@@ -16,12 +16,22 @@
 
                     </Grid>
                 </PivotItem>
-                <PivotItem Header="Husstand">
+                <PivotItem Header="Husstand" Margin="14,0,10,0">
                     <!-- tab2 -->
                     <Grid>
-                        <ListView>
-                            
-                        </ListView>
+                        <!--ListView-->
+                        <TextBlock Text="Husstands Oversigt" FontSize="28" FontFamily="Calibri" Margin="40,40,1749,810" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <ListView x:Name="listView" HorizontalAlignment="Left" Height="750" Margin="40,100,0,0" VerticalAlignment="Top" Width="450" Background="LightGray"/>
+                        <!--Creation Household-->
+                        <TextBox Text="test" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="750,150" Width="350"/>
+                        <TextBox Text="test" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="750,225" Width="350"/>
+                        <TextBox Text="test" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="750,300" Width="350"/>
+                        
+                        <TextBlock Text="Adresse" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="750,125" />
+                        <TextBlock Text="E-Mail Adresse" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="750,200" />
+                        <TextBlock Text="Test" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="750,275" />
+                        
+
                     </Grid>
                 </PivotItem>
                 <PivotItem Header="Planlægning">
@@ -29,7 +39,7 @@
                     <Grid>
                         <Pivot>
                             <PivotItem Header="Ugeplan">
-                                
+
                             </PivotItem>
                         </Pivot>
                     </Grid>
@@ -43,7 +53,7 @@
                 <PivotItem Header="Kalender">
                     <!-- tab5 -->
                     <Grid>
-<TextBlock Text="Content of Calendar"/>
+                        <TextBlock Text="Content of Calendar"/>
                     </Grid>
                 </PivotItem>
             </Pivot>
