@@ -16,7 +16,7 @@
 
                     </Grid>
                 </PivotItem>
-                <PivotItem Header="Husstand" Margin="14,0,10,0">
+                <PivotItem Header="Husstand" Margin="10,0,14,0">
                     <!-- tab2 -->
                     <Grid Margin="10,0,-10,0">
                         <Grid.ColumnDefinitions>
@@ -58,12 +58,12 @@
                         <AppBarButton Label="Slet" Width="90" Height="75" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="2" Margin="200,0,0,180">
                             <SymbolIcon Symbol="Delete"/>
                         </AppBarButton>
-                        
+
                         <!--Help Pane-->
                         <TextBlock Text="Information" Grid.Column="2" VerticalAlignment="Bottom" FontSize="28" />
                         <Image Source="Images/info.png" Grid.Column="2" Grid.Row="2" Margin="150,22,544,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-                        <TextBlock Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" Margin="20,160,0,0">En husstand repræsentere ens husnummer. Husnummeret benyttes under tilmeldingen. </TextBlock>
-                        
+                        <Image Source="Images/FAQ.png" Grid.Column="2" Grid.Row="2" Margin="32,127,393,0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="340" Width="369"/>
+
                     </Grid>
                 </PivotItem>
                 <PivotItem Header="Planlægning">
