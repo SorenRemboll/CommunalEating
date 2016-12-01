@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-373,0">
-        <Grid>
+        <Grid Margin="40">
             <Pivot Title="FællesspisningsApp">
                 <PivotItem Header="Oversigt">
                     <!-- tab1 -->
@@ -19,7 +19,9 @@
                 <PivotItem Header="Husstand">
                     <!-- tab2 -->
                     <Grid>
-
+                        <ListView>
+                            
+                        </ListView>
                     </Grid>
                 </PivotItem>
                 <PivotItem Header="Planlægning">
