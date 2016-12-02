@@ -37,6 +37,8 @@
 
                                     <!--pane 1 -->
                                     
+                                    <TextBlock x:Name="HeadlineTextBlock" Text="Dato" FontSize="25"/>
+                                    
                                     <TextBlock Text="Arrangør" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="0,90"/>
                                     <TextBlock Text="Overskrift" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,150" FontSize="20"/>
                                     <TextBlock Text="Beskrivelse" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,205" Grid.Column="0" />
@@ -48,9 +50,11 @@
                                     <TextBox Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,350,0,0" Width="250" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen note valgt" />
                                
                                     <!--Pane 2 -->
-                                    
+                                    <TextBlock x:Name="HeadlineTextBlock2" Text="Oprettelse" FontSize="25" Grid.Column="1"/>
                                     <!--Pane 3-->
-                                    <CalendarView Grid.Column="2" HorizontalAlignment="Center"/>
+                                    <TextBlock x:Name="HeadlineTextBlock3" Text="Vælg Dato" FontSize="25" Grid.Column="2"/>
+
+                                    <CalendarView Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                    
                                 </Grid>
 
