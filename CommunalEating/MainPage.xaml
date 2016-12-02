@@ -139,7 +139,7 @@
                 <PivotItem Header="Husstand">
                     <!-- tab2 -->
                     <Grid Margin="20">
-                        
+
                     </Grid>
                 </PivotItem>
                 <PivotItem Header="Planlægning">
@@ -150,23 +150,32 @@
                                 <Grid Margin="20">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="500"/>
+                                        <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="*"/>
-                                        <RowDefinition Height="500"/>
-                                        <RowDefinition Height="*"/>
-                                    </Grid.RowDefinitions>
 
 
-                                    <TextBlock Text="Vært" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="25"/>
-                                    <TextBlock Text="Beskrivelse" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,160" Grid.Column="0" Grid.Row="1"/>
-                                    <TextBlock Text="Overskrift" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,80" Grid.Column="0" Grid.Row="1" FontSize="25"/>
-                                    <TextBlock Text="Note" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="300,0" Grid.Column="0" Grid.Row="1" FontSize="25"/>
-                                    <TextBox Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,40" Width="250" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen vært valgt" />
-                                    <TextBox Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,120" Width="250" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen titel valgt" />
-                                    <TextBox Grid.Column="0" Grid.Row="1" Margin="0,0,0,200" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen beskrivelse valgt" HorizontalAlignment="Left" Width="250" Height="100" VerticalAlignment="Bottom"/>
+                                    <!--pane 1 -->
+                                    
+                                    <TextBlock x:Name="HeadlineTextBlock" Text="Dato" FontSize="25"/>
+                                    
+                                    <TextBlock Text="Arrangør" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="0,90"/>
+                                    <TextBlock Text="Overskrift" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,150" FontSize="20"/>
+                                    <TextBlock Text="Beskrivelse" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,205" Grid.Column="0" />
+                                    <TextBlock x:Name="textBlock" FontSize="20" HorizontalAlignment="Left" Margin="0,325,0,0" TextWrapping="Wrap" Text="Note" VerticalAlignment="Top"/>
+
+                                    <TextBox Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,120,0,0" Width="250" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen vært valgt" />
+                                    <TextBox Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,175,0,0" Width="250" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen titel valgt" />
+                                    <TextBox Grid.Column="0" Margin="0,230,0,0" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen beskrivelse valgt" HorizontalAlignment="Left" Width="250" Height="100" VerticalAlignment="top"/>
+                                    <TextBox Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,350,0,0" Width="250" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen note valgt" />
+                               
+                                    <!--Pane 2 -->
+                                    <TextBlock x:Name="HeadlineTextBlock2" Text="Oprettelse" FontSize="25" Grid.Column="1"/>
+                                    <!--Pane 3-->
+                                    <TextBlock x:Name="HeadlineTextBlock3" Text="Vælg Dato" FontSize="25" Grid.Column="2"/>
+
+                                    <CalendarView Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                   
                                 </Grid>
 
                             </PivotItem>
