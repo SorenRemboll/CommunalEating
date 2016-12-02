@@ -51,6 +51,23 @@
                                
                                     <!--Pane 2 -->
                                     <TextBlock x:Name="HeadlineTextBlock2" Text="Oprettelse" FontSize="25" Grid.Column="1"/>
+                                    <TextBlock Text="Arrangør" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="0,90" Grid.Column="1"/>
+                                    <TextBlock Text="Overskrift" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,150" FontSize="20" Grid.Column="1"/>
+                                    <TextBlock Text="Beskrivelse" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,205" Grid.Column="1" />
+                                    <TextBlock x:Name="textBlock2" FontSize="20" HorizontalAlignment="Left" Margin="0,325,0,0" TextWrapping="Wrap" Text="Note" VerticalAlignment="Top" Grid.Column="1"/>
+
+                                    <TextBox Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,120,0,0" Width="250" />
+                                    <TextBox Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,175,0,0" Width="250" />
+                                    <TextBox Grid.Column="1" Margin="0,230,0,0" HorizontalAlignment="Left" Width="250" Height="100" VerticalAlignment="top"/>
+                                    <TextBox Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,350,0,0" Width="250"/>
+                                    
+                                    <AppBarButton Label="Tilføj ændringer" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Background="LightGreen" Margin="280,160,0,0">
+                                        <SymbolIcon Symbol="Add"/>
+                                    </AppBarButton>
+                                    <AppBarButton Label="Slet ændringer" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Crimson" Foreground="White" Margin="280,260,0,0">
+                                        <SymbolIcon Symbol="Delete"/>
+                                    </AppBarButton>
+                                    
                                     <!--Pane 3-->
                                     <TextBlock x:Name="HeadlineTextBlock3" Text="Vælg Dato" FontSize="25" Grid.Column="2"/>
 
