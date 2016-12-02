@@ -14,7 +14,127 @@
                     <!-- tab1 -->
                     <Grid>
 
-                    </Grid>
+
+
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+              </Grid.ColumnDefinitions>
+
+              <StackPanel Margin="15">
+                <TextBlock Text="{Binding Day1}"
+                           FontWeight="Bold"
+                           FontSize="18" />
+
+                <TextBlock Margin="0,10,0,0"
+                           Text="Arrangør :"
+                           Foreground="DarkGray"
+                           FontSize="16"
+                           FontWeight="ExtraLight" />
+                <TextBlock />
+
+                <TextBlock Margin="0,10,0,0"
+                           Text="Beskrivelse :"
+                           Foreground="DarkGray"
+                           FontSize="16"
+                           FontWeight="ExtraLight" />
+                <TextBlock />
+
+                <TextBlock Margin="0,10,0,0"
+                           Text="Note :"
+                           Foreground="DarkGray"
+                           FontSize="16"
+                           FontWeight="ExtraLight" />
+                <TextBlock />
+              </StackPanel>
+
+              <StackPanel Margin="15"
+                          Grid.Column="1">
+                <TextBlock Text="{Binding Day2}"
+                           FontWeight="Bold"
+                           FontSize="18" />
+
+                <TextBlock Margin="0,10,0,0"
+                           Text="Arrangør :"
+                           Foreground="DarkGray"
+                           FontSize="16"
+                           FontWeight="ExtraLight" />
+                <TextBlock />
+
+                <TextBlock Margin="0,10,0,0"
+                           Text="Beskrivelse :"
+                           Foreground="DarkGray"
+                           FontSize="16"
+                           FontWeight="ExtraLight" />
+                <TextBlock />
+
+                <TextBlock Margin="0,10,0,0"
+                           Text="Note :"
+                           Foreground="DarkGray"
+                           FontSize="16"
+                           FontWeight="ExtraLight" />
+                <TextBlock />
+              </StackPanel>
+
+              <StackPanel Margin="15"
+                          Grid.Column="2">
+                <TextBlock Text="{Binding Day3}"
+                           FontWeight="Bold"
+                           FontSize="18" />
+
+                <TextBlock Margin="0,10,0,0"
+                           Text="Arrangør :"
+                           Foreground="DarkGray"
+                           FontSize="16"
+                           FontWeight="ExtraLight" />
+                <TextBlock />
+
+                <TextBlock Margin="0,10,0,0"
+                           Text="Beskrivelse :"
+                           Foreground="DarkGray"
+                           FontSize="16"
+                           FontWeight="ExtraLight" />
+                <TextBlock />
+
+                <TextBlock Margin="0,10,0,0"
+                           Text="Note :"
+                           Foreground="DarkGray"
+                           FontSize="16"
+                           FontWeight="ExtraLight" />
+                <TextBlock />
+              </StackPanel>
+
+              <StackPanel Margin="15"
+                          Grid.Column="3">
+                <TextBlock Text="{Binding Day4}"
+                           FontWeight="Bold"
+                           FontSize="18" />
+
+                <TextBlock Margin="0,10,0,0"
+                           Text="Arrangør :"
+                           Foreground="DarkGray"
+                           FontSize="16"
+                           FontWeight="ExtraLight" />
+                <TextBlock />
+
+                <TextBlock Margin="0,10,0,0"
+                           Text="Beskrivelse :"
+                           Foreground="DarkGray"
+                           FontSize="16"
+                           FontWeight="ExtraLight" />
+                <TextBlock />
+
+                <TextBlock Margin="0,10,0,0"
+                           Text="Note :"
+                           Foreground="DarkGray"
+                           FontSize="16"
+                           FontWeight="ExtraLight" />
+                <TextBlock />
+              </StackPanel>
+
+    </Grid>
                 </PivotItem>
                 <PivotItem Header="Husstand">
                     <!-- tab2 -->
