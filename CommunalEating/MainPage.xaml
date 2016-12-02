@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,0,0">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid Margin="40">
             <Pivot Title="FællesspisningsApp">
                 <PivotItem Header="Oversigt">
@@ -16,9 +16,9 @@
 
                     </Grid>
                 </PivotItem>
-                <PivotItem Header="Husstand" Margin="10,0,14,0">
+                <PivotItem Header="Husstand">
                     <!-- tab2 -->
-                    <Grid Margin="10,0,-10,0">
+                    <Grid Margin="20">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="600"/>
@@ -61,8 +61,8 @@
 
                         <!--Help Pane-->
                         <TextBlock Text="Information" Grid.Column="2" VerticalAlignment="Bottom" FontSize="28" />
-                        <Image Source="Images/info.png" Grid.Column="2" Grid.Row="2" Margin="150,22,544,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-                        <Image Source="Images/FAQ.png" Grid.Column="2" Grid.Row="2" Margin="32,127,393,0" VerticalAlignment="Top" HorizontalAlignment="Center" Height="340" Width="369"/>
+                        <Image Source="Images/info.png" Grid.Column="2" Grid.Row="2"  VerticalAlignment="Top" HorizontalAlignment="Center"/>
+                        <Image Source="Images/FAQ.png" Grid.Column="2" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" Height="340" Width="369"/>
 
                     </Grid>
                 </PivotItem>
@@ -71,7 +71,7 @@
                     <Grid>
                         <Pivot>
                             <PivotItem Header="Ugeplan">
-                                <Grid>
+                                <Grid Margin="20">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="500"/>
@@ -82,7 +82,15 @@
                                         <RowDefinition Height="500"/>
                                         <RowDefinition Height="*"/>
                                     </Grid.RowDefinitions>
-                                    
+
+
+                                    <TextBlock Text="Vært" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="25"/>
+                                    <TextBlock Text="Beskrivelse" FontSize="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,160" Grid.Column="0" Grid.Row="1"/>
+                                    <TextBlock Text="Overskrift" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,80" Grid.Column="0" Grid.Row="1" FontSize="25"/>
+                                    <TextBlock Text="Note" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="300,0" Grid.Column="0" Grid.Row="1" FontSize="25"/>
+                                    <TextBox Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,40" Width="250" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen vært valgt" />
+                                    <TextBox Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,120" Width="250" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen titel valgt" />
+                                    <TextBox Grid.Column="0" Grid.Row="1" Margin="0,0,0,200" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen beskrivelse valgt" HorizontalAlignment="Left" Width="250" Height="100" VerticalAlignment="Bottom"/>
                                 </Grid>
 
                             </PivotItem>
