@@ -19,51 +19,7 @@
                 <PivotItem Header="Husstand">
                     <!-- tab2 -->
                     <Grid Margin="20">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="600"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="185*" />
-                            <RowDefinition Height="20*"/>
-                            <RowDefinition Height="500" />
-                            <RowDefinition Height="200*"/>
-                        </Grid.RowDefinitions>
-
-                        <!--ListView-->
-                        <TextBlock Text="Husstands Oversigt" FontSize="28" FontFamily="Calibri" Margin="65,103,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="44" Width="259" />
-                        <ListView x:Name="listView1" Grid.Column="0" HorizontalAlignment="Left" Height="500" Margin="65,0,0,0" VerticalAlignment="Top" Width="666" Background="LightGray" Grid.Row="2"/>
-
-                        <!--Creation Household-->
-                        <TextBlock Text="Husstand Oprettelse" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" FontSize="28" Margin="10,0,0,9" />
-                        <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,47,0,0" Width="350" Grid.Column="1" Grid.Row="2"/>
-                        <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,122,0,0" Width="350" Grid.Column="1" Grid.Row="2"/>
-                        <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,197,0,0" Width="350" Grid.Column="1" Grid.Row="2"/>
-
-                        <TextBlock Text="Adresse" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,22,0,0" Grid.Column="1" Grid.Row="2"/>
-                        <TextBlock Text="E-Mail Adresse" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,97,0,0" Grid.Column="1" Grid.Row="2"/>
-                        <TextBlock Text="Test" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,172,0,0" Grid.Column="1" Grid.Row="2"/>
-
-                        <AppBarButton Label="Gem " Width="90" Height="75" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="2" Margin="100,0,0,100">
-                            <SymbolIcon Symbol="Save"/>
-                        </AppBarButton>
-                        <AppBarButton Label="Indlæs " Width="100" Height="75" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="2" Margin="200,0,0,100">
-                            <SymbolIcon Symbol="OpenFile"/>
-                        </AppBarButton>
-
-                        <AppBarButton Label="Tilføj" Width="90" Height="75" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="2" Margin="100,0,0,180">
-                            <SymbolIcon Symbol="Add"/>
-                        </AppBarButton>
-                        <AppBarButton Label="Slet" Width="90" Height="75" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="2" Margin="200,0,0,180">
-                            <SymbolIcon Symbol="Delete"/>
-                        </AppBarButton>
-
-                        <!--Help Pane-->
-                        <TextBlock Text="Information" Grid.Column="2" VerticalAlignment="Bottom" FontSize="28" />
-                        <Image Source="Images/info.png" Grid.Column="2" Grid.Row="2"  VerticalAlignment="Top" HorizontalAlignment="Center"/>
-                        <Image Source="Images/FAQ.png" Grid.Column="2" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" Height="340" Width="369"/>
-
+                        
                     </Grid>
                 </PivotItem>
                 <PivotItem Header="Planlægning">
