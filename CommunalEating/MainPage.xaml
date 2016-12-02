@@ -54,7 +54,7 @@
                                     <!--Pane 3-->
                                     <TextBlock x:Name="HeadlineTextBlock3" Text="Vælg Dato" FontSize="25" Grid.Column="2"/>
 
-                                    <CalendarView Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <CalendarView Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,60,37,65"/>
                                    
                                 </Grid>
 
