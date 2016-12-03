@@ -19,6 +19,17 @@
                 <PivotItem Header="Husstand">
                     <!-- tab2 -->
                     <Grid Margin="20">
+                        <Pivot>
+                            <PivotItem Header="Oprettelse">
+                                <!--Oprettelses tab-->
+                                
+                            </PivotItem>
+                            <PivotItem Header="Hjælp">
+                                <!--Hjælp tab-->
+
+                            </PivotItem>
+                        </Pivot>
+                    
 
                     </Grid>
                 </PivotItem>
@@ -71,7 +82,10 @@
                                     <!--Pane 3-->
                                     <TextBlock x:Name="HeadlineTextBlock3" Text="Vælg Dato" FontSize="25" Grid.Column="2"/>
 
-                                    <CalendarView Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="37,60,37,65"/>
+                                    <CalendarView Margin="40,80,40,0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Top">
+                                        <CalendarView.FirstDayOfWeek>Monday</CalendarView.FirstDayOfWeek>
+                                        
+                                    </CalendarView>
                                    
                                 </Grid>
 
