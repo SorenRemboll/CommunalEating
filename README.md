@@ -1,2 +1,2 @@
 # Community Eating Application
-![EASJ](readme\easj.png)
+![EASJ](easj.png)
