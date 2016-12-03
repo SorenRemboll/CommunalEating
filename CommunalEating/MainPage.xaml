@@ -139,6 +139,50 @@
                 <PivotItem Header="Husstand">
                     <!-- tab2 -->
                     <Grid Margin="20">
+                        <Pivot>
+                            <PivotItem Header="Oprettelse">
+                                <!--Oprettelses tab-->
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="100"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <TextBlock Text="Alle Husstand" FontSize="25" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                                    <TextBlock Text="Opret Husstand" FontSize="25" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                                    
+                                    <TextBlock Text="Husnummer"  Margin="20,20,0,0" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left"  />
+                                    <TextBlock Text="Email Adresse"  Margin="20,100,0,0" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left"  />
+                                    
+                                    <TextBox Margin="20,40,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Width="80"/>
+                                    <TextBox Margin="20,120,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Width="320"/>
+                                    
+                                    <AppBarButton Label="Tilføj Husstand" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,0">
+                                        <SymbolIcon Symbol="Add" />
+                                    </AppBarButton>
+                                    <AppBarButton Label="Slet Husstand" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="100,0,0,0">
+                                        <SymbolIcon Symbol="Delete" />
+                                    </AppBarButton>
+                                    <AppBarButton Label="Gem Husstand" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="300,0,0,0">
+                                        <SymbolIcon Symbol="Save" />
+                                    </AppBarButton>
+                                    <AppBarButton Label="Indlæs Alle" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="394,0,0,16">
+                                        <SymbolIcon Symbol="OpenFile" />
+                                    </AppBarButton>
+                                    <ListView Grid.Row="1" Background="LightGray" Margin="10"/>
+                                </Grid>
+                                
+                            </PivotItem>
+                            <PivotItem Header="Hjælp">
+                                <!--Hjælp tab-->
+
+                            </PivotItem>
+                        </Pivot>
+                    
 
                     </Grid>
                 </PivotItem>
@@ -171,10 +215,30 @@
                                
                                     <!--Pane 2 -->
                                     <TextBlock x:Name="HeadlineTextBlock2" Text="Oprettelse" FontSize="25" Grid.Column="1"/>
+                                    <TextBlock Text="Arrangør" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="0,90" Grid.Column="1"/>
+                                    <TextBlock Text="Overskrift" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,150" FontSize="20" Grid.Column="1"/>
+                                    <TextBlock Text="Beskrivelse" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,205" Grid.Column="1" />
+                                    <TextBlock x:Name="textBlock2" FontSize="20" HorizontalAlignment="Left" Margin="0,325,0,0" TextWrapping="Wrap" Text="Note" VerticalAlignment="Top" Grid.Column="1"/>
+
+                                    <TextBox Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,120,0,0" Width="250" />
+                                    <TextBox Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,175,0,0" Width="250" />
+                                    <TextBox Grid.Column="1" Margin="0,230,0,0" HorizontalAlignment="Left" Width="250" Height="100" VerticalAlignment="top"/>
+                                    <TextBox Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,350,0,0" Width="250"/>
+                                    
+                                    <AppBarButton Label="Tilføj ændringer" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Background="LightGreen" Margin="280,160,0,0">
+                                        <SymbolIcon Symbol="Add"/>
+                                    </AppBarButton>
+                                    <AppBarButton Label="Slet ændringer" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Crimson" Foreground="White" Margin="280,260,0,0">
+                                        <SymbolIcon Symbol="Delete"/>
+                                    </AppBarButton>
+                                    
                                     <!--Pane 3-->
                                     <TextBlock x:Name="HeadlineTextBlock3" Text="Vælg Dato" FontSize="25" Grid.Column="2"/>
 
-                                    <CalendarView Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    <CalendarView Margin="40,80,40,0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Top">
+                                        <CalendarView.FirstDayOfWeek>Monday</CalendarView.FirstDayOfWeek>
+                                        
+                                    </CalendarView>
                                    
                                 </Grid>
 
