@@ -22,6 +22,39 @@
                         <Pivot>
                             <PivotItem Header="Oprettelse">
                                 <!--Oprettelses tab-->
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="100"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <TextBlock Text="Alle Husstand" FontSize="25" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                                    <TextBlock Text="Opret Husstand" FontSize="25" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                                    
+                                    <TextBlock Text="Husnummer"  Margin="20,20,0,0" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left"  />
+                                    <TextBlock Text="Email Adresse"  Margin="20,100,0,0" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left"  />
+                                    
+                                    <TextBox Margin="20,40,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Width="80"/>
+                                    <TextBox Margin="20,120,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Width="320"/>
+                                    
+                                    <AppBarButton Label="Tilføj Husstand" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,0">
+                                        <SymbolIcon Symbol="Add" />
+                                    </AppBarButton>
+                                    <AppBarButton Label="Slet Husstand" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="100,0,0,0">
+                                        <SymbolIcon Symbol="Delete" />
+                                    </AppBarButton>
+                                    <AppBarButton Label="Gem Husstand" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="300,0,0,0">
+                                        <SymbolIcon Symbol="Save" />
+                                    </AppBarButton>
+                                    <AppBarButton Label="Indlæs Alle" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="394,0,0,16">
+                                        <SymbolIcon Symbol="OpenFile" />
+                                    </AppBarButton>
+                                    <ListView Grid.Row="1" Background="LightGray" Margin="10"/>
+                                </Grid>
                                 
                             </PivotItem>
                             <PivotItem Header="Hjælp">
