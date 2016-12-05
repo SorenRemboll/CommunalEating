@@ -418,7 +418,11 @@
                           Margin="28,25,0,0"
                           VerticalAlignment="Top"
                           Height="400"
-                          Width="480" />
+                          Width="480" >
+                        <CalendarView.FirstDayOfWeek>
+                            <Globalization:DayOfWeek>Monday</Globalization:DayOfWeek>
+                        </CalendarView.FirstDayOfWeek>
+                            </CalendarView>
 
                         <Button x:Name="button" 
                                 Content="Tilføj deltagelse" 
