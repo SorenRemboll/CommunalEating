@@ -5,6 +5,8 @@
     xmlns:local="using:CommunalEating"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -14,62 +16,72 @@
                 <Grid Margin="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <!--Pane 2 -->
                     <TextBlock x:Name="HeadlineTextBlock2"
-                             Text="Oprettelse"
+                             Text="Deltag"
                              FontSize="25"
                              Margin="23,10,23,36"/>
                     <TextBlock Text="Antal Voksne"
                              VerticalAlignment="Top"
                              HorizontalAlignment="Left"
                              FontSize="20"
-                             Margin="23,45,0,0" />
+                             Margin="23,103,0,0" />
                     <TextBlock Text="Antal Unge"
                              VerticalAlignment="Top"
                              HorizontalAlignment="Left"
-                             Margin="23,105,0,0"
+                             Margin="23,163,0,0"
                              FontSize="20" />
                     <TextBlock Text="Antal Brøn"
                              FontSize="20"
                              VerticalAlignment="Top"
                              HorizontalAlignment="Left"
-                             Margin="23,160,0,0" />
+                             Margin="23,218,0,0" />
                     <TextBlock x:Name="textBlock2"
                              FontSize="20"
                              HorizontalAlignment="Left"
-                             Margin="23,218,0,0"
+                             Margin="23,276,0,0"
                              TextWrapping="Wrap"
                              Text="Antal babyer"
                              VerticalAlignment="Top" />
+                    <TextBlock VerticalAlignment="Top"
+                               HorizontalAlignment="Left"
+                               FontSize="20"
+                               Margin="23,41,0,0"
+                               Text="Hustand"/>
+                    <TextBlock x:Name="textBlock" 
+                               FontSize="20"
+                               HorizontalAlignment="Left" 
+                               Margin="308,41,0,0" 
+                               TextWrapping="Wrap" 
+                               Text="Vælg endnu en dato" 
+                               VerticalAlignment="Top"/>
 
                     <TextBox
                            VerticalAlignment="Top"
                            HorizontalAlignment="Left"
-                           Margin="23,75,0,0"
+                           Margin="23,133,0,0"
                            Width="250" />
                     <TextBox
                            VerticalAlignment="Top"
                            HorizontalAlignment="Left"
-                           Margin="23,130,0,0"
+                           Margin="23,188,0,0"
                            Width="250" />
                     <TextBox
-                           Margin="23,185,0,0"
+                           Margin="23,243,0,0"
                            HorizontalAlignment="Left"
                            Width="250"
                            VerticalAlignment="top" />
                     <TextBox
                            VerticalAlignment="Top"
                            HorizontalAlignment="Left"
-                           Margin="23,243,0,0"
+                           Margin="23,301,0,0"
                            Width="250" />
 
                     <AppBarButton Label=""
                                 VerticalAlignment="Top"
                                 HorizontalAlignment="Left"
                                 Background="LightGreen"
-                                Margin="23,307,0,0" Height="48">
+                                Margin="23,365,0,0" Height="48">
                         <SymbolIcon Symbol="Add" />
                     </AppBarButton>
                     <AppBarButton Label=""
@@ -77,14 +89,38 @@
                                 HorizontalAlignment="Left"
                                 Background="Crimson"
                                 Foreground="White"
-                                Margin="205,307,0,0" Height="48">
+                                Margin="205,365,0,0" Height="48">
                         <SymbolIcon Symbol="Delete" />
                     </AppBarButton>
 
-                    <!--Pane 3-->
-                    <DatePicker HorizontalAlignment="Left" Margin="322,75,0,0" VerticalAlignment="Top" Height="30" Width="155"/>
+                    <Button x:Name="button" 
+                                Content="Tilbage til forsiden" 
+                                HorizontalAlignment="Left" 
+                                Margin="78,465,0,0" 
+                                VerticalAlignment="Top">
+                        <interactivity:Interaction.Behaviors>
+                            <core:EventTriggerBehavior EventName="Click">
+                                <core:NavigateToPageAction TargetPage="CommunalEating.MainPage"/>
+                            </core:EventTriggerBehavior>
+                        </interactivity:Interaction.Behaviors>
+                    </Button>
+
+                    <DatePicker HorizontalAlignment="Left" 
+                                Margin="308,70,0,0" 
+                                VerticalAlignment="Top" 
+                                Height="30" 
+                                Width="155"/>
+
+                    <ComboBox x:Name="comboBox" 
+                              HorizontalAlignment="Left" 
+                              Margin="23,71,0,0" 
+                              VerticalAlignment="Top" 
+                              Width="120"/>
+
+                    
+                    
                 </Grid>
-                
+
             </PivotItem>
             <PivotItem Header="Host">
                 <DatePicker HorizontalAlignment="Left" Margin="37,30,0,0" VerticalAlignment="Top" Height="30" Width="155"/>

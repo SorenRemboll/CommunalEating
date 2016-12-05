@@ -421,7 +421,7 @@
                           Width="480" />
 
                         <Button x:Name="button" 
-                                Content="Test knap" 
+                                Content="Tilføj deltagelse" 
                                 HorizontalAlignment="Left" 
                                 Margin="133,465,0,0" 
                                 VerticalAlignment="Top">
