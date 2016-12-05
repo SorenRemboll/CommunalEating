@@ -147,6 +147,34 @@
                                     <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,440,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
                                     
                                     <!--Pane 2-->
+                                    <DatePicker Margin="15" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1"></DatePicker>
+                                    
+                                    <TextBlock Text="Overkok" FontSize="20" Margin="15,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
+                                    <TextBlock Text="Kok" FontSize="20" Margin="15,110,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
+                                    <TextBlock Text="Kok 2" FontSize="20" Margin="15,170,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
+                                    <TextBlock Text="Afryder" FontSize="20" Margin="15,230,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
+                                    <TextBlock Text="Afryder 2" FontSize="20" Margin="15,290,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
+                                    <TextBlock Text="Afryder 3" FontSize="20" Margin="15,350,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
+                                    <TextBlock Text="Afryder 4" FontSize="20" Margin="15,410,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
+
+
+                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,80,0,0"   Width="250" Grid.Column="1" />
+                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,140,0,0"  Width="250" Grid.Column="1"/>
+                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,200,0,0"  Width="250" Grid.Column="1"/>
+                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,260,0,0"  Width="250" Grid.Column="1"/>
+                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,320,0,0"  Width="250" Grid.Column="1"/>
+                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,380,0,0"  Width="250" Grid.Column="1"/>
+                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,440,0,0"  Width="250" Grid.Column="1"/>
+
+                                    <TextBlock Text="Torsdag" FontSize="20" Margin="325,440,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
+                                    <CheckBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="300,440,0,0" Grid.Column="1" />
+
+                                    <AppBarButton Label="Tilføj ændringer" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Background="LightGreen" Margin="400,160,0,0">
+                                        <SymbolIcon Symbol="Add"/>
+                                    </AppBarButton>
+                                    <AppBarButton Label="Slet ændringer" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Crimson" Foreground="White" Margin="400,260,0,0">
+                                        <SymbolIcon Symbol="Delete"/>
+                                    </AppBarButton>
                                 </Grid>
 
                                
