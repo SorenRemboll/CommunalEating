@@ -66,7 +66,7 @@
                     <!-- tab3 -->
                     <Grid>
                         <Pivot>
-                            <PivotItem Header="Ugeplan">
+                            <PivotItem Header="Ugeplan" AllowDrop="True">
                                 <Grid Margin="20">
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
@@ -77,8 +77,8 @@
 
                                     <!--pane 1 -->
 
-                                    <TextBlock x:Name="HeadlineTextBlock" Text="Dato" FontSize="25"/>
-
+                                    <DatePicker x:Name="DatePicker2" Margin="0,25,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="0"/>
+ 
                                     <TextBlock Text="Arrangør" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="0,90"/>
                                     <TextBlock Text="Overskrift" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,150" FontSize="20"/>
                                     <TextBlock Text="Beskrivelse" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,205" Grid.Column="0" />
@@ -91,7 +91,7 @@
 
                                     <!--Pane 2 -->
                                     <TextBlock x:Name="HeadlineTextBlock2" Text="Oprettelse" FontSize="25" Grid.Column="1"/>
-                                    <TextBlock Text="Arrangør" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="0,90" Grid.Column="1"/>
+                                    <TextBlock Text="Arrangør" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="0,90" Grid.Column="1" />
                                     <TextBlock Text="Overskrift" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,150" FontSize="20" Grid.Column="1"/>
                                     <TextBlock Text="Beskrivelse" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,205" Grid.Column="1" />
                                     <TextBlock x:Name="textBlock2" FontSize="20" HorizontalAlignment="Left" Margin="0,325,0,0" TextWrapping="Wrap" Text="Note" VerticalAlignment="Top" Grid.Column="1"/>
@@ -108,10 +108,11 @@
                                         <SymbolIcon Symbol="Delete"/>
                                     </AppBarButton>
 
+                                   
                                     <!--Pane 3-->
                                     <TextBlock x:Name="HeadlineTextBlock3" Text="Vælg Dato" FontSize="25" Grid.Column="2"/>
 
-                                    <CalendarView Margin="40,80,40,0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Top">
+                                    <CalendarView x:Name="CalendarView2" Margin="40,80,40,0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Top">
                                         <CalendarView.FirstDayOfWeek>Monday</CalendarView.FirstDayOfWeek>
 
                                     </CalendarView>
@@ -120,6 +121,35 @@
 
                             </PivotItem>
                             <PivotItem Header="Arbejdsopgaver">
+                                
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    
+                                    <!--Pane 1-->
+                                    <TextBlock Text="Overkok" FontSize="20" Margin="15,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                                    <TextBlock Text="Kok" FontSize="20" Margin="15,110,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                                    <TextBlock Text="Kok 2" FontSize="20" Margin="15,170,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                                    <TextBlock Text="Afryder" FontSize="20" Margin="15,230,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                                    <TextBlock Text="Afryder 2" FontSize="20" Margin="15,290,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                                    <TextBlock Text="Afryder 3" FontSize="20" Margin="15,350,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                                    <TextBlock Text="Afryder 4" FontSize="20" Margin="15,410,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                                    
+                                    
+                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,80,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
+                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,140,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
+                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,200,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
+                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,260,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
+                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,320,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
+                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,380,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
+                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,440,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
+                                    
+                                    <!--Pane 2-->
+                                </Grid>
+
+                               
                                 
                             </PivotItem>
                         </Pivot>
