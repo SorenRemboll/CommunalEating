@@ -107,6 +107,7 @@
     <None Include="CommunalEating_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\Cards.png" />
     <Content Include="Images\info.png" />
     <Content Include="Images\FAQ.png" />
     <Content Include="Properties\Default.rd.xml" />

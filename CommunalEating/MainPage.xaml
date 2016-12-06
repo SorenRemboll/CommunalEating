@@ -9,7 +9,8 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid Margin="40">
             <Pivot Title="FællesspisningsApp">
-                <PivotItem Header="Oversigt">
+                <PivotItem Header="Oversigt"
+                           Margin="14,0,10,0">
                     <!-- tab1 -->
                     <Grid>
 
@@ -622,9 +623,13 @@
                                     <ListView Grid.Column="1"
                                               Grid.Row="1"
                                               Margin="10"
-                                              Background="LightGray" /> 
-                                    
-                                    <AppBarButton Label="Flere Detaljer"  VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="2">
+                                              Background="LightGray" />
+
+                                    <AppBarButton Label="Flere Detaljer"
+                                                  VerticalAlignment="Bottom"
+                                                  HorizontalAlignment="Left"
+                                                  Grid.Column="1"
+                                                  Grid.Row="2">
                                         <SymbolIcon Symbol="Edit" />
                                     </AppBarButton>
 
@@ -662,5 +667,7 @@
                 </PivotItem>
             </Pivot>
         </Grid>
+        <Image Source="Images/Cards.png"
+               Margin="1205,-19,10,663" />
     </Grid>
 </Page>
