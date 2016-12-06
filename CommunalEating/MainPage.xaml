@@ -4,6 +4,8 @@
       xmlns:local="using:CommunalEating"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+      xmlns:core="using:Microsoft.Xaml.Interactions.Core"
       mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -625,12 +627,27 @@
                                               Margin="10"
                                               Background="LightGray" />
 
+                                    <Button Grid.Column="0"
+                                            Grid.Row="1"
+                                            VerticalAlignment="Bottom"
+                                            HorizontalAlignment="Left"
+                                            Margin="15,0,0,24"
+                                            Width="112"
+                                            Height="21">
+                                        <interactivity:Interaction.Behaviors>
+                                            <core:EventTriggerBehavior EventName="Click">
+                                                <core:NavigateToPageAction TargetPage="CommunalEating.regenskab" />
+                                            </core:EventTriggerBehavior>
+                                        </interactivity:Interaction.Behaviors>
+                                    </Button>
+
                                     <AppBarButton Label="Flere Detaljer"
                                                   VerticalAlignment="Bottom"
                                                   HorizontalAlignment="Left"
                                                   Grid.Column="1"
                                                   Grid.Row="2">
                                         <SymbolIcon Symbol="Edit" />
+
                                     </AppBarButton>
 
 
