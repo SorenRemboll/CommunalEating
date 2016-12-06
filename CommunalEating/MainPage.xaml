@@ -1,11 +1,10 @@
-﻿<Page
-    x:Class="CommunalEating.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:CommunalEating"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+﻿<Page x:Class="CommunalEating.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:CommunalEating"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid Margin="40">
@@ -24,36 +23,85 @@
                                 <!--Oprettelses tab-->
                                 <Grid>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
                                     <Grid.RowDefinitions>
-                                        <RowDefinition Height="100"/>
-                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="100" />
+                                        <RowDefinition Height="*" />
                                     </Grid.RowDefinitions>
 
-                                    <TextBlock Text="Alle Husstand" FontSize="25" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
-                                    <TextBlock Text="Opret Husstand" FontSize="25" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+                                    <TextBlock Text="Alle Husstand"
+                                               FontSize="25"
+                                               VerticalAlignment="Bottom"
+                                               HorizontalAlignment="Left" />
+                                    <TextBlock Text="Opret Husstand"
+                                               FontSize="25"
+                                               Grid.Column="1"
+                                               VerticalAlignment="Bottom"
+                                               HorizontalAlignment="Left" />
 
-                                    <TextBlock Text="Husnummer"  Margin="20,20,0,0" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left"  />
-                                    <TextBlock Text="Email Adresse"  Margin="20,100,0,0" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left"  />
+                                    <TextBlock Text="Husnummer"
+                                               Margin="20,20,0,0"
+                                               Grid.Column="1"
+                                               Grid.Row="1"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left" />
+                                    <TextBlock Text="Email Adresse"
+                                               Margin="20,100,0,0"
+                                               Grid.Column="1"
+                                               Grid.Row="1"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left" />
 
-                                    <TextBox Margin="20,40,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Width="80"/>
-                                    <TextBox Margin="20,120,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Width="320"/>
+                                    <TextBox Margin="20,40,0,0"
+                                             VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Grid.Column="1"
+                                             Grid.Row="1"
+                                             Width="80" />
+                                    <TextBox Margin="20,120,0,0"
+                                             VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Grid.Column="1"
+                                             Grid.Row="1"
+                                             Width="320" />
 
-                                    <AppBarButton Label="Tilføj Husstand" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,0">
+                                    <AppBarButton Label="Tilføj Husstand"
+                                                  Grid.Column="1"
+                                                  Grid.Row="1"
+                                                  VerticalAlignment="Bottom"
+                                                  HorizontalAlignment="Left"
+                                                  Margin="10,0,0,0">
                                         <SymbolIcon Symbol="Add" />
                                     </AppBarButton>
-                                    <AppBarButton Label="Slet Husstand" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="100,0,0,0">
+                                    <AppBarButton Label="Slet Husstand"
+                                                  Grid.Column="1"
+                                                  Grid.Row="1"
+                                                  VerticalAlignment="Bottom"
+                                                  HorizontalAlignment="Left"
+                                                  Margin="100,0,0,0">
                                         <SymbolIcon Symbol="Delete" />
                                     </AppBarButton>
-                                    <AppBarButton Label="Gem Husstand" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="300,0,0,0">
+                                    <AppBarButton Label="Gem Husstand"
+                                                  Grid.Column="1"
+                                                  Grid.Row="1"
+                                                  VerticalAlignment="Bottom"
+                                                  HorizontalAlignment="Left"
+                                                  Margin="300,0,0,0">
                                         <SymbolIcon Symbol="Save" />
                                     </AppBarButton>
-                                    <AppBarButton Label="Indlæs Alle" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="394,0,0,16">
+                                    <AppBarButton Label="Indlæs Alle"
+                                                  Grid.Column="1"
+                                                  Grid.Row="1"
+                                                  VerticalAlignment="Bottom"
+                                                  HorizontalAlignment="Left"
+                                                  Margin="394,0,0,16">
                                         <SymbolIcon Symbol="OpenFile" />
                                     </AppBarButton>
-                                    <ListView Grid.Row="1" Background="LightGray" Margin="10"/>
+                                    <ListView Grid.Row="1"
+                                              Background="LightGray"
+                                              Margin="10" />
                                 </Grid>
 
                             </PivotItem>
@@ -66,53 +114,167 @@
                     <!-- tab3 -->
                     <Grid>
                         <Pivot>
-                            <PivotItem Header="Ugeplan" AllowDrop="True">
+                            <PivotItem Header="Ugeplan"
+                                       AllowDrop="True">
                                 <Grid Margin="20">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="*"/>
-                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
 
 
                                     <!--pane 1 -->
 
-                                    <DatePicker x:Name="DatePicker2" Margin="0,25,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="0"/>
- 
-                                    <TextBlock Text="Arrangør" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="0,90"/>
-                                    <TextBlock Text="Overskrift" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,150" FontSize="20"/>
-                                    <TextBlock Text="Beskrivelse" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,205" Grid.Column="0" />
-                                    <TextBlock x:Name="textBlock" FontSize="20" HorizontalAlignment="Left" Margin="0,325,0,0" TextWrapping="Wrap" Text="Note" VerticalAlignment="Top"/>
+                                    <DatePicker x:Name="DatePicker2"
+                                                Margin="0,25,0,0"
+                                                VerticalAlignment="Top"
+                                                HorizontalAlignment="Center"
+                                                Grid.Column="0"
+                                                Grid.Row="0" />
 
-                                    <TextBox Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,120,0,0" Width="250" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen vært valgt" />
-                                    <TextBox Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,175,0,0" Width="250" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen titel valgt" />
-                                    <TextBox Grid.Column="0" Margin="0,230,0,0" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen beskrivelse valgt" HorizontalAlignment="Left" Width="250" Height="100" VerticalAlignment="top"/>
-                                    <TextBox Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,350,0,0" Width="250" Background="LightGray" IsReadOnly="True" PlaceholderText="Ingen note valgt" />
+                                    <TextBlock Text="Arrangør"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               FontSize="20"
+                                               Margin="0,90" />
+                                    <TextBlock Text="Overskrift"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               Margin="0,150"
+                                               FontSize="20" />
+                                    <TextBlock Text="Beskrivelse"
+                                               FontSize="20"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               Margin="0,205"
+                                               Grid.Column="0" />
+                                    <TextBlock x:Name="textBlock"
+                                               FontSize="20"
+                                               HorizontalAlignment="Left"
+                                               Margin="0,325,0,0"
+                                               TextWrapping="Wrap"
+                                               Text="Note"
+                                               VerticalAlignment="Top" />
+
+                                    <TextBox Grid.Column="0"
+                                             VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="0,120,0,0"
+                                             Width="250"
+                                             Background="LightGray"
+                                             IsReadOnly="True"
+                                             PlaceholderText="Ingen vært valgt" />
+                                    <TextBox Grid.Column="0"
+                                             VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="0,175,0,0"
+                                             Width="250"
+                                             Background="LightGray"
+                                             IsReadOnly="True"
+                                             PlaceholderText="Ingen titel valgt" />
+                                    <TextBox Grid.Column="0"
+                                             Margin="0,230,0,0"
+                                             Background="LightGray"
+                                             IsReadOnly="True"
+                                             PlaceholderText="Ingen beskrivelse valgt"
+                                             HorizontalAlignment="Left"
+                                             Width="250"
+                                             Height="100"
+                                             VerticalAlignment="top" />
+                                    <TextBox Grid.Column="0"
+                                             VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="0,350,0,0"
+                                             Width="250"
+                                             Background="LightGray"
+                                             IsReadOnly="True"
+                                             PlaceholderText="Ingen note valgt" />
 
                                     <!--Pane 2 -->
-                                    <TextBlock x:Name="HeadlineTextBlock2" Text="Oprettelse" FontSize="25" Grid.Column="1"/>
-                                    <TextBlock Text="Arrangør" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="20" Margin="0,90" Grid.Column="1" />
-                                    <TextBlock Text="Overskrift" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,150" FontSize="20" Grid.Column="1"/>
-                                    <TextBlock Text="Beskrivelse" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,205" Grid.Column="1" />
-                                    <TextBlock x:Name="textBlock2" FontSize="20" HorizontalAlignment="Left" Margin="0,325,0,0" TextWrapping="Wrap" Text="Note" VerticalAlignment="Top" Grid.Column="1"/>
+                                    <TextBlock x:Name="HeadlineTextBlock2"
+                                               Text="Oprettelse"
+                                               FontSize="25"
+                                               Grid.Column="1" />
+                                    <TextBlock Text="Arrangør"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               FontSize="20"
+                                               Margin="0,90"
+                                               Grid.Column="1" />
+                                    <TextBlock Text="Overskrift"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               Margin="0,150"
+                                               FontSize="20"
+                                               Grid.Column="1" />
+                                    <TextBlock Text="Beskrivelse"
+                                               FontSize="20"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               Margin="0,205"
+                                               Grid.Column="1" />
+                                    <TextBlock x:Name="textBlock2"
+                                               FontSize="20"
+                                               HorizontalAlignment="Left"
+                                               Margin="0,325,0,0"
+                                               TextWrapping="Wrap"
+                                               Text="Note"
+                                               VerticalAlignment="Top"
+                                               Grid.Column="1" />
 
-                                    <TextBox Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,120,0,0" Width="250" />
-                                    <TextBox Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,175,0,0" Width="250" />
-                                    <TextBox Grid.Column="1" Margin="0,230,0,0" HorizontalAlignment="Left" Width="250" Height="100" VerticalAlignment="top"/>
-                                    <TextBox Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,350,0,0" Width="250"/>
+                                    <TextBox Grid.Column="1"
+                                             VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="0,120,0,0"
+                                             Width="250" />
+                                    <TextBox Grid.Column="1"
+                                             VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="0,175,0,0"
+                                             Width="250" />
+                                    <TextBox Grid.Column="1"
+                                             Margin="0,230,0,0"
+                                             HorizontalAlignment="Left"
+                                             Width="250"
+                                             Height="100"
+                                             VerticalAlignment="top" />
+                                    <TextBox Grid.Column="1"
+                                             VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="0,350,0,0"
+                                             Width="250" />
 
-                                    <AppBarButton Label="Tilføj ændringer" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Background="LightGreen" Margin="280,160,0,0">
-                                        <SymbolIcon Symbol="Add"/>
+                                    <AppBarButton Label="Tilføj ændringer"
+                                                  Grid.Column="1"
+                                                  VerticalAlignment="Top"
+                                                  HorizontalAlignment="Left"
+                                                  Background="LightGreen"
+                                                  Margin="280,160,0,0">
+                                        <SymbolIcon Symbol="Add" />
                                     </AppBarButton>
-                                    <AppBarButton Label="Slet ændringer" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Crimson" Foreground="White" Margin="280,260,0,0">
-                                        <SymbolIcon Symbol="Delete"/>
+                                    <AppBarButton Label="Slet ændringer"
+                                                  Grid.Column="1"
+                                                  VerticalAlignment="Top"
+                                                  HorizontalAlignment="Left"
+                                                  Background="Crimson"
+                                                  Foreground="White"
+                                                  Margin="280,260,0,0">
+                                        <SymbolIcon Symbol="Delete" />
                                     </AppBarButton>
 
-                                   
+
                                     <!--Pane 3-->
-                                    <TextBlock x:Name="HeadlineTextBlock3" Text="Vælg Dato" FontSize="25" Grid.Column="2"/>
+                                    <TextBlock x:Name="HeadlineTextBlock3"
+                                               Text="Vælg Dato"
+                                               FontSize="25"
+                                               Grid.Column="2" />
 
-                                    <CalendarView x:Name="CalendarView2" Margin="40,80,40,0" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Top">
+                                    <CalendarView x:Name="CalendarView2"
+                                                  Margin="40,80,40,0"
+                                                  Grid.Column="2"
+                                                  HorizontalAlignment="Center"
+                                                  VerticalAlignment="Top">
                                         <CalendarView.FirstDayOfWeek>Monday</CalendarView.FirstDayOfWeek>
 
                                     </CalendarView>
@@ -121,64 +283,254 @@
 
                             </PivotItem>
                             <PivotItem Header="Arbejdsopgaver">
-                                
+
                                 <Grid>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
-                                    
+
                                     <!--Pane 1-->
-                                    <TextBlock Text="Overkok" FontSize="20" Margin="15,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                                    <TextBlock Text="Kok" FontSize="20" Margin="15,110,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                                    <TextBlock Text="Kok 2" FontSize="20" Margin="15,170,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                                    <TextBlock Text="Afryder" FontSize="20" Margin="15,230,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                                    <TextBlock Text="Afryder 2" FontSize="20" Margin="15,290,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                                    <TextBlock Text="Afryder 3" FontSize="20" Margin="15,350,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                                    <TextBlock Text="Afryder 4" FontSize="20" Margin="15,410,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                                    
-                                    
-                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,80,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
-                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,140,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
-                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,200,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
-                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,260,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
-                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,320,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
-                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,380,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
-                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,440,0,0" IsReadOnly="True" Background="LightGray" Width="250" />
-                                    
+                                    <TextBlock Text="Overkok"
+                                               FontSize="20"
+                                               Margin="15,50,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left" />
+                                    <TextBlock Text="Kok"
+                                               FontSize="20"
+                                               Margin="15,110,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left" />
+                                    <TextBlock Text="Kok 2"
+                                               FontSize="20"
+                                               Margin="15,170,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left" />
+                                    <TextBlock Text="Afryder"
+                                               FontSize="20"
+                                               Margin="15,230,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left" />
+                                    <TextBlock Text="Afryder 2"
+                                               FontSize="20"
+                                               Margin="15,290,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left" />
+                                    <TextBlock Text="Afryder 3"
+                                               FontSize="20"
+                                               Margin="15,350,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left" />
+                                    <TextBlock Text="Afryder 4"
+                                               FontSize="20"
+                                               Margin="15,410,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left" />
+
+
+                                    <TextBox VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="15,80,0,0"
+                                             IsReadOnly="True"
+                                             Background="LightGray"
+                                             Width="250" />
+                                    <TextBox VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="15,140,0,0"
+                                             IsReadOnly="True"
+                                             Background="LightGray"
+                                             Width="250" />
+                                    <TextBox VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="15,200,0,0"
+                                             IsReadOnly="True"
+                                             Background="LightGray"
+                                             Width="250" />
+                                    <TextBox VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="15,260,0,0"
+                                             IsReadOnly="True"
+                                             Background="LightGray"
+                                             Width="250" />
+                                    <TextBox VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="15,320,0,0"
+                                             IsReadOnly="True"
+                                             Background="LightGray"
+                                             Width="250" />
+                                    <TextBox VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="15,380,0,0"
+                                             IsReadOnly="True"
+                                             Background="LightGray"
+                                             Width="250" />
+                                    <TextBox VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="15,440,0,0"
+                                             IsReadOnly="True"
+                                             Background="LightGray"
+                                             Width="250" />
+
                                     <!--Pane 2-->
-                                    <DatePicker Margin="15" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1"></DatePicker>
-                                    
-                                    <TextBlock Text="Overkok" FontSize="20" Margin="15,50,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-                                    <TextBlock Text="Kok" FontSize="20" Margin="15,110,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-                                    <TextBlock Text="Kok 2" FontSize="20" Margin="15,170,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-                                    <TextBlock Text="Afryder" FontSize="20" Margin="15,230,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-                                    <TextBlock Text="Afryder 2" FontSize="20" Margin="15,290,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-                                    <TextBlock Text="Afryder 3" FontSize="20" Margin="15,350,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-                                    <TextBlock Text="Afryder 4" FontSize="20" Margin="15,410,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
+                                    <DatePicker Margin="15"
+                                                VerticalAlignment="Top"
+                                                HorizontalAlignment="Center"
+                                                Grid.Column="1"></DatePicker>
+
+                                    <TextBlock Text="Overkok"
+                                               FontSize="20"
+                                               Margin="15,50,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               Grid.Column="1" />
+                                    <TextBlock Text="Kok"
+                                               FontSize="20"
+                                               Margin="15,110,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               Grid.Column="1" />
+                                    <TextBlock Text="Kok 2"
+                                               FontSize="20"
+                                               Margin="15,170,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               Grid.Column="1" />
+                                    <TextBlock Text="Afryder"
+                                               FontSize="20"
+                                               Margin="15,230,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               Grid.Column="1" />
+                                    <TextBlock Text="Afryder 2"
+                                               FontSize="20"
+                                               Margin="15,290,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               Grid.Column="1" />
+                                    <TextBlock Text="Afryder 3"
+                                               FontSize="20"
+                                               Margin="15,350,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               Grid.Column="1" />
+                                    <TextBlock Text="Afryder 4"
+                                               FontSize="20"
+                                               Margin="15,410,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               Grid.Column="1" />
 
 
-                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,80,0,0"   Width="250" Grid.Column="1" />
-                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,140,0,0"  Width="250" Grid.Column="1"/>
-                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,200,0,0"  Width="250" Grid.Column="1"/>
-                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,260,0,0"  Width="250" Grid.Column="1"/>
-                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,320,0,0"  Width="250" Grid.Column="1"/>
-                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,380,0,0"  Width="250" Grid.Column="1"/>
-                                    <TextBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,440,0,0"  Width="250" Grid.Column="1"/>
+                                    <TextBox VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="15,80,0,0"
+                                             Width="250"
+                                             Grid.Column="1" />
+                                    <TextBox VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="15,140,0,0"
+                                             Width="250"
+                                             Grid.Column="1" />
+                                    <TextBox VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="15,200,0,0"
+                                             Width="250"
+                                             Grid.Column="1" />
+                                    <TextBox VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="15,260,0,0"
+                                             Width="250"
+                                             Grid.Column="1" />
+                                    <TextBox VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="15,320,0,0"
+                                             Width="250"
+                                             Grid.Column="1" />
+                                    <TextBox VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="15,380,0,0"
+                                             Width="250"
+                                             Grid.Column="1" />
+                                    <TextBox VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="15,440,0,0"
+                                             Width="250"
+                                             Grid.Column="1" />
 
-                                    <TextBlock Text="Torsdag" FontSize="20" Margin="325,440,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Column="1"/>
-                                    <CheckBox VerticalAlignment="Top" HorizontalAlignment="Left" Margin="300,440,0,0" Grid.Column="1" />
+                                    <TextBlock Text="Torsdag"
+                                               FontSize="20"
+                                               Margin="325,440,0,0"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               Grid.Column="1" />
+                                    <CheckBox VerticalAlignment="Top"
+                                              HorizontalAlignment="Left"
+                                              Margin="300,440,0,0"
+                                              Grid.Column="1" />
 
-                                    <AppBarButton Label="Tilføj ændringer" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Background="LightGreen" Margin="400,160,0,0">
-                                        <SymbolIcon Symbol="Add"/>
+                                    <AppBarButton Label="Tilføj ændringer"
+                                                  Grid.Column="1"
+                                                  VerticalAlignment="Top"
+                                                  HorizontalAlignment="Left"
+                                                  Background="LightGreen"
+                                                  Margin="400,160,0,0">
+                                        <SymbolIcon Symbol="Add" />
                                     </AppBarButton>
-                                    <AppBarButton Label="Slet ændringer" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Left" Background="Crimson" Foreground="White" Margin="400,260,0,0">
-                                        <SymbolIcon Symbol="Delete"/>
+                                    <AppBarButton Label="Slet ændringer"
+                                                  Grid.Column="1"
+                                                  VerticalAlignment="Top"
+                                                  HorizontalAlignment="Left"
+                                                  Background="Crimson"
+                                                  Foreground="White"
+                                                  Margin="400,260,0,0">
+                                        <SymbolIcon Symbol="Delete" />
                                     </AppBarButton>
                                 </Grid>
+                            </PivotItem>
+                            <PivotItem Header="Regenskab">
+                                <Grid Margin="20">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="100" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="100" />
+                                    </Grid.RowDefinitions>
 
-                               
-                                
+                                    <!--Pane 1-->
+                                    <TextBlock Text="Vælg Start Dato"
+                                               FontSize="20"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               Grid.Row="0" />
+                                    
+
+                                    <DatePicker VerticalAlignment="Top"
+                                                HorizontalAlignment="Center"
+                                                Grid.Row="0"
+                                                Grid.Column="0"
+                                                Margin="0,30,0,0" />
+                                   
+
+
+
+                                    <!--Pane 2-->
+                                    <TextBlock Text="Vælg Slut Dato"
+                                               FontSize="20"
+                                               VerticalAlignment="Top"
+                                               HorizontalAlignment="Left"
+                                               Grid.Row="0"
+                                               Grid.Column="1" />
+                                    
+                                    <DatePicker VerticalAlignment="Top"
+                                                HorizontalAlignment="Center"
+                                                Grid.Row="0"
+                                                Grid.Column="1"
+                                                Margin="0,30,0,0" />
+                                </Grid>
+
                             </PivotItem>
                         </Pivot>
                     </Grid>
@@ -192,14 +544,18 @@
                 <PivotItem Header="Kalender">
                     <!-- tab5 -->
                     <Grid>
-                        <CalendarView HorizontalAlignment="Left" Margin="28,25,0,0" VerticalAlignment="Top" Height="400" Width="480"/>
+                        <CalendarView HorizontalAlignment="Left"
+                                      Margin="28,25,0,0"
+                                      VerticalAlignment="Top"
+                                      Height="400"
+                                      Width="480" />
 
                     </Grid>
                 </PivotItem>
                 <PivotItem Header="Hjælp">
                     <!-- tab5 -->
                     <Grid>
-                       
+
 
                     </Grid>
                 </PivotItem>
