@@ -23,6 +23,7 @@
                             <ColumnDefinition Width="1*" />
                         </Grid.ColumnDefinitions>
 
+                      
                         <StackPanel Margin="15">
                             <TextBlock Text="{Binding Day1}"
                                        FontWeight="Bold"
