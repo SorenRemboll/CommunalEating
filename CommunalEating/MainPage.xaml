@@ -261,7 +261,97 @@
                 <PivotItem Header="Hjælp">
                     <!-- tab5 -->
                     <Grid>
-                       
+                       <TextBlock Margin="10,10,-10,-10" FontSize="40">
+                           Hjælp siden - Hvad skal du have hjælp med?
+                       </TextBlock>
+                        <Pivot Margin="10,58,-10,-58">
+                            <PivotItem Header="Husstand">
+                                <Grid>
+                                    <TextBlock FontSize="35" FontWeight="Bold">
+                                        Husstand og oprettelse:
+                                    </TextBlock>
+                                    <TextBlock FontSize="25" Margin="0,70,0,-70">
+                                        For at oprette dig i systemet, er det nødvendigt at opgive email og<LineBreak/>
+                                        husnummer for at kunne deltage i de forskellige aktiviteter.
+                                        <LineBreak/>
+                                        <LineBreak/>
+                                        Du vil ikke have mulighed for at bruge dette program hvis ikke du er medlem. <LineBreak/>
+                                       <LineBreak/>
+                                        <LineBreak/>
+                                        Ved at opgive dit husnummer og Email, vil programmet have mulighed for at<LineBreak/>
+                                        kunne indkooporere dig i systemet, og sende emails i tilfælde af aflysninger<LineBreak/>
+                                        og holde dig som bruger opdateret med kommende begivenheder og helligdage.
+                                        <LineBreak/><LineBreak/><LineBreak/>
+                                        Desværre ikke.<LineBreak/>
+                                        For at dine andre naboer og mennesker i systemets skyld, vil det være <LineBreak/>
+                                        hensigtsmæssigt for både dig og dine medmennesker at al information<LineBreak/>
+                                        er frit tilgængeligt, så alle kan se hvem der deltager i spisningen og hvornår<LineBreak/>
+                                        <LineBreak/><LineBreak/>
+                                        Ja, andre brugere vil have adgang til din email i systemet. Vi kan derfor <LineBreak/>
+                                        anbefale at bruge en seperat email, og blot videre sende emails til den <LineBreak/>
+                                        adresse som du ønsker.
+
+
+                                    </TextBlock>
+                                    <TextBlock FontSize="28" FontWeight="Bold" Margin="0,221,0,-221">
+                                        Hvad er konsekvensen ved at opgive email og husnummer?<LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/>
+                                        Er anonymitet en mulighed?
+                                        <LineBreak/><LineBreak/><LineBreak/><LineBreak/><LineBreak/>
+                                        Kan andre se min Email?
+                                       
+                                    </TextBlock>
+                                </Grid>
+                            </PivotItem>
+                           <PivotItem Header="Planlægning">
+                               <Grid>
+                                   <TextBlock FontSize="35" FontWeight="Bold">
+                                       Planlægning
+                                   </TextBlock>
+                                   <TextBlock Margin="0,47,0,-47" FontSize="25">
+                                       For at kunne planlægge et event, er det nødvendigt som programmet angiver <LineBreak/>
+                                       at intaste hvem der skal stå for spisningen, en overskrift for forståelse, <LineBreak/>
+                                       beskrivelse, og en eventuelt note.<LineBreak/><LineBreak/>
+                                        Der vil altid være mulighed for at anulere en fællesspisning,<LineBreak/>
+                                       det skal dog ske inden for en tidsramme, der lyder på en uge <LineBreak/>
+                                       før selve spisningen forekommer.<LineBreak/><LineBreak/>
+                                       <LineBreak/>
+                                       Vær sikker på at din hustand er indskrevet i systemet, før du prøver at at <LineBreak/>
+                                       lave en reservation. Uden husstanden i systemet, er det ikke muligt at <LineBreak/>
+                                       foretage nogen handlinger inden for programmet parametre.
+                                       
+                                    </TextBlock>
+                                   <TextBlock FontSize="30" FontWeight="Bold" Margin="0,141,0,-141">
+                                       Jeg ønsker at droppe en spisning som jeg holder, hvad gør jeg?<LineBreak/><LineBreak/><LineBreak/><LineBreak/>
+                                      Min husstand er ikke på listen, hvorfor?
+                                   </TextBlock>
+                               </Grid>
+                               
+                           </PivotItem>
+                           <PivotItem Header="Kontakt information">
+                               <Grid>
+                                   <TextBlock FontSize="35" FontWeight="Bold">
+                                       Kontakt information
+                                   </TextBlock>
+                                    <TextBlock Margin="0,54,0,-54" FontSize="25"><LineBreak/>
+                                       Adresse: Elisagårdsvej; 5.<LineBreak/>
+                                      Telefon nummer: 22 25 88 09 <LineBreak/>
+                                       Email adresse: Soer145a@edu.com<LineBreak/><LineBreak/>
+                                       Navn på programører: <LineBreak/> Søren Rembøll <LineBreak/>
+                                       Henrik Jeppesen <LineBreak/>
+                                       Alex Van Storm <LineBreak/>
+                                       Jacob Boeg Hansen
+                                       
+                                       
+                                       
+                                   </TextBlock>
+                               </Grid>
+                           </PivotItem>
+                        </Pivot>
+                        
+                        
+                        
+
+
 
                     </Grid>
                 </PivotItem>
