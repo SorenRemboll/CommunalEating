@@ -667,7 +667,5 @@
                 </PivotItem>
             </Pivot>
         </Grid>
-        <Image Source="Images/Cards.png"
-               Margin="1205,-19,10,663" />
     </Grid>
 </Page>
