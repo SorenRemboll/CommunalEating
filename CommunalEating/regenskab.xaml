@@ -26,30 +26,58 @@
                        VerticalAlignment="Center"
                        HorizontalAlignment="Left"
                        Grid.Column="0"
-                       Grid.Row="0" />
+                       Grid.Row="0" FontWeight="Bold"/>
 
             <TextBlock Text="Husstands regenskab"
                        FontSize="20"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Left"
                        Grid.Column="0"
-                       Grid.Row="1" />
+                       Grid.Row="1" FontWeight="Bold" />
+
+            <!--Dette listview skal vise Hustandene-->
+            <ListView Height="400"
+                      Width="350"
+                      Grid.Column="0"
+                      Grid.Row="1"
+                      Background="LightGray" />
 
             <!--Pane 2-->
-            <TextBlock Text="Husstands regenskab"
+            <TextBlock Text="Pris per person"
                        FontSize="20"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Left"
                        Grid.Column="1"
-                       Grid.Row="1" />
+                       Grid.Row="1" FontWeight="Bold" />
+            
+            <TextBlock Text="Voksen pris:" FontSize="20" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,50,0,0" />
+            <TextBlock Text="Ung (7-15 år) pris:" FontSize="20" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,80,0,0" />
+            <TextBlock Text="Barn (3-6 år) pris:" FontSize="20" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,110,0,0" />
+            <TextBlock Text="Barn (Under 3 år) pris:" FontSize="20" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,140,0,0" />
+            
+            <TextBox Grid.Column="1" Grid.Row="1" IsReadOnly="True" Background="LightGray" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="250,50,0,0" />
+            <TextBox Grid.Column="1" Grid.Row="1" IsReadOnly="True" Background="LightGray" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="250,80,0,0" />
+            <TextBox Grid.Column="1" Grid.Row="1" IsReadOnly="True" Background="LightGray" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="250,110,0,0" />
+            <TextBox Grid.Column="1" Grid.Row="1" IsReadOnly="True" Background="LightGray" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="250,140,0,0" />
+            
+            
 
             <!--Pane 3-->
-            <TextBlock Text="Husstands regenskab"
+            <TextBlock Text="Husstand Medlemmer"
                        FontSize="20"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Left"
                        Grid.Column="2"
-                       Grid.Row="1" />
+                       Grid.Row="1" FontWeight="Bold"/>
+            
+            <DatePicker Grid.Column="2" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            
+            <!--Dette listview skal vise Antal personer-->
+            <ListView Height="400" Width="350" Grid.Column="2" Grid.Row="1" Background="LightGray" />
+            
+            <AppBarButton Label="Tilbage til Planlægning" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                <SymbolIcon Symbol="Back" />
+            </AppBarButton>
 
 
 
