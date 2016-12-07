@@ -5,6 +5,8 @@
     xmlns:local="using:CommunalEating"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -139,6 +141,11 @@
                           Grid.Row="2"
                           VerticalAlignment="Center"
                           HorizontalAlignment="Stretch">
+                <interactivity:Interaction.Behaviors>
+                    <core:EventTriggerBehavior EventName="Click">
+                        <core:NavigateToPageAction TargetPage="CommunalEating.MainPage" />
+                    </core:EventTriggerBehavior>
+                </interactivity:Interaction.Behaviors>
                 <SymbolIcon Symbol="Back" />
             </AppBarButton>
 

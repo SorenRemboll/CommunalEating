@@ -796,6 +796,11 @@
                                                   HorizontalAlignment="Left"
                                                   Grid.Column="1"
                                                   Grid.Row="2">
+                                        <Interactivity:Interaction.Behaviors>
+                                            <Core:EventTriggerBehavior EventName="Click">
+                                                <Core:NavigateToPageAction TargetPage="CommunalEating.regenskab" />
+                                            </Core:EventTriggerBehavior>
+                                        </Interactivity:Interaction.Behaviors>
                                         <SymbolIcon Symbol="Edit" />
                                     </AppBarButton>
                                 </Grid>
