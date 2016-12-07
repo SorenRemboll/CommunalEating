@@ -31,7 +31,7 @@
                        Grid.Row="0"
                        FontWeight="Bold" />
 
-            <TextBlock Text="Husstands regenskab"
+            <TextBlock Text="Alle Husstand"
                        FontSize="20"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Left"
@@ -83,6 +83,14 @@
                        VerticalAlignment="Top"
                        HorizontalAlignment="Left"
                        Margin="15,140,0,0" />
+            <TextBlock Text="Pris I alt:"
+                       FontSize="20"
+                       Grid.Column="1"
+                       Grid.Row="1"
+                       VerticalAlignment="Top"
+                       HorizontalAlignment="Left"
+                       FontWeight="Bold"
+                       Margin="15,200,0,0" />
 
             <TextBox Grid.Column="1"
                      Grid.Row="1"
@@ -112,6 +120,13 @@
                      VerticalAlignment="Top"
                      HorizontalAlignment="Left"
                      Margin="250,140,0,0" />
+            <TextBox Grid.Column="1"
+                     Grid.Row="1"
+                     IsReadOnly="True"
+                     Background="LightGray"
+                     VerticalAlignment="Top"
+                     HorizontalAlignment="Left"
+                     Margin="250,200,0,0" />
 
 
 
@@ -136,7 +151,7 @@
                       Grid.Row="1"
                       Background="LightGray" />
 
-            <AppBarButton Label="Tilbage til Planlægning"
+            <AppBarButton Label="Tilbage"
                           Grid.Column="1"
                           Grid.Row="2"
                           VerticalAlignment="Center"
