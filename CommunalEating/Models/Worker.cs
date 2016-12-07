@@ -12,6 +12,8 @@ namespace CommunalEating.Models
         private string _assistanceChef;
         private string _cleaner;
         private bool _isItThursdag;
+        private string _date;
+        DateTime today = new DateTime();
 
         #region Properties
 
@@ -39,6 +41,12 @@ namespace CommunalEating.Models
             set { _isItThursdag = value; }
         }
 
+        public string Date
+        {
+            get { return _date; }
+            set { _date = value; }
+        }
+        public int DayOfWeek { get; set; }
         #endregion
 
         #region Constructor
@@ -49,9 +57,25 @@ namespace CommunalEating.Models
             _assistanceChef = assistanceChef;
             _cleaner = cleaner;
             _isItThursdag = isItThursdag;
+            _date = Date;
         }
         #endregion
 
+        public bool GetThursday()
+        {
+            int x = 1;
+            if (GetThursday())
+            {
+                x = DayOfWeek;
+                
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
+        
     }
 }
