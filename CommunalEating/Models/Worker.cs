@@ -52,6 +52,6 @@ namespace CommunalEating.Models
         }
         #endregion
 
-        
+
     }
 }
