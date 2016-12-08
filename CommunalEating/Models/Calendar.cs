@@ -145,6 +145,14 @@ namespace CommunalEating.Models
       return day;
     }
 
+    public bool IsThursday()
+    {
+      bool thursday = false;
+      if (today.DayOfWeek == DayOfWeek.Thursday)
+        thursday = true;
+      return thursday;
+    }
+
     // # Show week-number
     public int GetWeekNumber(DateTime date)
     {

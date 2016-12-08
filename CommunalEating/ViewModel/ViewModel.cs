@@ -15,14 +15,15 @@ namespace CommunalEating
 
     // # The front/overview four days objects
     private Calendar days;
-
+    private Worker workers;
 
     // private bool isThursday;
 
     // # Constructor
     public ViewModel()
     {
-      //IsThursday();
+      // IsThursday();
+      // workers = new Worker("", "", "");
       days = new Calendar();
     }
 
@@ -31,21 +32,21 @@ namespace CommunalEating
     {
       get { return days.Day1; }
     }
-
     public String Day2
     {
       get { return days.Day2; }
     }
-
     public String Day3
     {
       get { return days.Day3; }
     }
-
     public String Day4
     {
       get { return days.Day4; }
     }
+
+    // # Property to get IsThursday value
+    public bool ThursdayChecked { get; set; }
 
     //public bool IsItThursday
     //{
