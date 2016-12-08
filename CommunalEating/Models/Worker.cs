@@ -64,6 +64,7 @@ namespace CommunalEating.Models
         public bool GetThursday()
         {
             int x = 1;
+
             if (GetThursday())
             {
                 x = DayOfWeek;
