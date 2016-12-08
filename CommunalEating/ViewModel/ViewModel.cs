@@ -10,38 +10,67 @@ using CommunalEating.Models;
 
 namespace CommunalEating
 {
-    class ViewModel : INotifyPropertyChanged
+  class ViewModel : INotifyPropertyChanged
+  {
+
+    // # The front/overview four days objects
+    private Calendar days;
+    private Worker workers;
+
+    // private bool isThursday;
+
+    // # Constructor
+    public ViewModel()
     {
-        private bool isThursday;
-
-        public ViewModel()
-        {
-            IsThursday();
-        }
-
-        //public bool IsItThursday
-        //{
-        //    get { return _isThursday; }
-        //    set { _isItThursday = value; }
-        //}
-
-        public bool IsThursday()
-        {
-            Worker testWorkser = new Worker("Louise", "Bent", "Gunnar");
-
-            return testWorkser.GetThursday();
-        }
-
-        #region MyRegion
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        #endregion
+      // IsThursday();
+      // workers = new Worker("", "", "");
+      days = new Calendar();
     }
+
+    // # Properties to get the 4 days on the front/overview
+    public String Day1
+    {
+      get { return days.Day1; }
+    }
+    public String Day2
+    {
+      get { return days.Day2; }
+    }
+    public String Day3
+    {
+      get { return days.Day3; }
+    }
+    public String Day4
+    {
+      get { return days.Day4; }
+    }
+
+    // # Property to get IsThursday value
+    public bool ThursdayChecked { get; set; }
+
+    //public bool IsItThursday
+    //{
+    //    get { return _isThursday; }
+    //    set { _isItThursday = value; }
+    //}
+
+    //public bool IsThursday()
+    //{
+    //  Worker testWorkser = new Worker("Louise", "Bent", "Gunnar");
+
+    //  return testWorkser.GetThursday();
+    //}
+
+    #region MyRegion
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    [NotifyPropertyChangedInvocator]
+    protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+    {
+      PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+
+    #endregion
+  }
 }

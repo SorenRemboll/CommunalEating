@@ -14,6 +14,7 @@ namespace CommunalEating.Models
     private string _additionalNote;
     private string _host;
     private double _price;
+    private DateTime _date;
 
     // ## Properties
     // # Headline
@@ -45,6 +46,13 @@ namespace CommunalEating.Models
     {
       get { return _price; }
       set { _price = value; }
+    }
+
+    // # Date
+    public DateTime Date
+    {
+      get { return _date; }
+      set { _date = value; }
     }
 
     // # Default Constructor
