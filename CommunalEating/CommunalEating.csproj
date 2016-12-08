@@ -109,6 +109,8 @@
     <Compile Include="regenskab.xaml.cs">
       <DependentUpon>regenskab.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RelayCommand\RelayCommand.cs" />
+    <Compile Include="ViewModel\ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
