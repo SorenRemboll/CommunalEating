@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using CommunalEating.Annotations;
 
 namespace CommunalEating.Models
 {
@@ -67,5 +70,7 @@ namespace CommunalEating.Models
     {
       return calendar.GetWeekOfYear(date, calendarWeekRule, dayOfWeek);
     }
+
+     
   }
 }
