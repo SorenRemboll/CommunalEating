@@ -651,8 +651,7 @@
                                     <CheckBox VerticalAlignment="Top"
                                               HorizontalAlignment="Left"
                                               Margin="300,440,0,0"
-                                              Grid.Column="1"
-                                              IsChecked="{Binding IsItThursday, Mode=OneWay}" />
+                                              Grid.Column="1" />
 
 
                                     <AppBarButton Label="Tilføj ændringer"

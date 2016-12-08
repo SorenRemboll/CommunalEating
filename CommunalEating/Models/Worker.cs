@@ -36,11 +36,6 @@ namespace CommunalEating.Models
             set { _cleaner = value; }
         }
 
-        public bool IsItThursdag
-        {
-            get { return _isItThursdag; }
-            set { _isItThursdag = value; }
-        }
 
         public string Date
         {
@@ -55,12 +50,11 @@ namespace CommunalEating.Models
 
         #region Constructor
 
-        public Worker(string chef, string assistanceChef, string cleaner, bool isItThursdag)
+        public Worker(string chef, string assistanceChef, string cleaner)
         {
             _chef = chef;
             _assistanceChef = assistanceChef;
             _cleaner = cleaner;
-            _isItThursdag = isItThursdag;
             _date = Date;
             _today = DateTime.Now;
         }

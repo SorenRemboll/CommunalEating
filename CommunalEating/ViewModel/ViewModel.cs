@@ -8,21 +8,28 @@ using System.Threading.Tasks;
 using CommunalEating.Annotations;
 using CommunalEating.Models;
 
-namespace CommunalEating 
+namespace CommunalEating
 {
     class ViewModel : INotifyPropertyChanged
     {
-        private bool _isItThursday;
+        private bool isThursday;
 
-        public bool IsItThursday
+        public ViewModel()
         {
-            get { return _isItThursday; }
-            set { _isItThursday = value; }
+            IsThursday();
         }
 
-        public void IsItThursday()
+        //public bool IsItThursday
+        //{
+        //    get { return _isThursday; }
+        //    set { _isItThursday = value; }
+        //}
+
+        public bool IsThursday()
         {
-            Worker.GetThursday();
+            Worker testWorkser = new Worker("Louise", "Bent", "Gunnar");
+
+            return testWorkser.GetThursday();
         }
 
         #region MyRegion
