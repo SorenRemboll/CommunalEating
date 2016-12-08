@@ -13,7 +13,7 @@ namespace CommunalEating.Models
         private string _cleaner;
         private bool _isItThursdag;
         private string _date;
-        private DayOfWeek _today;
+        private static DayOfWeek _today;
 
         #region Properties
 
@@ -48,7 +48,7 @@ namespace CommunalEating.Models
         }
         public int DayOfWeek { get; set; }
 
-        public DayOfWeek Today
+        public static DayOfWeek Today
         {
             get { return _today; }
             set { _today = value; }
@@ -68,7 +68,7 @@ namespace CommunalEating.Models
         }
         #endregion
 
-        public bool GetThursday()
+        public static bool GetThursday()
         {
             
             int x = 1;
