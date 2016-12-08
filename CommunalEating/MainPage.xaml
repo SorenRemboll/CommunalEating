@@ -130,7 +130,7 @@
                                        Foreground="DarkGray"
                                        FontSize="16"
                                        FontWeight="ExtraLight" />
-                            <TextBlock />
+                            <TextBlock  Text='{Binding}'/>
                         </StackPanel>
                         <!-- END DAY THREE -->
                         <!-- START DAY FOUR -->
