@@ -13,7 +13,7 @@ namespace CommunalEating.Models
         private string _cleaner;
         private bool _isItThursdag;
         private string _date;
-        DateTime today = new DateTime();
+        private DayOfWeek _today;
 
         #region Properties
 
@@ -47,6 +47,13 @@ namespace CommunalEating.Models
             set { _date = value; }
         }
         public int DayOfWeek { get; set; }
+
+        public DayOfWeek Today
+        {
+            get { return _today; }
+            set { _today = value; }
+        }
+
         #endregion
 
         #region Constructor
@@ -63,11 +70,11 @@ namespace CommunalEating.Models
 
         public bool GetThursday()
         {
+            
             int x = 1;
-
             if (GetThursday())
             {
-                x = DayOfWeek;
+                Today = System.DayOfWeek.Thursday;
                 
                 return true;
             }
