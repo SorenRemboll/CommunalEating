@@ -32,7 +32,7 @@ namespace CommunalEating.Models
       today = DateTime.Now;
     }
 
-    // # Constructor that takes a day (1,2or3) for the next, the following and fourth eating day
+    // # Constructor that takes a day
     public Calendar(int _days)
     {
       today = DateTime.Now.AddDays(_days);
