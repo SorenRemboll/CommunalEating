@@ -103,6 +103,7 @@
     </Compile>
     <Compile Include="Models\Calendar.cs" />
     <Compile Include="Models\HostDinner.cs" />
+    <Compile Include="Models\Household.cs" />
     <Compile Include="Models\Singelton.cs" />
     <Compile Include="Models\Worker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
