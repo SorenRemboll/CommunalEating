@@ -8,7 +8,7 @@
         private int day3 = 0;
         private int day4 = 0;
 
-
+        
     }
 }
 
