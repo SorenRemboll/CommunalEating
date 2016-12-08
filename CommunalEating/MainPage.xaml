@@ -10,6 +10,9 @@
       mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.DataContext>
+            <local:ViewModel />
+        </Grid.DataContext>
         <Grid Margin="40">
             <Pivot Title="FællesspisningsApp">
                 <PivotItem Header="Oversigt">
