@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,10 +10,13 @@ namespace CommunalEating.Models
     class Singelton
     {
         private static Singelton _instance = new Singelton();
+        public ObservableCollection<Household> Households { get; set; }
 
         public Singelton()
         {
             //Here is where the objects are created
+            Households = new ObservableCollection<Household>();
+
         }
 
         public static Singelton GetInstance()

@@ -19,7 +19,7 @@
                     <!-- tab1 -->
                     <Grid>
 
-                      
+
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*" />
                             <ColumnDefinition Width="1*" />
@@ -130,7 +130,7 @@
                                        Foreground="DarkGray"
                                        FontSize="16"
                                        FontWeight="ExtraLight" />
-                            <TextBlock  Text='{Binding}'/>
+                            <TextBlock  Text='{Binding}' />
                         </StackPanel>
                         <!-- END DAY THREE -->
                         <!-- START DAY FOUR -->
@@ -214,20 +214,24 @@
                                              HorizontalAlignment="Left"
                                              Grid.Column="1"
                                              Grid.Row="1"
-                                             Width="80" />
+                                             Width="80"
+                                             AutomationProperties.AccessibilityView="Content"
+                                             Text="{Binding Address, Mode=TwoWay}" />
                                     <TextBox Margin="20,120,0,0"
                                              VerticalAlignment="Top"
                                              HorizontalAlignment="Left"
                                              Grid.Column="1"
                                              Grid.Row="1"
-                                             Width="320" />
+                                             Width="320"
+                                             Text="{Binding Email, Mode=TwoWay}" />
 
                                     <AppBarButton Label="Tilføj Husstand"
                                                   Grid.Column="1"
                                                   Grid.Row="1"
                                                   VerticalAlignment="Bottom"
                                                   HorizontalAlignment="Left"
-                                                  Margin="10,0,0,0">
+                                                  Margin="10,0,0,0"
+                                                  Command="{Binding HAddCommand}">
                                         <SymbolIcon Symbol="Add" />
                                     </AppBarButton>
                                     <AppBarButton Label="Slet Husstand"
@@ -256,7 +260,8 @@
                                     </AppBarButton>
                                     <ListView Grid.Row="1"
                                               Background="LightGray"
-                                              Margin="10" />
+                                              Margin="10"
+                                              ItemsSource="{Binding Singelton.Households[0]}" />
                                 </Grid>
 
                             </PivotItem>

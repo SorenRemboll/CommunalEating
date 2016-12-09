@@ -8,18 +8,20 @@ namespace CommunalEating.Models
 {
     class Household
     {
-        public string Address { get; set; }
+        public int Address { get; set; }
         public string Email { get; set; }
 
-        public Household()
-        {
-            
-        }
 
-        public Household(string address, string email)
+
+        public Household(int address, string email)
         {
             Address = address;
             Email = email;
+        }
+
+        public override string ToString()
+        {
+            return $"{nameof(Address)}: {Address}, {nameof(Email)}: {Email}";
         }
     }
 }
