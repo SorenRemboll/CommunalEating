@@ -46,7 +46,10 @@ namespace CommunalEating
     }
 
     // # Property to get IsThursday value
-    public bool ThursdayChecked { get; set; }
+    public bool ThursdayChecked
+    {
+      get { return days.IsThursday(); }
+    }
 
     //public bool IsItThursday
     //{
