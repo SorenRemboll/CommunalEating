@@ -60,7 +60,7 @@ namespace CommunalEating
 
         public void HAdd()
         {
-            Singelton.GetInstance().Households.Add(new Household(Address,Email));
+            Singelton.GetInstance().Households.Add(new Household(Address, Email));
             OnPropertyChanged();
         }
 
@@ -84,11 +84,11 @@ namespace CommunalEating
             get { return days.Day4; }
         }
 
-    // # Property to get IsThursday value
-    public bool ThursdayChecked
-    {
-      get { return days.IsThursday(); }
-    }
+        // # Property to get IsThursday value
+        public bool ThursdayChecked
+        {
+            get { return days.IsThursday(); }
+        }
 
         //public bool IsItThursday
         //{

@@ -19,7 +19,6 @@
                     <!-- tab1 -->
                     <Grid>
 
-
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*" />
                             <ColumnDefinition Width="1*" />
@@ -439,7 +438,6 @@
                             </PivotItem>
                             <PivotItem Header="Arbejdsopgaver">
 
-
                                 <Grid>
 
                                     <Grid.ColumnDefinitions>
@@ -450,9 +448,7 @@
 
                                     </Grid.ColumnDefinitions>
 
-
                                     <!--Pane 1-->
-
                                     <TextBlock Text="Overkok"
                                                FontSize="20"
                                                Margin="15,50,0,0"
@@ -494,8 +490,6 @@
                                                Margin="15,410,0,0"
                                                VerticalAlignment="Top"
                                                HorizontalAlignment="Left" />
-
-
 
                                     <TextBox VerticalAlignment="Top"
                                              HorizontalAlignment="Left"
@@ -545,7 +539,6 @@
                                              IsReadOnly="True"
                                              Background="LightGray"
                                              Width="250" />
-
 
                                     <!--Pane 2-->
 
@@ -645,7 +638,6 @@
                                              Width="250"
                                              Grid.Column="1" />
 
-
                                     <TextBlock Text="Torsdag"
                                                FontSize="20"
                                                Margin="325,440,0,0"
@@ -656,8 +648,8 @@
                                     <CheckBox VerticalAlignment="Top"
                                               HorizontalAlignment="Left"
                                               Margin="300,440,0,0"
-                                              Grid.Column="1" />
-
+                                              Grid.Column="1" 
+                                              IsChecked="{Binding ThursdayChecked}"/>
 
                                     <AppBarButton Label="Tilføj ændringer"
                                                   Grid.Column="1"
@@ -702,7 +694,6 @@
                                                VerticalAlignment="Top"
                                                HorizontalAlignment="Left"
                                                Grid.Row="0" />
-
 
                                     <DatePicker VerticalAlignment="Top"
                                                 HorizontalAlignment="Center"
@@ -798,9 +789,6 @@
                                                   Margin="100,0,0,0">
                                         <SymbolIcon Symbol="Send" />
                                     </AppBarButton>
-
-
-
 
                                     <!--Pane 2-->
                                     <TextBlock Text="Vælg Slut Dato"
@@ -912,9 +900,7 @@
                                         anbefale at bruge en seperat email, og blot videre sende emails til den <LineBreak />
                                         adresse som du ønsker.
 
-
                                     </TextBlock>
-
 
                                 </Grid>
                             </PivotItem>
@@ -963,8 +949,6 @@
                                        Henrik Jeppesen <LineBreak />
                                        Alex Van Storm <LineBreak />
                                        Jacob Boeg Hansen
-
-
 
                                     </TextBlock>
                                 </Grid>
