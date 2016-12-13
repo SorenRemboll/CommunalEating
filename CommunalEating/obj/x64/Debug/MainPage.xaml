@@ -8,6 +8,33 @@
       xmlns:Core="using:Microsoft.Xaml.Interactions.Core"
       x:Class="CommunalEating.MainPage"
       mc:Ignorable="d">
+    <Page.Resources>
+        <DataTemplate x:Key="ListviewHustandTemplate">
+            <Grid>
+                <StackPanel HorizontalAlignment="Left"
+                            VerticalAlignment="Top">
+                    <TextBlock x:Name="textBlock1"
+                               TextWrapping="Wrap"
+                               Text="Husnummer"
+                               FontWeight="Bold"
+                               Foreground="White" />
+                    <TextBlock x:Name="textBlock"
+                               TextWrapping="Wrap"
+                               Text="{Binding Address}"
+                               FontStyle="Italic" />
+                    <TextBlock x:Name="textBlock2"
+                               TextWrapping="Wrap"
+                               Text="Email"
+                               FontWeight="Bold"
+                               Foreground="White" />
+                    <TextBlock x:Name="textBlock3"
+                               TextWrapping="Wrap"
+                               Text="{Binding Email}" />
+                </StackPanel>
+
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.DataContext>
@@ -262,8 +289,9 @@
                                     <ListView Grid.Row="1"
                                               Background="LightGray"
                                               Margin="10"
-                                              ItemsSource="{Binding Households}" 
-                                              SelectedIndex="{Binding HousePick, Mode=TwoWay}"/>
+                                              ItemsSource="{Binding Households}"
+                                              SelectedIndex="{Binding HousePick, Mode=TwoWay}"
+                                              ItemTemplate="{StaticResource ListviewHustandTemplate}" />
                                 </Grid>
 
                             </PivotItem>
