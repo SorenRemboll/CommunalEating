@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-M4ELOB5</Machine>
+    <Machine>DESKTOP-2K0F822</Machine>
     <WindowsUser>Makuro</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,19 +10,19 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>e3027099-9796-4871-97f2-19bf1433d964</PackageIdentityName>
     <PackageIdentityPublisher>CN=Søren Remnøll</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Dokumenter\Projekts\CommunalEating\CommunalEating\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.exe">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.exe">
       <PackagePath>entrypoint\CommunalEating.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Makuro\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
@@ -340,53 +340,53 @@
     <AppxPackagedFile Include="C:\Users\Makuro\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Images\info.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Images\info.png">
       <PackagePath>Images\info.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Images\FAQ.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Images\FAQ.png">
       <PackagePath>Images\FAQ.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.xr.xml">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.xr.xml">
       <PackagePath>CommunalEating.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\bin\x64\Debug\Core\CommunalEating.exe">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\Core\CommunalEating.exe">
       <PackagePath>CommunalEating.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

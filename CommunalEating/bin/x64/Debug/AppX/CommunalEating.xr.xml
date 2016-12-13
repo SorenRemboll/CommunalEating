@@ -2,6 +2,8 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Households" />
+    <RootPropertyPathName Name="HousePick" />
+    <RootPropertyPathName Name="HRemoveCommand" />
     <RootPropertyPathName Name="HAddCommand" />
     <RootPropertyPathName Name="Email" />
     <RootPropertyPathName Name="Address" />
@@ -80,6 +82,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedIndex" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Label" />

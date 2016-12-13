@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-M4ELOB5</Machine>
+    <Machine>DESKTOP-2K0F822</Machine>
     <WindowsUser>Makuro</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>e3027099-9796-4871-97f2-19bf1433d964</PackageIdentityName>
     <PackageIdentityPublisher>CN=Søren Remnøll</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>D:\Dokumenter\Projekts\CommunalEating\CommunalEating\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T10:51:11.387</Modified>
+      <Modified>2016-12-13T12:24:50.921</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.exe">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.exe">
       <PackagePath>entrypoint\CommunalEating.exe</PackagePath>
-      <Modified>2016-12-13T10:51:05.651</Modified>
+      <Modified>2016-12-13T12:24:50.115</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Makuro\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -456,68 +456,68 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T21:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Images\info.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Images\info.png">
       <PackagePath>Images\info.png</PackagePath>
-      <Modified>2016-12-01T19:03:12.531</Modified>
+      <Modified>2016-12-08T21:52:28.988</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Images\FAQ.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Images\FAQ.png">
       <PackagePath>Images\FAQ.png</PackagePath>
-      <Modified>2016-12-02T09:35:13.018</Modified>
+      <Modified>2016-12-08T21:52:28.987</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2016-12-01T11:17:50.901</Modified>
+      <Modified>2016-12-08T21:52:28.970</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-01T11:17:50.906</Modified>
+      <Modified>2016-12-08T21:52:28.971</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-01T11:17:50.912</Modified>
+      <Modified>2016-12-08T21:52:28.972</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-01T11:17:50.916</Modified>
+      <Modified>2016-12-08T21:52:28.972</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-01T11:17:50.934</Modified>
+      <Modified>2016-12-08T21:52:28.973</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-01T11:17:50.937</Modified>
+      <Modified>2016-12-08T21:52:28.974</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-01T11:17:50.941</Modified>
+      <Modified>2016-12-08T21:52:28.975</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2016-12-01T11:17:51.145</Modified>
+      <Modified>2016-12-08T21:52:29.035</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.xr.xml">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.xr.xml">
       <PackagePath>CommunalEating.xr.xml</PackagePath>
-      <Modified>2016-12-13T10:51:04.621</Modified>
+      <Modified>2016-12-13T12:11:47.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2016-09-13T03:25:21.507</Modified>
+      <Modified>2016-12-08T21:25:37.541</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T10:51:10.029</Modified>
+      <Modified>2016-12-13T12:24:50.474</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Makuro\Documents\Skole\Eksamens projekt 1\CommunalEating\CommunalEating\bin\x64\Debug\Core\CommunalEating.exe">
+    <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\Core\CommunalEating.exe">
       <PackagePath>CommunalEating.exe</PackagePath>
-      <Modified>2016-12-13T10:51:11.370</Modified>
+      <Modified>2016-12-13T12:24:50.920</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

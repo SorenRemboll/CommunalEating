@@ -239,7 +239,8 @@
                                                   Grid.Row="1"
                                                   VerticalAlignment="Bottom"
                                                   HorizontalAlignment="Left"
-                                                  Margin="100,0,0,0">
+                                                  Margin="100,0,0,0"
+                                                  Command="{Binding HRemoveCommand}">
                                         <SymbolIcon Symbol="Delete" />
                                     </AppBarButton>
                                     <AppBarButton Label="Gem Husstand"
@@ -261,7 +262,8 @@
                                     <ListView Grid.Row="1"
                                               Background="LightGray"
                                               Margin="10"
-                                              ItemsSource="{Binding Households}" />
+                                              ItemsSource="{Binding Households}" 
+                                              SelectedIndex="{Binding HousePick, Mode=TwoWay}"/>
                                 </Grid>
 
                             </PivotItem>
