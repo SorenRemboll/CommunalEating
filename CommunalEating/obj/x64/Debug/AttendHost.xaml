@@ -1,13 +1,12 @@
-﻿<Page
-    x:Class="CommunalEating.AttendHost"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:CommunalEating"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
-    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
-    mc:Ignorable="d">
+﻿<Page x:Class="CommunalEating.AttendHost"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:CommunalEating"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+      xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+      mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
           Margin="40">
@@ -19,100 +18,102 @@
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
                     <TextBlock Text="Antal Voksne"
-                             VerticalAlignment="Top"
-                             HorizontalAlignment="Left"
-                             FontSize="20"
-                             Margin="4,72,0,0" />
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Left"
+                               FontSize="20"
+                               Margin="4,72,0,0" />
                     <TextBlock Text="Antal Unge"
-                             VerticalAlignment="Top"
-                             HorizontalAlignment="Left"
-                             Margin="4,132,0,0"
-                             FontSize="20" />
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Left"
+                               Margin="4,132,0,0"
+                               FontSize="20" />
                     <TextBlock Text="Antal Brøn"
-                             FontSize="20"
-                             VerticalAlignment="Top"
-                             HorizontalAlignment="Left"
-                             Margin="4,187,0,0" />
+                               FontSize="20"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Left"
+                               Margin="4,187,0,0" />
                     <TextBlock x:ConnectionId='5' x:Name="textBlock2"
-                             FontSize="20"
-                             HorizontalAlignment="Left"
-                             Margin="4,245,0,0"
-                             TextWrapping="Wrap"
-                             Text="Antal babyer"
-                             VerticalAlignment="Top" />
+                               FontSize="20"
+                               HorizontalAlignment="Left"
+                               Margin="4,245,0,0"
+                               TextWrapping="Wrap"
+                               Text="Antal babyer"
+                               VerticalAlignment="Top" />
                     <TextBlock VerticalAlignment="Top"
                                HorizontalAlignment="Left"
                                FontSize="20"
                                Margin="4,10,0,0"
-                               Text="Hustand"/>
-                    <TextBlock x:ConnectionId='6' x:Name="textBlock" 
+                               Text="Hustand" />
+                    <TextBlock x:ConnectionId='6' x:Name="textBlock"
                                FontSize="20"
-                               HorizontalAlignment="Left" 
-                               Margin="289,10,0,0" 
-                               TextWrapping="Wrap" 
-                               Text="Vælg endnu en dato" 
-                               VerticalAlignment="Top"/>
+                               HorizontalAlignment="Left"
+                               Margin="289,10,0,0"
+                               TextWrapping="Wrap"
+                               Text="Vælg endnu en dato"
+                               VerticalAlignment="Top" />
 
-                    <TextBox
-                           VerticalAlignment="Top"
-                           HorizontalAlignment="Left"
-                           Margin="4,102,0,0"
-                           Width="250" />
-                    <TextBox
-                           VerticalAlignment="Top"
-                           HorizontalAlignment="Left"
-                           Margin="4,157,0,0"
-                           Width="250" />
-                    <TextBox
-                           Margin="4,212,0,0"
-                           HorizontalAlignment="Left"
-                           Width="250"
-                           VerticalAlignment="top" />
-                    <TextBox
-                           VerticalAlignment="Top"
-                           HorizontalAlignment="Left"
-                           Margin="4,270,0,0"
-                           Width="250" />
+                    <TextBox VerticalAlignment="Top"
+                             HorizontalAlignment="Left"
+                             Margin="4,102,0,0"
+                             Width="250" />
+                    <TextBox VerticalAlignment="Top"
+                             HorizontalAlignment="Left"
+                             Margin="4,157,0,0"
+                             Width="250" />
+                    <TextBox Margin="4,212,0,0"
+                             HorizontalAlignment="Left"
+                             Width="250"
+                             VerticalAlignment="top" />
+                    <TextBox VerticalAlignment="Top"
+                             HorizontalAlignment="Left"
+                             Margin="4,270,0,0"
+                             Width="250" />
 
                     <AppBarButton Label=""
-                                VerticalAlignment="Top"
-                                HorizontalAlignment="Left"
-                                Background="LightGreen"
-                                Margin="4,334,0,0" Height="48">
+                                  VerticalAlignment="Top"
+                                  HorizontalAlignment="Left"
+                                  Background="LightGreen"
+                                  Margin="4,334,0,0"
+                                  Height="48">
                         <SymbolIcon Symbol="Add" />
                     </AppBarButton>
                     <AppBarButton Label=""
-                                VerticalAlignment="Top"
-                                HorizontalAlignment="Left"
-                                Background="Crimson"
-                                Foreground="White"
-                                Margin="186,334,0,0" Height="48">
+                                  VerticalAlignment="Top"
+                                  HorizontalAlignment="Left"
+                                  Background="Crimson"
+                                  Foreground="White"
+                                  Margin="186,334,0,0"
+                                  Height="48">
                         <SymbolIcon Symbol="Delete" />
                     </AppBarButton>
 
-                    <Button x:ConnectionId='7' x:Name="button" 
-                                Content="Tilbage til forsiden" 
-                                HorizontalAlignment="Left" 
-                                Margin="50,400,0,0" 
-                                VerticalAlignment="Top" Width="150">
+                    
+
+                    <AppBarButton Label="Tilbage til Forsiden"
+                                  VerticalAlignment="Top"
+                                  HorizontalAlignment="Left"
+                                  Margin="30,400,0,0"
+                                  Background="LightGray"
+                                  Width="200">
+                        <SymbolIcon Symbol="Back" />
                         <interactivity:Interaction.Behaviors>
                             <core:EventTriggerBehavior EventName="Click">
-                                <core:NavigateToPageAction TargetPage="CommunalEating.MainPage"/>
+                                <core:NavigateToPageAction TargetPage="CommunalEating.MainPage" />
                             </core:EventTriggerBehavior>
                         </interactivity:Interaction.Behaviors>
-                    </Button>
+                    </AppBarButton>
 
-                    <DatePicker HorizontalAlignment="Left" 
-                                Margin="289,39,0,0" 
-                                VerticalAlignment="Top" 
-                                Height="30" 
-                                Width="155"/>
+                    <DatePicker HorizontalAlignment="Left"
+                                Margin="289,39,0,0"
+                                VerticalAlignment="Top"
+                                Height="30"
+                                Width="155" />
 
-                    <ComboBox x:ConnectionId='8' x:Name="comboBox" 
-                              HorizontalAlignment="Left" 
-                              Margin="4,40,0,0" 
-                              VerticalAlignment="Top" 
-                              Width="120"/>
+                    <ComboBox x:ConnectionId='7' x:Name="comboBox"
+                              HorizontalAlignment="Left"
+                              Margin="4,40,0,0"
+                              VerticalAlignment="Top"
+                              Width="120" />
 
                 </Grid>
 
@@ -124,104 +125,104 @@
                     </Grid.ColumnDefinitions>
 
                     <TextBlock Text="Arrangør"
-                             VerticalAlignment="Top"
-                             HorizontalAlignment="Left"
-                             FontSize="20"
-                             Margin="4,9,0,0" />
-                    <TextBlock Text="Overskrift"
-                             VerticalAlignment="Top"
-                             HorizontalAlignment="Left"
-                             Margin="4,69,0,0"
-                             FontSize="20" />
-                    <TextBlock Text="Beskrivelse"
-                             FontSize="20"
-                             VerticalAlignment="Top"
-                             HorizontalAlignment="Left"
-                             Margin="4,124,0,0"
-                             Grid.Column="0" />
-                    <TextBlock x:ConnectionId='1' x:Name="textBlock3"
-                             FontSize="20"
-                             HorizontalAlignment="Left"
-                             Margin="4,244,0,0"
-                             TextWrapping="Wrap"
-                             Text="Note"
-                             VerticalAlignment="Top" />
-                    <TextBlock Text="Afryddere"
-                        FontSize="20"
-                        VerticalAlignment="Top"
-                        HorizontalAlignment="Left"
-                        Margin="4,428,0,0"
-                        Grid.Column="0" />
-                    <TextBlock Text="Kokke"
-                        FontSize="20"
-                        VerticalAlignment="Top"
-                        HorizontalAlignment="Left"
-                        Margin="4,299,0,0"
-                        Grid.Column="0" />
-                    <TextBlock x:ConnectionId='2' x:Name="textBlock1" 
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Left"
                                FontSize="20"
-                               HorizontalAlignment="Left" 
-                               Margin="307,14,0,0" 
-                               TextWrapping="Wrap" 
-                               Text="Vælg en dato" 
-                               VerticalAlignment="Top"/>
+                               Margin="4,9,0,0" />
+                    <TextBlock Text="Overskrift"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Left"
+                               Margin="4,69,0,0"
+                               FontSize="20" />
+                    <TextBlock Text="Beskrivelse"
+                               FontSize="20"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Left"
+                               Margin="4,124,0,0"
+                               Grid.Column="0" />
+                    <TextBlock x:ConnectionId='1' x:Name="textBlock3"
+                               FontSize="20"
+                               HorizontalAlignment="Left"
+                               Margin="4,244,0,0"
+                               TextWrapping="Wrap"
+                               Text="Note"
+                               VerticalAlignment="Top" />
+                    <TextBlock Text="Afryddere"
+                               FontSize="20"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Left"
+                               Margin="4,428,0,0"
+                               Grid.Column="0" />
+                    <TextBlock Text="Kokke"
+                               FontSize="20"
+                               VerticalAlignment="Top"
+                               HorizontalAlignment="Left"
+                               Margin="4,299,0,0"
+                               Grid.Column="0" />
+                    <TextBlock x:ConnectionId='2' x:Name="textBlock1"
+                               FontSize="20"
+                               HorizontalAlignment="Left"
+                               Margin="307,14,0,0"
+                               TextWrapping="Wrap"
+                               Text="Vælg en dato"
+                               VerticalAlignment="Top" />
 
                     <TextBox Grid.Column="0"
-                           VerticalAlignment="Top"
-                           HorizontalAlignment="Left"
-                           Margin="4,39,0,0"
-                           Width="250"
-                           Background="LightGray"
-                           IsReadOnly="True"
-                           PlaceholderText="Ingen vært valgt" />
+                             VerticalAlignment="Top"
+                             HorizontalAlignment="Left"
+                             Margin="4,39,0,0"
+                             Width="250"
+                             Background="LightGray"
+                             IsReadOnly="True"
+                             PlaceholderText="Ingen vært valgt" />
                     <TextBox Grid.Column="0"
-                           VerticalAlignment="Top"
-                           HorizontalAlignment="Left"
-                           Margin="4,94,0,0"
-                           Width="250"
-                           Background="LightGray"
-                           IsReadOnly="True"
-                           PlaceholderText="Ingen titel valgt" />
+                             VerticalAlignment="Top"
+                             HorizontalAlignment="Left"
+                             Margin="4,94,0,0"
+                             Width="250"
+                             Background="LightGray"
+                             IsReadOnly="True"
+                             PlaceholderText="Ingen titel valgt" />
                     <TextBox Grid.Column="0"
-                           Margin="4,149,0,0"
-                           Background="LightGray"
-                           IsReadOnly="True"
-                           PlaceholderText="Ingen beskrivelse valgt"
-                           HorizontalAlignment="Left"
-                           Width="250"
-                           Height="100"
-                           VerticalAlignment="top" />
+                             Margin="4,149,0,0"
+                             Background="LightGray"
+                             IsReadOnly="True"
+                             PlaceholderText="Ingen beskrivelse valgt"
+                             HorizontalAlignment="Left"
+                             Width="250"
+                             Height="100"
+                             VerticalAlignment="top" />
                     <TextBox Grid.Column="0"
-                           VerticalAlignment="Top"
-                           HorizontalAlignment="Left"
-                           Margin="4,269,0,0"
-                           Width="250"
-                           Background="LightGray"
-                           IsReadOnly="True"
-                           PlaceholderText="Ingen note valgt" />
+                             VerticalAlignment="Top"
+                             HorizontalAlignment="Left"
+                             Margin="4,269,0,0"
+                             Width="250"
+                             Background="LightGray"
+                             IsReadOnly="True"
+                             PlaceholderText="Ingen note valgt" />
 
-                    <DatePicker HorizontalAlignment="Left" 
-                                Margin="307,39,0,0" 
-                                VerticalAlignment="Top" 
-                                Height="30" 
-                                Width="155"/>
+                    <DatePicker HorizontalAlignment="Left"
+                                Margin="307,39,0,0"
+                                VerticalAlignment="Top"
+                                Height="30"
+                                Width="155" />
 
-                    <ListView x:ConnectionId='3' x:Name="listView" 
+                    <ListView x:ConnectionId='3' x:Name="listView"
                               Background="LightGray"
-                              HorizontalAlignment="Left" 
-                              Height="100" 
-                              Margin="4,326,0,0" 
-                              VerticalAlignment="Top" 
-                              Width="250"/>
+                              HorizontalAlignment="Left"
+                              Height="100"
+                              Margin="4,326,0,0"
+                              VerticalAlignment="Top"
+                              Width="250" />
 
-                    <ListView x:ConnectionId='4' x:Name="listView_Copy" 
+                    <ListView x:ConnectionId='4' x:Name="listView_Copy"
                               Background="LightGray"
-                              HorizontalAlignment="Left" 
-                              Height="100" 
-                              Margin="4,455,0,0" 
-                              VerticalAlignment="Top" 
-                              Width="250"/>
-                    
+                              HorizontalAlignment="Left"
+                              Height="100"
+                              Margin="4,455,0,0"
+                              VerticalAlignment="Top"
+                              Width="250" />
+
                 </Grid>
             </PivotItem>
         </Pivot>
