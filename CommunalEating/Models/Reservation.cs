@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CommunalEating.Models
 {
-    class Reservation
+    class Reservation 
     {
         private int _dinnerId;
         private int _noOfAdults;
@@ -61,8 +61,9 @@ namespace CommunalEating.Models
 
         #endregion
 
-
-
-
+        public override string ToString()
+        {
+            return $"{nameof(dinnerId)}: {dinnerId}, {nameof(noOfAdults)}: {noOfAdults}, {nameof(noOfTeens)}: {noOfTeens}, {nameof(noOfKids)}: {noOfKids}, {nameof(noOfBabies)}: {noOfBabies}";
+        }
     }
 }
