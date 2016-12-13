@@ -1,4 +1,5 @@
-﻿using Windows.ApplicationModel.Activation;
+﻿using System.Collections.Generic;
+using Windows.ApplicationModel.Activation;
 using Windows.Devices.Bluetooth.Background;
 
 namespace CommunalEating
@@ -6,10 +7,12 @@ namespace CommunalEating
     public class Calcualtor
     {
 
-        private int day1 = 0;
-        private int day2 = 0;
-        private int day3 = 0;
-        private int day4 = 0;
+        int day1 = 0;
+        int day2 = 0;
+        int day3 = 0;
+        int day4 = 0;
+
+
 
         private int voksen = 1;
         private double ung = 0.5;
@@ -65,14 +68,11 @@ namespace CommunalEating
             get { return _baby; }
             set { _baby = value; }
         }
-        Calcualtor _Adding = new Calcualtor();
-        public int Totalpris = day1 + day2 + day3 + day4;
-
-
+        
 
     }
-
-    }
+    
+ }
     
 
 
