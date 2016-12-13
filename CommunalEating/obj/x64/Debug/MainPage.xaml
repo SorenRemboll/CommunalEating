@@ -314,7 +314,7 @@
 
                                     <!--pane 1 -->
 
-                                    <TextBlock x:ConnectionId='2' x:Name="HeadlineTextBlock"
+                                    <TextBlock x:ConnectionId='1' x:Name="HeadlineTextBlock"
                                                Text="Dato"
                                                FontSize="25" />
 
@@ -334,7 +334,7 @@
                                                HorizontalAlignment="Left"
                                                Margin="0,205"
                                                Grid.Column="0" />
-                                    <TextBlock x:ConnectionId='3' x:Name="textBlock"
+                                    <TextBlock x:ConnectionId='2' x:Name="textBlock"
                                                FontSize="20"
                                                HorizontalAlignment="Left"
                                                Margin="0,325,0,0"
@@ -377,7 +377,7 @@
                                              PlaceholderText="Ingen note valgt" />
 
                                     <!--Pane 2 -->
-                                    <TextBlock x:ConnectionId='4' x:Name="HeadlineTextBlock2"
+                                    <TextBlock x:ConnectionId='3' x:Name="HeadlineTextBlock2"
                                                Text="Oprettelse"
                                                FontSize="25"
                                                Grid.Column="1" />
@@ -399,7 +399,7 @@
                                                HorizontalAlignment="Left"
                                                Margin="0,205"
                                                Grid.Column="1" />
-                                    <TextBlock x:ConnectionId='5' x:Name="textBlock2"
+                                    <TextBlock x:ConnectionId='4' x:Name="textBlock2"
                                                FontSize="20"
                                                HorizontalAlignment="Left"
                                                Margin="0,325,0,0"
@@ -449,7 +449,7 @@
                                     </AppBarButton>
 
                                     <!--Pane 3-->
-                                    <TextBlock x:ConnectionId='6' x:Name="HeadlineTextBlock3"
+                                    <TextBlock x:ConnectionId='5' x:Name="HeadlineTextBlock3"
                                                Text="Vælg Dato"
                                                FontSize="25"
                                                Grid.Column="2" />
@@ -714,168 +714,165 @@
 
                                 </Grid>
                             </PivotItem>
-                            <PivotItem Header="Regenskab">
-                                <Grid Margin="20">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="*" />
-                                    </Grid.ColumnDefinitions>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="100" />
-                                        <RowDefinition Height="*" />
-                                        <RowDefinition Height="100" />
-                                    </Grid.RowDefinitions>
 
-                                    <!--Pane 1-->
-                                    <TextBlock Text="Vælg Start Dato"
-                                               FontSize="20"
-                                               VerticalAlignment="Top"
-                                               HorizontalAlignment="Left"
-                                               Grid.Row="0" />
-
-
-                                    <DatePicker VerticalAlignment="Top"
-                                                HorizontalAlignment="Center"
-                                                Grid.Row="0"
-                                                Grid.Column="0"
-                                                Margin="0,30,0,0" />
-
-                                    <TextBlock Text="Antal Voksne (15+ år):"
-                                               FontSize="20"
-                                               VerticalAlignment="Top"
-                                               HorizontalAlignment="Left"
-                                               Grid.Column="0"
-                                               Grid.Row="1"
-                                               Margin="15,25,0,0" />
-                                    <TextBlock Text="Antal Unge (7-15 år):"
-                                               FontSize="20"
-                                               VerticalAlignment="Top"
-                                               HorizontalAlignment="Left"
-                                               Grid.Column="0"
-                                               Grid.Row="1"
-                                               Margin="15,55,0,0" />
-                                    <TextBlock Text="Antal Børn (3-6 år):"
-                                               FontSize="20"
-                                               VerticalAlignment="Top"
-                                               HorizontalAlignment="Left"
-                                               Grid.Column="0"
-                                               Grid.Row="1"
-                                               Margin="15,85,0,0" />
-                                    <TextBlock Text="Antal Børn (under 3 år):"
-                                               FontSize="20"
-                                               VerticalAlignment="Top"
-                                               HorizontalAlignment="Left"
-                                               Grid.Column="0"
-                                               Grid.Row="1"
-                                               Margin="15,115,0,0" />
-                                    <TextBlock Text="Total Pris:"
-                                               FontSize="20"
-                                               FontWeight="Bold"
-                                               VerticalAlignment="Top"
-                                               HorizontalAlignment="Left"
-                                               Grid.Column="0"
-                                               Grid.Row="1"
-                                               Margin="15,165,0,0" />
-
-                                    <TextBox VerticalAlignment="Top"
-                                             HorizontalAlignment="Left"
-                                             Grid.Column="0"
-                                             Grid.Row="1"
-                                             Margin="235,25,0,0"
-                                             IsReadOnly="True"
-                                             Background="LightGray" />
-                                    <TextBox VerticalAlignment="Top"
-                                             HorizontalAlignment="Left"
-                                             Grid.Column="0"
-                                             Grid.Row="1"
-                                             Margin="235,55,0,0"
-                                             IsReadOnly="True"
-                                             Background="LightGray" />
-                                    <TextBox VerticalAlignment="Top"
-                                             HorizontalAlignment="Left"
-                                             Grid.Column="0"
-                                             Grid.Row="1"
-                                             Margin="235,85,0,0"
-                                             IsReadOnly="True"
-                                             Background="LightGray" />
-                                    <TextBox VerticalAlignment="Top"
-                                             HorizontalAlignment="Left"
-                                             Grid.Column="0"
-                                             Grid.Row="1"
-                                             Margin="235,115,0,0"
-                                             IsReadOnly="True"
-                                             Background="LightGray" />
-                                    <TextBox VerticalAlignment="Top"
-                                             HorizontalAlignment="Left"
-                                             Grid.Column="0"
-                                             Grid.Row="1"
-                                             Margin="235,165,0,0"
-                                             IsReadOnly="True"
-                                             Background="LightGray" />
-
-                                    <AppBarButton Label="Udregn Total Pris"
-                                                  VerticalAlignment="Bottom"
-                                                  HorizontalAlignment="Left"
-                                                  Grid.Column="0"
-                                                  Grid.Row="2">
-                                        <SymbolIcon Symbol="Calculator" />
-                                    </AppBarButton>
-                                    <AppBarButton Label="Send Regning"
-                                                  VerticalAlignment="Bottom"
-                                                  HorizontalAlignment="Left"
-                                                  Grid.Column="0"
-                                                  Grid.Row="2"
-                                                  Margin="100,0,0,0">
-                                        <SymbolIcon Symbol="Send" />
-                                    </AppBarButton>
-
-
-
-
-                                    <!--Pane 2-->
-                                    <TextBlock Text="Vælg Slut Dato"
-                                               FontSize="20"
-                                               VerticalAlignment="Top"
-                                               HorizontalAlignment="Left"
-                                               Grid.Row="0"
-                                               Grid.Column="1" />
-
-                                    <DatePicker VerticalAlignment="Top"
-                                                HorizontalAlignment="Center"
-                                                Grid.Row="0"
-                                                Grid.Column="1"
-                                                Margin="0,30,0,0" />
-
-                                    <ListView Grid.Column="1"
-                                              Grid.Row="1"
-                                              Margin="10"
-                                              Background="LightGray" />
-
-                                    <AppBarButton Label="Flere Detaljer"
-                                                  VerticalAlignment="Bottom"
-                                                  HorizontalAlignment="Left"
-                                                  Grid.Column="1"
-                                                  Grid.Row="2">
-                                        <Interactivity:Interaction.Behaviors>
-                                            <Core:EventTriggerBehavior EventName="Click">
-                                                <Core:NavigateToPageAction TargetPage="CommunalEating.regenskab" />
-                                            </Core:EventTriggerBehavior>
-                                        </Interactivity:Interaction.Behaviors>
-                                        <SymbolIcon Symbol="Edit" />
-                                    </AppBarButton>
-                                </Grid>
-                            </PivotItem>
                         </Pivot>
                     </Grid>
                 </PivotItem>
-                <PivotItem Header="Historik">
-                    <!-- tab4 -->
-                    <Grid />
+                <PivotItem Header="Regenskab">
+                    <Grid Margin="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="100" />
+                        </Grid.RowDefinitions>
+
+                        <!--Pane 1-->
+                        <TextBlock Text="Vælg Start Dato"
+                                   FontSize="20"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Left"
+                                   Grid.Row="0" />
+
+
+                        <DatePicker VerticalAlignment="Top"
+                                    HorizontalAlignment="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="0"
+                                    Margin="0,30,0,0" />
+
+                        <TextBlock Text="Antal Voksne (15+ år):"
+                                   FontSize="20"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Left"
+                                   Grid.Column="0"
+                                   Grid.Row="1"
+                                   Margin="15,25,0,0" />
+                        <TextBlock Text="Antal Unge (7-15 år):"
+                                   FontSize="20"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Left"
+                                   Grid.Column="0"
+                                   Grid.Row="1"
+                                   Margin="15,55,0,0" />
+                        <TextBlock Text="Antal Børn (3-6 år):"
+                                   FontSize="20"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Left"
+                                   Grid.Column="0"
+                                   Grid.Row="1"
+                                   Margin="15,85,0,0" />
+                        <TextBlock Text="Antal Børn (under 3 år):"
+                                   FontSize="20"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Left"
+                                   Grid.Column="0"
+                                   Grid.Row="1"
+                                   Margin="15,115,0,0" />
+                        <TextBlock Text="Total Pris:"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Left"
+                                   Grid.Column="0"
+                                   Grid.Row="1"
+                                   Margin="15,165,0,0" />
+
+                        <TextBox VerticalAlignment="Top"
+                                 HorizontalAlignment="Left"
+                                 Grid.Column="0"
+                                 Grid.Row="1"
+                                 Margin="235,25,0,0"
+                                 IsReadOnly="True"
+                                 Background="LightGray" />
+                        <TextBox VerticalAlignment="Top"
+                                 HorizontalAlignment="Left"
+                                 Grid.Column="0"
+                                 Grid.Row="1"
+                                 Margin="235,55,0,0"
+                                 IsReadOnly="True"
+                                 Background="LightGray" />
+                        <TextBox VerticalAlignment="Top"
+                                 HorizontalAlignment="Left"
+                                 Grid.Column="0"
+                                 Grid.Row="1"
+                                 Margin="235,85,0,0"
+                                 IsReadOnly="True"
+                                 Background="LightGray" />
+                        <TextBox VerticalAlignment="Top"
+                                 HorizontalAlignment="Left"
+                                 Grid.Column="0"
+                                 Grid.Row="1"
+                                 Margin="235,115,0,0"
+                                 IsReadOnly="True"
+                                 Background="LightGray" />
+                        <TextBox VerticalAlignment="Top"
+                                 HorizontalAlignment="Left"
+                                 Grid.Column="0"
+                                 Grid.Row="1"
+                                 Margin="235,165,0,0"
+                                 IsReadOnly="True"
+                                 Background="LightGray" />
+
+                        <AppBarButton Label="Udregn Total Pris"
+                                      VerticalAlignment="Bottom"
+                                      HorizontalAlignment="Left"
+                                      Grid.Column="0"
+                                      Grid.Row="2">
+                            <SymbolIcon Symbol="Calculator" />
+                        </AppBarButton>
+                        <AppBarButton Label="Send Regning"
+                                      VerticalAlignment="Bottom"
+                                      HorizontalAlignment="Left"
+                                      Grid.Column="0"
+                                      Grid.Row="2"
+                                      Margin="100,0,0,0">
+                            <SymbolIcon Symbol="Send" />
+                        </AppBarButton>
+
+
+
+
+                        <!--Pane 2-->
+                        <TextBlock Text="Vælg Slut Dato"
+                                   FontSize="20"
+                                   VerticalAlignment="Top"
+                                   HorizontalAlignment="Left"
+                                   Grid.Row="0"
+                                   Grid.Column="1" />
+
+                        <DatePicker VerticalAlignment="Top"
+                                    HorizontalAlignment="Center"
+                                    Grid.Row="0"
+                                    Grid.Column="1"
+                                    Margin="0,30,0,0" />
+
+                        <ListView Grid.Column="1"
+                                  Grid.Row="1"
+                                  Margin="10"
+                                  Background="LightGray" />
+
+                        <AppBarButton Label="Flere Detaljer"
+                                      VerticalAlignment="Bottom"
+                                      HorizontalAlignment="Left"
+                                      Grid.Column="1"
+                                      Grid.Row="2">
+                            <Interactivity:Interaction.Behaviors>
+                                <Core:EventTriggerBehavior EventName="Click">
+                                    <Core:NavigateToPageAction TargetPage="CommunalEating.regenskab" />
+                                </Core:EventTriggerBehavior>
+                            </Interactivity:Interaction.Behaviors>
+                            <SymbolIcon Symbol="More" />
+                        </AppBarButton>
+                    </Grid>
                 </PivotItem>
                 <PivotItem Header="Kalender">
                     <!-- tab5 -->
                     <Grid>
-                        <CalendarView HorizontalAlignment="Left"
+                        <CalendarView HorizontalAlignment="Center"
                                       Margin="28,25,0,0"
                                       VerticalAlignment="Top"
                                       Height="400"
@@ -885,17 +882,21 @@
                             </CalendarView.FirstDayOfWeek>
                         </CalendarView>
 
-                        <Button x:ConnectionId='1' x:Name="button"
-                                Content="Tilføj deltagelse"
-                                HorizontalAlignment="Left"
-                                Margin="133,465,0,0"
-                                VerticalAlignment="Top">
+                        <AppBarButton Label="Tilmeld"
+                                      VerticalAlignment="Bottom"
+                                      HorizontalAlignment="Center"
+                                      Background="LightGreen"
+                                      Margin="0,-0,0,0"
+                                      Width="100"
+                                      Height="75">
+                            <SymbolIcon Symbol="Pin" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <Interactivity:Interaction.Behaviors>
                                 <Core:EventTriggerBehavior EventName="Click">
                                     <Core:NavigateToPageAction TargetPage="CommunalEating.AttendHost" />
                                 </Core:EventTriggerBehavior>
                             </Interactivity:Interaction.Behaviors>
-                        </Button>
+
+                        </AppBarButton>
 
                     </Grid>
                 </PivotItem>

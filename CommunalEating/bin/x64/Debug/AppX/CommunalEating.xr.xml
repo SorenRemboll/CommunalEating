@@ -96,6 +96,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="Content" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Width" />
       <RootProperty Name="Command" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
@@ -124,6 +125,8 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
       <RootProperty Name="Symbol" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="CommunalEating.AttendHost" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">

@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>C9FC555318D34E64083D6454EAD85559EC4CDD7BCF602620249715AC64EDBBDE</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>977CCC5282D87A1DB1780B7CFDB3748A0F97CEBED60C72D293FD8A1D5494EB30</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e3027099-9796-4871-97f2-19bf1433d964_1.0.0.0_x64__p7dtn051ymnz8</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3027099-9796-4871-97f2-19bf1433d964_p7dtn051ymnz8!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e3027099-9796-4871-97f2-19bf1433d964</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T16:25:07.654</Modified>
+      <Modified>2016-12-13T18:09:37.348</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.exe">
       <PackagePath>entrypoint\CommunalEating.exe</PackagePath>
-      <Modified>2016-12-13T16:25:05.873</Modified>
+      <Modified>2016-12-13T18:09:36.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -508,7 +508,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.xr.xml">
       <PackagePath>CommunalEating.xr.xml</PackagePath>
-      <Modified>2016-12-13T16:25:05.595</Modified>
+      <Modified>2016-12-13T18:09:36.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -517,11 +517,11 @@
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T16:25:07.110</Modified>
+      <Modified>2016-12-13T18:09:36.936</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\Core\CommunalEating.exe">
       <PackagePath>CommunalEating.exe</PackagePath>
-      <Modified>2016-12-13T16:25:07.647</Modified>
+      <Modified>2016-12-13T18:09:37.344</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

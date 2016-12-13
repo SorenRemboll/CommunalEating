@@ -872,7 +872,7 @@
                 <PivotItem Header="Kalender">
                     <!-- tab5 -->
                     <Grid>
-                        <CalendarView HorizontalAlignment="Left"
+                        <CalendarView HorizontalAlignment="Center"
                                       Margin="28,25,0,0"
                                       VerticalAlignment="Top"
                                       Height="400"
@@ -882,17 +882,21 @@
                             </CalendarView.FirstDayOfWeek>
                         </CalendarView>
 
-                        <Button x:Name="button"
-                                Content="Tilføj deltagelse"
-                                HorizontalAlignment="Left"
-                                Margin="133,465,0,0"
-                                VerticalAlignment="Top">
+                        <AppBarButton Label="Tilmeld"
+                                      VerticalAlignment="Bottom"
+                                      HorizontalAlignment="Center"
+                                      Background="LightGreen"
+                                      Margin="0,-0,0,0"
+                                      Width="100"
+                                      Height="75">
+                            <SymbolIcon Symbol="Pin" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <Interactivity:Interaction.Behaviors>
                                 <Core:EventTriggerBehavior EventName="Click">
                                     <Core:NavigateToPageAction TargetPage="CommunalEating.AttendHost" />
                                 </Core:EventTriggerBehavior>
                             </Interactivity:Interaction.Behaviors>
-                        </Button>
+
+                        </AppBarButton>
 
                     </Grid>
                 </PivotItem>
