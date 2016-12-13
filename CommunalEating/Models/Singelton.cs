@@ -11,6 +11,7 @@ namespace CommunalEating.Models
     {
         private static Singelton _instance = new Singelton();
         public ObservableCollection<Household> Households { get; set; }
+        public ObservableCollection<Reservation> Type { get; set; }
 
         public Singelton()
         {

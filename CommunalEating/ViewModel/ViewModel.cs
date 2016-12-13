@@ -14,6 +14,19 @@ namespace CommunalEating
 {
     class ViewModel : INotifyPropertyChanged
     {
+
+        #region Alex
+
+        private ObservableCollection<Reservation> _reservations;
+
+        public ObservableCollection<Reservation> Reservations
+        {
+            get { return _reservations; }
+            set { _reservations = value;}
+        }
+
+        #endregion
+
         #region Jacob
 
         public int HousePick
@@ -58,6 +71,15 @@ namespace CommunalEating
         // # Constructor
         public ViewModel()
         {
+            #region Alex
+
+//            _reservations = Singelton.GetInstance().Reservations;
+//            Singelton.GetInstance().Households.Add(new Reservation());
+
+                #endregion
+
+
+
             #region jacob
 
             _households = Singelton.GetInstance().Households;
@@ -85,6 +107,8 @@ namespace CommunalEating
         }
 
         #endregion
+
+
 
         // # Properties to get the 4 days on the front/overview
         public String Day1
