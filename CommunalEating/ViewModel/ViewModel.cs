@@ -16,6 +16,12 @@ namespace CommunalEating
     {
         #region Jacob
 
+        public int HousePick
+        {
+            get { return _housePick; }
+            set { _housePick = value; OnPropertyChanged();}
+        }
+
         public ObservableCollection<Household> Households
         {
             get { return _households; }
@@ -37,12 +43,14 @@ namespace CommunalEating
 
         private ObservableCollection<Household> _households;
         public RelayCommand HAddCommand { get; set; }
+        public RelayCommand HRemoveCommand { get; set; }
         #endregion
         // # The front/overview four days objects
         private Calendar days;
         private Worker workers;
         private int _address;
         private string _email;
+        private int _housePick;
 
 
         // private bool isThursday;
@@ -54,6 +62,7 @@ namespace CommunalEating
 
             _households = Singelton.GetInstance().Households;
             HAddCommand = new RelayCommand(HAdd);
+            HRemoveCommand = new RelayCommand(HRemove);
             Singelton.GetInstance().Households.Add(new Household(5, "test"));
             #endregion
 
@@ -64,6 +73,11 @@ namespace CommunalEating
 
         #region Jacob
 
+        public void HRemove()
+        {
+            Singelton.GetInstance().Households.RemoveAt(HousePick);
+            OnPropertyChanged();
+        }
         public void HAdd()
         {
             Singelton.GetInstance().Households.Add(new Household(Address,Email));

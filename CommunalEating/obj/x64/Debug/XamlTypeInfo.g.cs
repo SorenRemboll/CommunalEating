@@ -148,10 +148,10 @@ namespace CommunalEating.CommunalEating_XamlTypeInfo
             _typeNameTable[12] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[13] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[14] = "CommunalEating.ViewModel";
-            _typeNameTable[15] = "System.Collections.ObjectModel.ObservableCollection`1<CommunalEating.Models.Household>";
-            _typeNameTable[16] = "System.Collections.ObjectModel.Collection`1<CommunalEating.Models.Household>";
-            _typeNameTable[17] = "CommunalEating.Models.Household";
-            _typeNameTable[18] = "Int32";
+            _typeNameTable[15] = "Int32";
+            _typeNameTable[16] = "System.Collections.ObjectModel.ObservableCollection`1<CommunalEating.Models.Household>";
+            _typeNameTable[17] = "System.Collections.ObjectModel.Collection`1<CommunalEating.Models.Household>";
+            _typeNameTable[18] = "CommunalEating.Models.Household";
             _typeNameTable[19] = "Eventmaker.Common.RelayCommand";
             _typeNameTable[20] = "Boolean";
             _typeNameTable[21] = "Windows.Globalization.DayOfWeek";
@@ -176,10 +176,10 @@ namespace CommunalEating.CommunalEating_XamlTypeInfo
             _typeTable[12] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[13] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[14] = typeof(global::CommunalEating.ViewModel);
-            _typeTable[15] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::CommunalEating.Models.Household>);
-            _typeTable[16] = typeof(global::System.Collections.ObjectModel.Collection<global::CommunalEating.Models.Household>);
-            _typeTable[17] = typeof(global::CommunalEating.Models.Household);
-            _typeTable[18] = typeof(global::System.Int32);
+            _typeTable[15] = typeof(global::System.Int32);
+            _typeTable[16] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::CommunalEating.Models.Household>);
+            _typeTable[17] = typeof(global::System.Collections.ObjectModel.Collection<global::CommunalEating.Models.Household>);
+            _typeTable[18] = typeof(global::CommunalEating.Models.Household);
             _typeTable[19] = typeof(global::Eventmaker.Common.RelayCommand);
             _typeTable[20] = typeof(global::System.Boolean);
             _typeTable[21] = typeof(global::Windows.Globalization.DayOfWeek);
@@ -227,8 +227,8 @@ namespace CommunalEating.CommunalEating_XamlTypeInfo
         private object Activate_10_NavigateToPageAction() { return new global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction(); }
         private object Activate_11_AttendHost() { return new global::CommunalEating.AttendHost(); }
         private object Activate_14_ViewModel() { return new global::CommunalEating.ViewModel(); }
-        private object Activate_15_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::CommunalEating.Models.Household>(); }
-        private object Activate_16_Collection() { return new global::System.Collections.ObjectModel.Collection<global::CommunalEating.Models.Household>(); }
+        private object Activate_16_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::CommunalEating.Models.Household>(); }
+        private object Activate_17_Collection() { return new global::System.Collections.ObjectModel.Collection<global::CommunalEating.Models.Household>(); }
         private object Activate_24_MainPage() { return new global::CommunalEating.MainPage(); }
         private object Activate_25_regenskab() { return new global::CommunalEating.regenskab(); }
         private void VectorAdd_2_BehaviorCollection(object instance, object item)
@@ -243,13 +243,13 @@ namespace CommunalEating.CommunalEating_XamlTypeInfo
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_15_ObservableCollection(object instance, object item)
+        private void VectorAdd_16_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::CommunalEating.Models.Household>)instance;
             var newItem = (global::CommunalEating.Models.Household)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_16_Collection(object instance, object item)
+        private void VectorAdd_17_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::CommunalEating.Models.Household>)instance;
             var newItem = (global::CommunalEating.Models.Household)item;
@@ -350,10 +350,12 @@ namespace CommunalEating.CommunalEating_XamlTypeInfo
             case 14:   //  CommunalEating.ViewModel
                 userType = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_14_ViewModel;
+                userType.AddMemberName("HousePick");
                 userType.AddMemberName("Households");
                 userType.AddMemberName("Address");
                 userType.AddMemberName("Email");
                 userType.AddMemberName("HAddCommand");
+                userType.AddMemberName("HRemoveCommand");
                 userType.AddMemberName("Day1");
                 userType.AddMemberName("Day2");
                 userType.AddMemberName("Day3");
@@ -363,30 +365,30 @@ namespace CommunalEating.CommunalEating_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 15:   //  System.Collections.ObjectModel.ObservableCollection`1<CommunalEating.Models.Household>
+            case 15:   //  Int32
+                xamlType = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 16:   //  System.Collections.ObjectModel.ObservableCollection`1<CommunalEating.Models.Household>
                 userType = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<CommunalEating.Models.Household>"));
-                userType.CollectionAdd = VectorAdd_15_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_16_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 16:   //  System.Collections.ObjectModel.Collection`1<CommunalEating.Models.Household>
+            case 17:   //  System.Collections.ObjectModel.Collection`1<CommunalEating.Models.Household>
                 userType = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_16_Collection;
-                userType.CollectionAdd = VectorAdd_16_Collection;
+                userType.Activator = Activate_17_Collection;
+                userType.CollectionAdd = VectorAdd_17_Collection;
                 xamlType = userType;
                 break;
 
-            case 17:   //  CommunalEating.Models.Household
+            case 18:   //  CommunalEating.Models.Household
                 userType = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Address");
                 userType.AddMemberName("Email");
                 userType.SetIsLocalType();
                 xamlType = userType;
-                break;
-
-            case 18:   //  Int32
-                xamlType = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 19:   //  Eventmaker.Common.RelayCommand
@@ -498,87 +500,107 @@ namespace CommunalEating.CommunalEating_XamlTypeInfo
             var that = (global::Microsoft.Xaml.Interactions.Core.NavigateToPageAction)instance;
             that.Parameter = (global::System.Object)Value;
         }
-        private object get_7_ViewModel_Households(object instance)
+        private object get_7_ViewModel_HousePick(object instance)
+        {
+            var that = (global::CommunalEating.ViewModel)instance;
+            return that.HousePick;
+        }
+        private void set_7_ViewModel_HousePick(object instance, object Value)
+        {
+            var that = (global::CommunalEating.ViewModel)instance;
+            that.HousePick = (global::System.Int32)Value;
+        }
+        private object get_8_ViewModel_Households(object instance)
         {
             var that = (global::CommunalEating.ViewModel)instance;
             return that.Households;
         }
-        private void set_7_ViewModel_Households(object instance, object Value)
+        private void set_8_ViewModel_Households(object instance, object Value)
         {
             var that = (global::CommunalEating.ViewModel)instance;
             that.Households = (global::System.Collections.ObjectModel.ObservableCollection<global::CommunalEating.Models.Household>)Value;
         }
-        private object get_8_Household_Address(object instance)
+        private object get_9_Household_Address(object instance)
         {
             var that = (global::CommunalEating.Models.Household)instance;
             return that.Address;
         }
-        private void set_8_Household_Address(object instance, object Value)
+        private void set_9_Household_Address(object instance, object Value)
         {
             var that = (global::CommunalEating.Models.Household)instance;
             that.Address = (global::System.Int32)Value;
         }
-        private object get_9_Household_Email(object instance)
+        private object get_10_Household_Email(object instance)
         {
             var that = (global::CommunalEating.Models.Household)instance;
             return that.Email;
         }
-        private void set_9_Household_Email(object instance, object Value)
+        private void set_10_Household_Email(object instance, object Value)
         {
             var that = (global::CommunalEating.Models.Household)instance;
             that.Email = (global::System.String)Value;
         }
-        private object get_10_ViewModel_Address(object instance)
+        private object get_11_ViewModel_Address(object instance)
         {
             var that = (global::CommunalEating.ViewModel)instance;
             return that.Address;
         }
-        private void set_10_ViewModel_Address(object instance, object Value)
+        private void set_11_ViewModel_Address(object instance, object Value)
         {
             var that = (global::CommunalEating.ViewModel)instance;
             that.Address = (global::System.Int32)Value;
         }
-        private object get_11_ViewModel_Email(object instance)
+        private object get_12_ViewModel_Email(object instance)
         {
             var that = (global::CommunalEating.ViewModel)instance;
             return that.Email;
         }
-        private void set_11_ViewModel_Email(object instance, object Value)
+        private void set_12_ViewModel_Email(object instance, object Value)
         {
             var that = (global::CommunalEating.ViewModel)instance;
             that.Email = (global::System.String)Value;
         }
-        private object get_12_ViewModel_HAddCommand(object instance)
+        private object get_13_ViewModel_HAddCommand(object instance)
         {
             var that = (global::CommunalEating.ViewModel)instance;
             return that.HAddCommand;
         }
-        private void set_12_ViewModel_HAddCommand(object instance, object Value)
+        private void set_13_ViewModel_HAddCommand(object instance, object Value)
         {
             var that = (global::CommunalEating.ViewModel)instance;
             that.HAddCommand = (global::Eventmaker.Common.RelayCommand)Value;
         }
-        private object get_13_ViewModel_Day1(object instance)
+        private object get_14_ViewModel_HRemoveCommand(object instance)
+        {
+            var that = (global::CommunalEating.ViewModel)instance;
+            return that.HRemoveCommand;
+        }
+        private void set_14_ViewModel_HRemoveCommand(object instance, object Value)
+        {
+            var that = (global::CommunalEating.ViewModel)instance;
+            that.HRemoveCommand = (global::Eventmaker.Common.RelayCommand)Value;
+        }
+        private object get_15_ViewModel_Day1(object instance)
         {
             var that = (global::CommunalEating.ViewModel)instance;
             return that.Day1;
         }
-        private object get_14_ViewModel_Day2(object instance)
+        private object get_16_ViewModel_Day2(object instance)
         {
             var that = (global::CommunalEating.ViewModel)instance;
             return that.Day2;
         }
-        private object get_15_ViewModel_Day3(object instance)
+        private object get_17_ViewModel_Day3(object instance)
         {
             var that = (global::CommunalEating.ViewModel)instance;
             return that.Day3;
         }
-        private object get_16_ViewModel_Day4(object instance)
+        private object get_18_ViewModel_Day4(object instance)
         {
             var that = (global::CommunalEating.ViewModel)instance;
             return that.Day4;
         }
-        private object get_17_ViewModel_ThursdayChecked(object instance)
+        private object get_19_ViewModel_ThursdayChecked(object instance)
         {
             var that = (global::CommunalEating.ViewModel)instance;
             return that.ThursdayChecked;
@@ -640,70 +662,82 @@ namespace CommunalEating.CommunalEating_XamlTypeInfo
                 xamlMember.Getter = get_6_NavigateToPageAction_Parameter;
                 xamlMember.Setter = set_6_NavigateToPageAction_Parameter;
                 break;
+            case "CommunalEating.ViewModel.HousePick":
+                userType = (global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunalEating.ViewModel");
+                xamlMember = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlMember(this, "HousePick", "Int32");
+                xamlMember.Getter = get_7_ViewModel_HousePick;
+                xamlMember.Setter = set_7_ViewModel_HousePick;
+                break;
             case "CommunalEating.ViewModel.Households":
                 userType = (global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunalEating.ViewModel");
                 xamlMember = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlMember(this, "Households", "System.Collections.ObjectModel.ObservableCollection`1<CommunalEating.Models.Household>");
-                xamlMember.Getter = get_7_ViewModel_Households;
-                xamlMember.Setter = set_7_ViewModel_Households;
+                xamlMember.Getter = get_8_ViewModel_Households;
+                xamlMember.Setter = set_8_ViewModel_Households;
                 break;
             case "CommunalEating.Models.Household.Address":
                 userType = (global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunalEating.Models.Household");
                 xamlMember = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlMember(this, "Address", "Int32");
-                xamlMember.Getter = get_8_Household_Address;
-                xamlMember.Setter = set_8_Household_Address;
+                xamlMember.Getter = get_9_Household_Address;
+                xamlMember.Setter = set_9_Household_Address;
                 break;
             case "CommunalEating.Models.Household.Email":
                 userType = (global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunalEating.Models.Household");
                 xamlMember = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlMember(this, "Email", "String");
-                xamlMember.Getter = get_9_Household_Email;
-                xamlMember.Setter = set_9_Household_Email;
+                xamlMember.Getter = get_10_Household_Email;
+                xamlMember.Setter = set_10_Household_Email;
                 break;
             case "CommunalEating.ViewModel.Address":
                 userType = (global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunalEating.ViewModel");
                 xamlMember = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlMember(this, "Address", "Int32");
-                xamlMember.Getter = get_10_ViewModel_Address;
-                xamlMember.Setter = set_10_ViewModel_Address;
+                xamlMember.Getter = get_11_ViewModel_Address;
+                xamlMember.Setter = set_11_ViewModel_Address;
                 break;
             case "CommunalEating.ViewModel.Email":
                 userType = (global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunalEating.ViewModel");
                 xamlMember = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlMember(this, "Email", "String");
-                xamlMember.Getter = get_11_ViewModel_Email;
-                xamlMember.Setter = set_11_ViewModel_Email;
+                xamlMember.Getter = get_12_ViewModel_Email;
+                xamlMember.Setter = set_12_ViewModel_Email;
                 break;
             case "CommunalEating.ViewModel.HAddCommand":
                 userType = (global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunalEating.ViewModel");
                 xamlMember = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlMember(this, "HAddCommand", "Eventmaker.Common.RelayCommand");
-                xamlMember.Getter = get_12_ViewModel_HAddCommand;
-                xamlMember.Setter = set_12_ViewModel_HAddCommand;
+                xamlMember.Getter = get_13_ViewModel_HAddCommand;
+                xamlMember.Setter = set_13_ViewModel_HAddCommand;
+                break;
+            case "CommunalEating.ViewModel.HRemoveCommand":
+                userType = (global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunalEating.ViewModel");
+                xamlMember = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlMember(this, "HRemoveCommand", "Eventmaker.Common.RelayCommand");
+                xamlMember.Getter = get_14_ViewModel_HRemoveCommand;
+                xamlMember.Setter = set_14_ViewModel_HRemoveCommand;
                 break;
             case "CommunalEating.ViewModel.Day1":
                 userType = (global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunalEating.ViewModel");
                 xamlMember = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlMember(this, "Day1", "String");
-                xamlMember.Getter = get_13_ViewModel_Day1;
+                xamlMember.Getter = get_15_ViewModel_Day1;
                 xamlMember.SetIsReadOnly();
                 break;
             case "CommunalEating.ViewModel.Day2":
                 userType = (global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunalEating.ViewModel");
                 xamlMember = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlMember(this, "Day2", "String");
-                xamlMember.Getter = get_14_ViewModel_Day2;
+                xamlMember.Getter = get_16_ViewModel_Day2;
                 xamlMember.SetIsReadOnly();
                 break;
             case "CommunalEating.ViewModel.Day3":
                 userType = (global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunalEating.ViewModel");
                 xamlMember = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlMember(this, "Day3", "String");
-                xamlMember.Getter = get_15_ViewModel_Day3;
+                xamlMember.Getter = get_17_ViewModel_Day3;
                 xamlMember.SetIsReadOnly();
                 break;
             case "CommunalEating.ViewModel.Day4":
                 userType = (global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunalEating.ViewModel");
                 xamlMember = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlMember(this, "Day4", "String");
-                xamlMember.Getter = get_16_ViewModel_Day4;
+                xamlMember.Getter = get_18_ViewModel_Day4;
                 xamlMember.SetIsReadOnly();
                 break;
             case "CommunalEating.ViewModel.ThursdayChecked":
                 userType = (global::CommunalEating.CommunalEating_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunalEating.ViewModel");
                 xamlMember = new global::CommunalEating.CommunalEating_XamlTypeInfo.XamlMember(this, "ThursdayChecked", "Boolean");
-                xamlMember.Getter = get_17_ViewModel_ThursdayChecked;
+                xamlMember.Getter = get_19_ViewModel_ThursdayChecked;
                 xamlMember.SetIsReadOnly();
                 break;
             }
