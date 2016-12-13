@@ -216,14 +216,14 @@
                                              Grid.Row="1"
                                              Width="80"
                                              AutomationProperties.AccessibilityView="Content"
-                                             Text="{Binding Address, Mode=TwoWay}" />
+                                             Text="{Binding Address, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                                     <TextBox Margin="20,120,0,0"
                                              VerticalAlignment="Top"
                                              HorizontalAlignment="Left"
                                              Grid.Column="1"
                                              Grid.Row="1"
                                              Width="320"
-                                             Text="{Binding Email, Mode=TwoWay}" />
+                                             Text="{Binding Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
                                     <AppBarButton Label="Tilføj Husstand"
                                                   Grid.Column="1"
@@ -261,7 +261,7 @@
                                     <ListView Grid.Row="1"
                                               Background="LightGray"
                                               Margin="10"
-                                              ItemsSource="{Binding Singelton.Households[0]}" />
+                                              ItemsSource="{Binding Households}" />
                                 </Grid>
 
                             </PivotItem>

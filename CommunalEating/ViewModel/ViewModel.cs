@@ -16,6 +16,12 @@ namespace CommunalEating
     {
         #region Jacob
 
+        public ObservableCollection<Household> Households
+        {
+            get { return _households; }
+            set { _households = value; }
+        }
+
         public int Address
         {
             get { return _address; }
@@ -28,7 +34,6 @@ namespace CommunalEating
             set { _email = value; OnPropertyChanged(); }
         }
 
-        public Singelton Singelton { get; set; }
 
         private ObservableCollection<Household> _households;
         public RelayCommand HAddCommand { get; set; }
@@ -38,6 +43,7 @@ namespace CommunalEating
         private Worker workers;
         private int _address;
         private string _email;
+
 
         // private bool isThursday;
 
