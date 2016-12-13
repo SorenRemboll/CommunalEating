@@ -435,7 +435,9 @@
                                                   VerticalAlignment="Top"
                                                   HorizontalAlignment="Left"
                                                   Background="LightGreen"
-                                                  Margin="280,160,0,0">
+                                                  Margin="280,160,0,0"
+                                                  AllowDrop="False"
+                                                  ToolTipService.ToolTip="Dette tilføjer dine ændringer">
                                         <SymbolIcon Symbol="Add" />
                                     </AppBarButton>
                                     <AppBarButton Label="Slet ændringer"
@@ -444,7 +446,8 @@
                                                   HorizontalAlignment="Left"
                                                   Background="Crimson"
                                                   Foreground="White"
-                                                  Margin="280,260,0,0">
+                                                  Margin="280,260,0,0"
+                                                  ToolTipService.ToolTip="Ved tryk bliver alle dine ændringer fjernet. Når først de er fjernet kan de ikke hentes tilbage. ">
                                         <SymbolIcon Symbol="Delete" />
                                     </AppBarButton>
 
@@ -853,7 +856,10 @@
                         <ListView Grid.Column="1"
                                   Grid.Row="1"
                                   Margin="10"
-                                  Background="LightGray" />
+                                  Background="LightGray"
+                                  Header="Tilmeldte Hustande" FontSize="20"
+                                  ItemsSource="{Binding Households, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                                  ItemTemplate="{StaticResource ListviewHustandTemplate}" />
 
                         <AppBarButton Label="Flere Detaljer"
                                       VerticalAlignment="Bottom"
@@ -873,7 +879,7 @@
                     <!-- tab5 -->
                     <Grid>
                         <CalendarView HorizontalAlignment="Center"
-                                      Margin="28,25,0,0"
+                                      Margin="28,50,0,0"
                                       VerticalAlignment="Top"
                                       Height="400"
                                       Width="480">

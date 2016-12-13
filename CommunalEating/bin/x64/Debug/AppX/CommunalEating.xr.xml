@@ -83,6 +83,8 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedIndex" />
       <RootProperty Name="ItemTemplate" />
@@ -97,14 +99,8 @@
       <RootProperty Name="Content" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Width" />
+      <RootProperty Name="AllowDrop" />
       <RootProperty Name="Command" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
       <RootMethod Name="GetBehaviors" />
@@ -116,17 +112,17 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
+      <RootProperty Name="Symbol" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
     <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
       <RootProperty Name="EventName" />
       <RootProperty Name="Actions" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Interactions.Core.NavigateToPageAction">
       <RootProperty Name="TargetPage" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
-      <RootProperty Name="Symbol" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="CommunalEating.AttendHost" />
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -162,6 +158,10 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
+      <RootMethod Name="GetToolTip" />
+      <RootMethod Name="SetToolTip" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
       <RootMethod Name="GetAccessibilityView" />
