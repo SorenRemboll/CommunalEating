@@ -412,3 +412,4 @@ D:\Dokumenter\Projekts\CommunalEating\CommunalEating\obj\x64\Debug\MultipleQuali
 D:\Dokumenter\Projekts\CommunalEating\CommunalEating\obj\x64\Debug\Microsoft.Xaml.Interactions.pri.xml
 D:\Dokumenter\Projekts\CommunalEating\CommunalEating\obj\x64\Debug\Microsoft.Xaml.Interactivity.pri.xml
 D:\Dokumenter\Projekts\CommunalEating\CommunalEating\obj\x64\Debug\ProjectArchitectures.txt
+D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\Newtonsoft.Json.dll

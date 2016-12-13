@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T12:24:50.921</Modified>
+      <Modified>2016-12-13T12:46:49.751</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.exe">
       <PackagePath>entrypoint\CommunalEating.exe</PackagePath>
-      <Modified>2016-12-13T12:24:50.115</Modified>
+      <Modified>2016-12-13T12:46:48.615</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Makuro\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -103,6 +103,10 @@
     <AppxPackagedFile Include="C:\Users\Makuro\.nuget\packages\Microsoft.Xaml.Behaviors.Uwp.Managed\2.0.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
       <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
       <Modified>2016-10-19T15:07:18.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Makuro\.nuget\packages\Newtonsoft.Json\9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2016-06-13T21:06:14.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Makuro\.nuget\packages\runtime.any.System.Private.DataContractSerialization\4.1.0\lib\netcore50\System.Private.DataContractSerialization.dll">
       <PackagePath>System.Private.DataContractSerialization.dll</PackagePath>
@@ -513,11 +517,11 @@
     <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T12:24:50.474</Modified>
+      <Modified>2016-12-13T12:46:49.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Dokumenter\Projekts\CommunalEating\CommunalEating\bin\x64\Debug\Core\CommunalEating.exe">
       <PackagePath>CommunalEating.exe</PackagePath>
-      <Modified>2016-12-13T12:24:50.920</Modified>
+      <Modified>2016-12-13T12:46:49.745</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
