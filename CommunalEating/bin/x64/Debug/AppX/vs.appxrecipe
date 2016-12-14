@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T21:58:20.965</Modified>
+      <Modified>2016-12-13T23:17:59.433</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.exe">
       <PackagePath>entrypoint\CommunalEating.exe</PackagePath>
-      <Modified>2016-12-13T21:58:19.822</Modified>
+      <Modified>2016-12-13T23:17:57.739</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -508,7 +508,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.xr.xml">
       <PackagePath>CommunalEating.xr.xml</PackagePath>
-      <Modified>2016-12-13T21:55:15.129</Modified>
+      <Modified>2016-12-13T23:17:57.382</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -517,11 +517,11 @@
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T21:58:20.532</Modified>
+      <Modified>2016-12-13T23:17:58.870</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\Core\CommunalEating.exe">
       <PackagePath>CommunalEating.exe</PackagePath>
-      <Modified>2016-12-13T21:58:20.961</Modified>
+      <Modified>2016-12-13T23:17:59.424</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
