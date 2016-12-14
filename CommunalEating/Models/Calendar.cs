@@ -30,11 +30,11 @@ namespace CommunalEating.Models
         // # I know - I too am ashamed of this snippet
         public Calendar()
         {
-            today = DateTime.Now;
-            day1 = DateTime.Now;
-            day2 = DateTime.Now;
-            day3 = DateTime.Now;
-            day4 = DateTime.Now;
+            today = DateTime.Today;
+            day1 = DateTime.Today;
+            day2 = DateTime.Today;
+            day3 = DateTime.Today;
+            day4 = DateTime.Today;
             if (today.DayOfWeek == DayOfWeek.Monday)
             {
                 day2 = day2.AddDays(1);
@@ -107,15 +107,15 @@ namespace CommunalEating.Models
         }
         public DateTime Day2Date
         {
-            get { return day2; }
+            get { return day2.Date; }
         }
         public DateTime Day3Date
         {
-            get { return day3; }
+            get { return day3.Date; }
         }
         public DateTime Day4Date
         {
-            get { return day4; }
+            get { return day4.Date; }
         }
 
         // # Property to easily get a day (either today, or one of the next 3 days)

@@ -88,9 +88,17 @@ namespace CommunalEating
         public RelayCommand HSaveCommand { get; set; }
         public RelayCommand HLoadCommand { get; set; }
         #endregion
+
+        #region Henrik
         // # The front/overview four days objects
         private Calendar days;
-        private Worker workers;
+        private HostDinner day1;
+        private HostDinner day2;
+        private HostDinner day3;
+        private HostDinner day4;
+        #endregion
+
+        // private Worker workers;
         private int _address;
         private string _email;
         private int _housePick;
@@ -107,7 +115,8 @@ namespace CommunalEating
 
             #endregion
 
-
+            // IsThursday();
+            // workers = new Worker("", "", "");
 
             #region jacob
 
@@ -119,9 +128,14 @@ namespace CommunalEating
             Singelton.GetInstance().Households.Add(new Household(5, "test"));
             #endregion
 
-            // IsThursday();
-            // workers = new Worker("", "", "");
+
+            #region Henrik
             days = new Calendar();
+            day1 = new HostDinner("Kødsovs","Serveres med yadada","Kan indeholde kød",5,500,DateTime.Today);
+            day2 = new HostDinner("En anden ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(1));
+            day3 = new HostDinner("En tredje ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(2));
+            day4 = new HostDinner("Og den sidste ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(3));
+            #endregion
         }
 
         #region Jacob
@@ -134,7 +148,7 @@ namespace CommunalEating
 
         public void HAdd() //used to call the add command on the singelton object of household
         {
-            Singelton.GetInstance().Households.Add(new Household(Address,Email));
+            Singelton.GetInstance().Households.Add(new Household(Address, Email));
             OnPropertyChanged();
         }
 
@@ -157,6 +171,7 @@ namespace CommunalEating
 
 
 
+        #region Henrik
         // # Properties to get the 4 days on the front/overview
         public String Day1
         {
@@ -175,11 +190,185 @@ namespace CommunalEating
             get { return days.Day4; }
         }
 
-        // # Property to get IsThursday value
-        public bool ThursdayChecked
+        //public DateTime testDate { get { return days.Day1Date; }  }
+        //public DateTime testDate2 { get { return day1.Date; } }
+
+        // # (Properties) Get the food/description for the following eating days
+        #region FoodDescription
+        public String day1Headline
         {
-            get { return days.IsThursday(); }
+            get
+            {
+                String x = "";
+                if (days.Day1Date == day1.Date)
+                    x = day1.Headline;
+                return x;
+            }
         }
+        public String day1Host
+        {
+            get
+            {
+                String x = "Ingen Arrangør";
+                if (days.Day1Date == day1.Date)
+                    x = day1.Host.ToString();
+                return x;
+            }
+        }
+        public String day1Description
+        {
+            get
+            {
+                String x = "";
+                if (days.Day1Date == day1.Date)
+                    x = day1.Description;
+                return x;
+            }
+        }
+        public String day1Note
+        {
+            get
+            {
+                String x = "";
+                if (days.Day1Date == day1.Date)
+                    x = day1.AdditionalNote;
+                return x;
+            }
+        }
+        // End day one
+        public String day2Headline
+        {
+            get
+            {
+                String x = "";
+                if (days.Day2Date == day2.Date)
+                    x = day2.Headline;
+                return x;
+            }
+        }
+        public String day2Host
+        {
+            get
+            {
+                String x = "Ingen Arrangør";
+                if (days.Day2Date == day2.Date)
+                    x = day2.Host.ToString();
+                return x;
+            }
+        }
+        public String day2Description
+        {
+            get
+            {
+                String x = "";
+                if (days.Day2Date == day2.Date)
+                    x = day2.Description;
+                return x;
+            }
+        }
+        public String day2Note
+        {
+            get
+            {
+                String x = "";
+                if (days.Day2Date == day2.Date)
+                    x = day1.AdditionalNote;
+                return x;
+            }
+        }
+        // End day two
+        public String day3Headline
+        {
+            get
+            {
+                String x = "";
+                if (days.Day3Date == day3.Date)
+                    x = day3.Headline;
+                return x;
+            }
+        }
+        public String day3Host
+        {
+            get
+            {
+                String x = "Ingen Arrangør";
+                if (days.Day3Date == day3.Date)
+                    x = day3.Host.ToString();
+                return x;
+            }
+        }
+        public String day3Description
+        {
+            get
+            {
+                String x = "";
+                if (days.Day3Date == day3.Date)
+                    x = day3.Description;
+                return x;
+            }
+        }
+        public String day3Note
+        {
+            get
+            {
+                String x = "";
+                if (days.Day3Date == day3.Date)
+                    x = day3.AdditionalNote;
+                return x;
+            }
+        }
+        // End day three
+        public String day4Headline
+        {
+            get
+            {
+                String x = "";
+                if (days.Day4Date == day4.Date)
+                    x = day4.Headline;
+                return x;
+            }
+        }
+        public String day4Host
+        {
+            get
+            {
+                String x = "Ingen Arrangør";
+                if (days.Day4Date == day4.Date)
+                    x = day4.Host.ToString();
+                return x;
+            }
+        }
+        public String day4Description
+        {
+            get
+            {
+                String x = "";
+                if (days.Day4Date == day4.Date)
+                    x = day4.Description;
+                return x;
+            }
+        }
+        public String day4Note
+        {
+            get
+            {
+                String x = "";
+                if (days.Day4Date == day4.Date)
+                    x = day4.AdditionalNote;
+                return x;
+            }
+        }
+        // End day four 
+        #endregion
+
+
+        // ## No longer in use
+        // # Property to get IsThursday value
+        //public bool ThursdayChecked
+        //{
+        //    get { return days.IsThursday(); }
+        //} 
+        #endregion
 
         //public bool IsItThursday
         //{
@@ -194,7 +383,7 @@ namespace CommunalEating
         //  return testWorkser.GetThursday();
         //}
 
-        #region MyRegion
+        #region PropertyChanged
 
         public event PropertyChangedEventHandler PropertyChanged;
 
