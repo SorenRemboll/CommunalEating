@@ -86,8 +86,8 @@
       <RootProperty Name="Header" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="ItemsSource" />
-      <RootProperty Name="SelectedIndex" />
       <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="SelectedIndex" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Label" />
@@ -154,6 +154,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
@@ -167,7 +168,6 @@
       <RootMethod Name="GetAccessibilityView" />
       <RootMethod Name="SetAccessibilityView" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="CommunalEating.MainPage" />
     <RootType FullName="CommunalEating.regenskab" />
   </Roots.RootTypes>

@@ -16,7 +16,7 @@ namespace CommunalEating.Models
 
         #region Constructor
 
-        public Reservation(int dinnerId, int noOfAdults, int noOfTeens, int noOfKids, int noOfBabies)
+        public Reservation(int noOfAdults, int noOfTeens, int noOfKids, int noOfBabies)
         {
             _dinnerId = dinnerId;
             _noOfAdults = noOfAdults;
