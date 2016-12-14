@@ -15,7 +15,7 @@ namespace CommunalEating
     class ViewModel : INotifyPropertyChanged
     {
 
-        #region Alex
+        #region Alex [RESERVATION]
 
         private ObservableCollection<Reservation> _reservations;
         private int _noOfAdults;
@@ -55,7 +55,7 @@ namespace CommunalEating
 
         #endregion
 
-        #region Jacob
+        #region Jacob [HOUSEHOLD]
 
         public int HousePick
         {
@@ -86,6 +86,7 @@ namespace CommunalEating
         public RelayCommand HAddCommand { get; set; }
         public RelayCommand HRemoveCommand { get; set; }
         #endregion
+        
         // # The front/overview four days objects
         private Calendar days;
         private Worker workers;
@@ -98,10 +99,10 @@ namespace CommunalEating
         // # Constructor
         public ViewModel()
         {
-            #region Alex
+            #region Alex [RESERVATION]
 
             _reservations = Singelton.GetInstance().Reservations;
-            Singelton.GetInstance().Reservations.Add(new Reservation(0,0,0,0)); 
+            Singelton.GetInstance().Reservations.Add(new Reservation(1,1,1,1)); 
 
             #endregion
 
@@ -120,7 +121,7 @@ namespace CommunalEating
             days = new Calendar();
         }
 
-        #region Jacob
+        #region Jacob [HOUSEHOLD]
 
         public void HRemove()
         {
@@ -138,6 +139,7 @@ namespace CommunalEating
 
 
         // # Properties to get the 4 days on the front/overview
+
         public String Day1
         {
             get { return days.Day1; }
@@ -174,7 +176,7 @@ namespace CommunalEating
         //  return testWorkser.GetThursday();
         //}
 
-        #region MyRegion
+        #region OnPropertyChanged
 
         public event PropertyChangedEventHandler PropertyChanged;
 

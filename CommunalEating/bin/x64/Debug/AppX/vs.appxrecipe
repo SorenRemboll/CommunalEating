@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T23:17:59.433</Modified>
+      <Modified>2016-12-14T19:47:50.570</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.exe">
       <PackagePath>entrypoint\CommunalEating.exe</PackagePath>
-      <Modified>2016-12-13T23:17:57.739</Modified>
+      <Modified>2016-12-14T19:47:48.574</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -462,53 +462,53 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\Images\info.png">
       <PackagePath>Images\info.png</PackagePath>
-      <Modified>2016-12-13T15:10:30.904</Modified>
+      <Modified>2016-12-14T19:44:00.967</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\Images\FAQ.png">
       <PackagePath>Images\FAQ.png</PackagePath>
-      <Modified>2016-12-13T15:10:30.903</Modified>
+      <Modified>2016-12-14T19:44:00.967</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2016-12-13T15:10:30.221</Modified>
+      <Modified>2016-12-14T19:44:00.958</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T15:10:30.222</Modified>
+      <Modified>2016-12-14T19:44:00.959</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T15:10:30.222</Modified>
+      <Modified>2016-12-14T19:44:00.960</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T15:10:30.223</Modified>
+      <Modified>2016-12-14T19:44:00.960</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T15:10:30.224</Modified>
+      <Modified>2016-12-14T19:44:00.961</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T15:10:30.225</Modified>
+      <Modified>2016-12-14T19:44:00.962</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T15:10:30.226</Modified>
+      <Modified>2016-12-14T19:44:00.963</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2016-12-13T15:10:31.084</Modified>
+      <Modified>2016-12-14T19:44:00.983</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\CommunalEating.xr.xml">
       <PackagePath>CommunalEating.xr.xml</PackagePath>
-      <Modified>2016-12-13T23:17:57.382</Modified>
+      <Modified>2016-12-14T19:47:48.269</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -517,11 +517,11 @@
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-13T23:17:58.870</Modified>
+      <Modified>2016-12-14T19:47:50.045</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\bin\x64\Debug\Core\CommunalEating.exe">
       <PackagePath>CommunalEating.exe</PackagePath>
-      <Modified>2016-12-13T23:17:59.424</Modified>
+      <Modified>2016-12-14T19:47:50.565</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
