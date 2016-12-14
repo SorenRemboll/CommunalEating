@@ -11,12 +11,14 @@ namespace CommunalEating.Models
     {
         private static Singelton _instance = new Singelton();
         public ObservableCollection<Household> Households { get; set; }
-        public ObservableCollection<Reservation> Type { get; set; }
+        public ObservableCollection<Reservation> Reservations { get; set; }
+
 
         public Singelton()
         {
             //Here is where the objects are created
             Households = new ObservableCollection<Household>();
+            Reservations = new ObservableCollection<Reservation>();
 
         }
 

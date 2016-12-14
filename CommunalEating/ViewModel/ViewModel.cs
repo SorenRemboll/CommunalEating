@@ -18,11 +18,39 @@ namespace CommunalEating
         #region Alex
 
         private ObservableCollection<Reservation> _reservations;
+        private int _noOfAdults;
+        private int _noOfTeens;
+        private int _noOfYoungsters;
+        private int _noOfKids;
 
         public ObservableCollection<Reservation> Reservations
         {
             get { return _reservations; }
-            set { _reservations = value;}
+            set { _reservations = value; OnPropertyChanged(); }
+        }
+
+        public int NoOfAdults
+        {
+            get { return _noOfAdults; }
+            set { _noOfAdults = value; OnPropertyChanged(); }
+        }
+
+        public int NoOfTeens
+        {
+            get { return _noOfTeens; }
+            set { _noOfTeens = value; OnPropertyChanged(); }
+        }
+
+        public int NoOfYoungsters
+        {
+            get { return _noOfYoungsters; }
+            set { _noOfYoungsters = value; OnPropertyChanged(); }
+        }
+
+        public int NoOfKids
+        {
+            get { return _noOfKids; }
+            set { _noOfKids = value; OnPropertyChanged(); }
         }
 
         #endregion
@@ -32,7 +60,7 @@ namespace CommunalEating
         public int HousePick
         {
             get { return _housePick; }
-            set { _housePick = value; OnPropertyChanged();}
+            set { _housePick = value; OnPropertyChanged(); }
         }
 
         public ObservableCollection<Household> Households
@@ -66,17 +94,16 @@ namespace CommunalEating
         private int _housePick;
 
 
-        // private bool isThursday;
 
         // # Constructor
         public ViewModel()
         {
             #region Alex
 
-//            _reservations = Singelton.GetInstance().Reservations;
-//            Singelton.GetInstance().Households.Add(new Reservation());
+            _reservations = Singelton.GetInstance().Reservations;
+            Singelton.GetInstance().Reservations.Add(new Reservation(0, 0, 0, 0));
 
-                #endregion
+            #endregion
 
 
 
@@ -102,7 +129,7 @@ namespace CommunalEating
         }
         public void HAdd()
         {
-            Singelton.GetInstance().Households.Add(new Household(Address,Email));
+            Singelton.GetInstance().Households.Add(new Household(Address, Email));
             OnPropertyChanged();
         }
 
@@ -128,11 +155,11 @@ namespace CommunalEating
             get { return days.Day4; }
         }
 
-    // # Property to get IsThursday value
-    public bool ThursdayChecked
-    {
-      get { return days.IsThursday(); }
-    }
+        // # Property to get IsThursday value
+        public bool ThursdayChecked
+        {
+            get { return days.IsThursday(); }
+        }
 
         //public bool IsItThursday
         //{
