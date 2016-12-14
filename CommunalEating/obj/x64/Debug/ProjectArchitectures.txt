@@ -1,1 +1,1 @@
-C:\Users\Stormeal\Source\Repos\CommunalEating\CommunalEating\CommunalEating.csproj;x64
+D:\Dokumenter\Projekts\CommunalEating\CommunalEating\CommunalEating.csproj;x64
