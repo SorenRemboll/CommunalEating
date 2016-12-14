@@ -85,6 +85,8 @@ namespace CommunalEating
         private ObservableCollection<Household> _households;
         public RelayCommand HAddCommand { get; set; }
         public RelayCommand HRemoveCommand { get; set; }
+        public RelayCommand HSaveCommand { get; set; }
+        public RelayCommand HLoadCommand { get; set; }
         #endregion
         // # The front/overview four days objects
         private Calendar days;
@@ -112,6 +114,8 @@ namespace CommunalEating
             _households = Singelton.GetInstance().Households;
             HAddCommand = new RelayCommand(HAdd);
             HRemoveCommand = new RelayCommand(HRemove);
+            HSaveCommand = new RelayCommand(SaveHousehold);
+            HLoadCommand = new RelayCommand(LoadHousehold);
             Singelton.GetInstance().Households.Add(new Household(5, "test"));
             #endregion
 
@@ -122,17 +126,33 @@ namespace CommunalEating
 
         #region Jacob
 
-        public void HRemove()
+        public void HRemove() //Used to call the remove command on the singelton object of household at (housepick) location
         {
             Singelton.GetInstance().Households.RemoveAt(HousePick);
             OnPropertyChanged();
         }
-        public void HAdd()
+
+        public void HAdd() //used to call the add command on the singelton object of household
         {
-            Singelton.GetInstance().Households.Add(new Household(Address, Email));
+            Singelton.GetInstance().Households.Add(new Household(Address,Email));
             OnPropertyChanged();
         }
 
+        public async void SaveHousehold()
+        {
+            PersistenceFacade.SaveHouseholdJason(Singelton.GetInstance().Households);
+        }
+
+        public async void LoadHousehold()
+        {
+            var household = await PersistenceFacade.LoadHouseholdJason();
+            Singelton.GetInstance().Households.Clear();
+            if (household != null)
+                foreach (var house in household)
+                {
+                    Singelton.GetInstance().Households.Add(house);
+                }
+        }
         #endregion
 
 
