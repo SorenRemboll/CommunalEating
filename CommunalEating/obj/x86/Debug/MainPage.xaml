@@ -19,7 +19,7 @@
                     <!-- tab1 -->
                     <Grid>
 
-                      
+
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*" />
                             <ColumnDefinition Width="1*" />
@@ -130,7 +130,7 @@
                                        Foreground="DarkGray"
                                        FontSize="16"
                                        FontWeight="ExtraLight" />
-                            <TextBlock  Text='{Binding}'/>
+                            <TextBlock  Text='{Binding}' />
                         </StackPanel>
                         <!-- END DAY THREE -->
                         <!-- START DAY FOUR -->
@@ -841,10 +841,16 @@
                     <!-- tab5 -->
                     <Grid>
                         <CalendarView HorizontalAlignment="Left"
-                                      Margin="28,25,0,0"
+                                      Margin="80.478,41.911,0,0"
                                       VerticalAlignment="Top"
                                       Height="400"
-                                      Width="480">
+                                      Width="796.453"
+                                      RenderTransformOrigin="0.5,0.5"
+                                      UseLayoutRounding="False"
+                                      d:LayoutRounding="Auto">
+                            <CalendarView.RenderTransform>
+                                <CompositeTransform Rotation="0.149" />
+                            </CalendarView.RenderTransform>
                             <CalendarView.FirstDayOfWeek>
                                 <Globalization:DayOfWeek>Monday</Globalization:DayOfWeek>
                             </CalendarView.FirstDayOfWeek>
@@ -853,7 +859,7 @@
                         <Button x:ConnectionId='1' x:Name="button"
                                 Content="Tilføj deltagelse"
                                 HorizontalAlignment="Left"
-                                Margin="133,465,0,0"
+                                Margin="918,89,0,0"
                                 VerticalAlignment="Top">
                             <Interactivity:Interaction.Behaviors>
                                 <Core:EventTriggerBehavior EventName="Click">

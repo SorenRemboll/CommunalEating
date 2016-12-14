@@ -124,7 +124,13 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="RenderTransform" />
       <RootProperty Name="FirstDayOfWeek" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
+      <RootProperty Name="Rotation" />
     </RootType>
     <RootType FullName="Windows.Globalization.DayOfWeek" />
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
