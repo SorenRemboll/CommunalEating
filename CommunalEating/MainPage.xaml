@@ -522,7 +522,7 @@
                                                VerticalAlignment="Top"
                                                HorizontalAlignment="Left" />
 
-                                    <TextBlock Text="Afryder 4"
+                                    <TextBlock Text="Torsdag Afryder"
                                                FontSize="20"
                                                Margin="15,410,0,0"
                                                VerticalAlignment="Top"
@@ -629,7 +629,7 @@
                                                HorizontalAlignment="Left"
                                                Grid.Column="1" />
 
-                                    <TextBlock Text="Afryder 4"
+                                    <TextBlock Text="Torsdag Afryder"
                                                FontSize="20"
                                                Margin="15,410,0,0"
                                                VerticalAlignment="Top"
@@ -677,19 +677,6 @@
                                              Margin="15,440,0,0"
                                              Width="250"
                                              Grid.Column="1" />
-
-
-                                    <TextBlock Text="Torsdag"
-                                               FontSize="20"
-                                               Margin="325,440,0,0"
-                                               VerticalAlignment="Top"
-                                               HorizontalAlignment="Left"
-                                               Grid.Column="1" />
-
-                                    <CheckBox VerticalAlignment="Top"
-                                              HorizontalAlignment="Left"
-                                              Margin="300,440,0,0"
-                                              Grid.Column="1" />
 
 
                                     <AppBarButton Label="Tilføj ændringer"
