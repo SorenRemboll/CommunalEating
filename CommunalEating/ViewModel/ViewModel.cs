@@ -335,6 +335,8 @@ namespace CommunalEating
             _calculation = Singelton.GetInstance().Calculation;
             Singelton.GetInstance().Calculation.Add(new Calcualtor(0,0,0,0));
 
+            
+
                 #endregion
 
         
@@ -361,11 +363,71 @@ namespace CommunalEating
             #endregion
         }
 
-    #region Methods
+        #region Methods
 
-    #region Jacob
+        #region Alex [CALCULATOR]
 
-    public void HRemove() //Used to call the remove command on the singelton object of household at (housepick) location
+        public double calcNoOfAdults()
+        {
+            HostDinner hd = new HostDinner("","","",0,0,DateTime.Now);
+            if (_noOfAdults == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                double result = hd.Price / (_noOfAdults / valueOfAdults) + (_noOfTeens / valueOfTeens) + (_noOfKids / valueOfKids);
+                return result;
+            }
+
+        }
+
+        public double calcNoOfTeens()
+        {
+            HostDinner hd = new HostDinner("", "", "", 0, 0, DateTime.Now);
+            if (_noOfTeens == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                double result = hd.Price / ((_noOfAdults / valueOfAdults) + (_noOfTeens / valueOfTeens) + (_noOfKids / valueOfKids) / valueOfTeens);
+                return result;
+            }
+
+
+        }
+
+        public double calcNoOfKids()
+        {
+            HostDinner hd = new HostDinner("", "", "", 0, 0, DateTime.Now);
+            if (_noOfKids == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                double result = hd.Price / ((_noOfAdults / valueOfAdults) + (_noOfTeens / valueOfTeens) + (_noOfKids / valueOfKids) / valueOfKids);
+                return result;
+            }
+        }
+
+        public double calcNoOfBabies()
+        {
+            return 0;
+        }
+
+        public double calcResult()
+        {
+            double result = calcNoOfAdults() + calcNoOfTeens() + calcNoOfKids() + calcNoOfBabies();
+            return result;
+        }
+
+        #endregion
+
+        #region Jacob
+
+        public void HRemove() //Used to call the remove command on the singelton object of household at (housepick) location
     {
         Singelton.GetInstance().Households.RemoveAt(HousePick);
         OnPropertyChanged();
