@@ -1,65 +1,94 @@
 ﻿using Windows.ApplicationModel.Activation;
 using Windows.Devices.Bluetooth.Background;
+using CommunalEating.Models;
 
 namespace CommunalEating
 {
-    public class Calcualtor
+    public class Calcualtor : Reservation
     {
+        private int valueOfAdults = 1;
+        private double valueOfTeens = 0.5;
+        private double valueOfKids = 0.25;
+        private int valueOfBabies = 0;
 
-        private int day1 = 1;
-        private int day2 = 1;
-        private int day3 = 1;
-        private int day4 = 1;
-
-        //private int voksen = 1;
-        //private double ung = 0.5;
-        //private double barn = 0.25;
-        //private int baby = 0;
-        //private double _ung;
-        //private int _baby = 0;
-
-        //private double totalpris = voksen + barn + ung + baby;
+        private HostDinner hd = new HostDinner("", "", "", "", 0);
 
 
-        //public int Voksen
-        //{
-        //    get { return voksen; }
-        //    set { voksen = value; }
-        //}
 
-        //public double ung
-        //{
-        //    get { return _ung; }
-        //    set { _ung = value; }
-        //}
+        public Calcualtor(int noOfAdults, int noOfTeens, int noOfKids, int noOfBabies) : base(noOfAdults, noOfTeens, noOfKids, noOfBabies)
 
-        //public double Barn
-        //{
-        //    get { return barn; }
-        //    set { barn = value; }
-        //}
+        {
+            noOfAdults = 0;
+            noOfTeens = 1;
+            noOfKids = 1;
+            noOfBabies = 1;
 
-        //public int Baby
-        //{
-        //    get { return _baby; }
-        //    set { _baby = value; }
-        //}
+        }
+
+        public double calcNoOfAdults()
+        {
+            if (noOfAdults== 0)
+            {
+                return 0;
+            }
+            else
+            {
+                double result = hd.Price / (noOfAdults / valueOfAdults) + (noOfTeens / valueOfTeens) + (noOfKids / valueOfKids);
+                return result;
+            }
+
+        }
+
+        public double calcNoOfTeens()
+        {
+            if (noOfTeens == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                double result = hd.Price / ((noOfAdults / valueOfAdults) + (noOfTeens / valueOfTeens) + (noOfKids / valueOfKids) / valueOfTeens);
+                return result;
+            }
+
+            
+        }
+
+        public double calcNoOfKids()
+        {
+            if (noOfKids == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                double result = hd.Price / ((noOfAdults / valueOfAdults) + (noOfTeens / valueOfTeens) + (noOfKids / valueOfKids) / valueOfKids);
+                return result;
+            }
+        }
+
+        public double calcNoOfBabies()
+        {
+            return 0;
+        }
+
+        public double calcResult()
+        {
+            double result = calcNoOfAdults() + calcNoOfTeens() + calcNoOfKids() + calcNoOfBabies();
+            return result;
+        }
+        // PENIS PENIS PENIS PENIS TIS TIS TIS
 
 
-        //public Calcualtor()
-        //{
-        //    if (day1 != isChecked);
-        //    if (day2 != isChecked);
-        //    if (day3 != isChecked);
-        //    if (day4 != isChecked);
 
-        //}
-        
+
+
+
     }
-    
+
 }
 
 
-        
-    
-    
+
+
+
