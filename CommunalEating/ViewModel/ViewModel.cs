@@ -96,7 +96,7 @@ namespace CommunalEating
         public RelayCommand HLoadCommand { get; set; }
         #endregion
 
-        #region Henrik
+        #region Properties (creating objects)
         // # The front/overview four days objects
         private Calendar days;
 
@@ -104,83 +104,7 @@ namespace CommunalEating
         private HostDinner day2;
         private HostDinner day3;
         private HostDinner day4;
-        #endregion
-
-        // private Worker workers;
-        private int _address;
-        private string _email;
-        private int _housePick;
-	
-
-        #endregion
-
-
-        // # Constructor
-        public ViewModel()
-        {
-            #region Alex
-
-            _reservations = Singelton.GetInstance().Reservations;
-            Singelton.GetInstance().Reservations.Add(new Reservation(0, 0, 0, 0));
-
-            #endregion
-
-            // IsThursday();
-            // workers = new Worker("", "", "");
-
-            #region jacob
-
-            _households = Singelton.GetInstance().Households;
-            HAddCommand = new RelayCommand(HAdd);
-            HRemoveCommand = new RelayCommand(HRemove);
-            HSaveCommand = new RelayCommand(SaveHousehold);
-            HLoadCommand = new RelayCommand(LoadHousehold);
-            Singelton.GetInstance().Households.Add(new Household(5, "test"));
-            #endregion
-
-
-            #region Henrik
-            days = new Calendar();
-            day1 = new HostDinner("Kødsovs", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today);
-            day2 = new HostDinner("En anden ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(1));
-            day3 = new HostDinner("En tredje ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(2));
-            day4 = new HostDinner("Og den sidste ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(3));
-            #endregion
-        }
-
-        #region Methods
-
-        #region Jacob
-
-        public void HRemove() //Used to call the remove command on the singelton object of household at (housepick) location
-        {
-            Singelton.GetInstance().Households.RemoveAt(HousePick);
-            OnPropertyChanged();
-        }
-
-        public void HAdd() //used to call the add command on the singelton object of household
-        {
-            Singelton.GetInstance().Households.Add(new Household(Address, Email));
-            OnPropertyChanged();
-        }
-
-        public async void SaveHousehold()
-        {
-            PersistenceFacade.SaveHouseholdJason(Singelton.GetInstance().Households);
-        }
-
-        public async void LoadHousehold()
-        {
-            var household = await PersistenceFacade.LoadHouseholdJason();
-            Singelton.GetInstance().Households.Clear();
-            if (household != null)
-                foreach (var house in household)
-                {
-                    Singelton.GetInstance().Households.Add(house);
-                }
-        }
-        #endregion
-
+#endregion
         #region Henrik
         // # Properties to get the 4 days on the front/overview
         public String Day1
@@ -379,6 +303,77 @@ namespace CommunalEating
         //    get { return days.IsThursday(); }
         //} 
         #endregion
+
+        #endregion
+
+
+        // # Constructor
+        public ViewModel()
+        {
+            #region Alex
+
+            _reservations = Singelton.GetInstance().Reservations;
+            Singelton.GetInstance().Reservations.Add(new Reservation(0, 0, 0, 0));
+
+            #endregion
+
+            // IsThursday();
+            // workers = new Worker("", "", "");
+
+            #region jacob
+
+            _households = Singelton.GetInstance().Households;
+            HAddCommand = new RelayCommand(HAdd);
+            HRemoveCommand = new RelayCommand(HRemove);
+            HSaveCommand = new RelayCommand(SaveHousehold);
+            HLoadCommand = new RelayCommand(LoadHousehold);
+            Singelton.GetInstance().Households.Add(new Household(5, "test"));
+            #endregion
+
+
+            #region Henrik
+            days = new Calendar();
+            day1 = new HostDinner("Kødsovs", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today);
+            day2 = new HostDinner("En anden ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(4));
+            day3 = new HostDinner("En tredje ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(5));
+            day4 = new HostDinner("Og den sidste ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(6));
+            #endregion
+        }
+
+        #region Methods
+
+        #region Jacob
+
+        public void HRemove() //Used to call the remove command on the singelton object of household at (housepick) location
+        {
+            Singelton.GetInstance().Households.RemoveAt(HousePick);
+            OnPropertyChanged();
+        }
+
+        public void HAdd() //used to call the add command on the singelton object of household
+        {
+            Singelton.GetInstance().Households.Add(new Household(Address, Email));
+            OnPropertyChanged();
+        }
+
+        public async void SaveHousehold()
+        {
+            PersistenceFacade.SaveHouseholdJason(Singelton.GetInstance().Households);
+        }
+
+        public async void LoadHousehold()
+        {
+            var household = await PersistenceFacade.LoadHouseholdJason();
+            Singelton.GetInstance().Households.Clear();
+            if (household != null)
+                foreach (var house in household)
+                {
+                    Singelton.GetInstance().Households.Add(house);
+                }
+        }
+        #endregion
+        #endregion
+
 
         private void backButton(object sender, EventArgs e)
         {
