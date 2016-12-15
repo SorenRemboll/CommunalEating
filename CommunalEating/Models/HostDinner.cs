@@ -65,7 +65,7 @@ namespace CommunalEating.Models
             _price = 0.0;
         }
 
-        // # Constructor that takes values
+        // # Constructor that takes values (+price)
         public HostDinner(String _headline,
                           String _description,
                           String _additionalNote,
@@ -78,6 +78,21 @@ namespace CommunalEating.Models
             this._additionalNote = _additionalNote;
             this._host = _host;
             this._price = _price;
+            this._date = _date;
+        }
+
+        // # Constructor that takes values (-price)
+        public HostDinner(String _headline,
+                          String _description,
+                          String _additionalNote,
+                          int _host,
+                          DateTime _date)
+        {
+            this._headline = _headline;
+            this._description = _description;
+            this._additionalNote = _additionalNote;
+            this._host = _host;
+            this._price = 0;
             this._date = _date;
         }
     }
