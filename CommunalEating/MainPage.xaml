@@ -283,7 +283,8 @@
                                                   Grid.Row="1"
                                                   VerticalAlignment="Bottom"
                                                   HorizontalAlignment="Left"
-                                                  Margin="394,0,0,16">
+                                                  Margin="394,0,0,16"
+                                                  Command="{Binding HLoadCommand}">
                                         <SymbolIcon Symbol="OpenFile" />
                                     </AppBarButton>
                                     <ListView Grid.Row="1"

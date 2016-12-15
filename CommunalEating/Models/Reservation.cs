@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CommunalEating.Models
 {
-    class Reservation 
+    public class Reservation 
     {
         private int _dinnerId;
         private int _noOfAdults;
@@ -58,6 +58,7 @@ namespace CommunalEating.Models
             get { return _noOfBabies; }
             set { _noOfBabies = value; }
         }
+
 
         #endregion
 
