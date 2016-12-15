@@ -77,7 +77,7 @@ namespace CommunalEating
             double result = calcNoOfAdults() + calcNoOfTeens() + calcNoOfKids() + calcNoOfBabies();
             return result;
         }
-        // PENIS PENIS PENIS PENIS TIS TIS TIS
+
 
 
 
