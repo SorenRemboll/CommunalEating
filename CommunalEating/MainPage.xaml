@@ -275,7 +275,8 @@
                                                   Grid.Row="1"
                                                   VerticalAlignment="Bottom"
                                                   HorizontalAlignment="Left"
-                                                  Margin="300,0,0,0">
+                                                  Margin="300,0,0,0"
+                                                  Command="{Binding HSaveCommand}">
                                         <SymbolIcon Symbol="Save" />
                                     </AppBarButton>
                                     <AppBarButton Label="Indlæs Alle"
@@ -283,7 +284,8 @@
                                                   Grid.Row="1"
                                                   VerticalAlignment="Bottom"
                                                   HorizontalAlignment="Left"
-                                                  Margin="394,0,0,16">
+                                                  Margin="394,0,0,16"
+                                                  Command="{Binding HLoadCommand}">
                                         <SymbolIcon Symbol="OpenFile" />
                                     </AppBarButton>
                                     <ListView Grid.Row="1"

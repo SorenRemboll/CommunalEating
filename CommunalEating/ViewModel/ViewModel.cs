@@ -119,7 +119,6 @@ namespace CommunalEating
             HRemoveCommand = new RelayCommand(HRemove);
             HSaveCommand = new RelayCommand(SaveHousehold);
             HLoadCommand = new RelayCommand(LoadHousehold);
-            Singelton.GetInstance().Households.Add(new Household(5, "test"));
             #endregion
 
             // IsThursday();
@@ -141,6 +140,8 @@ namespace CommunalEating
         {
             Singelton.GetInstance().Households.Add(new Household(Address,Email));
             OnPropertyChanged();
+            Address = 0;
+            Email = "";
         }
 
         public async void SaveHousehold()
