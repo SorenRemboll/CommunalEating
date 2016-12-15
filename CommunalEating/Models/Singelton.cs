@@ -13,12 +13,14 @@ namespace CommunalEating.Models
         public ObservableCollection<Household> Households { get; set; }
         public ObservableCollection<Reservation> Reservations { get; set; }
 
+        public ObservableCollection<Calcualtor> Calculation { get; set; }
 
         public Singelton()
         {
             //Here is where the objects are created
             Households = new ObservableCollection<Household>();
             Reservations = new ObservableCollection<Reservation>();
+            Calculation = new ObservableCollection<Calcualtor>();
 
         }
 
