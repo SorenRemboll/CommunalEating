@@ -15,6 +15,8 @@ namespace CommunalEating
     class ViewModel : INotifyPropertyChanged
     {
 
+        #region Properties
+
         #region Alex
 
         private ObservableCollection<Reservation> _reservations;
@@ -53,6 +55,9 @@ namespace CommunalEating
             set { _noOfKids = value; OnPropertyChanged(); }
         }
 
+        private int _address;
+        private string _email;
+        private int _housePick;
         #endregion
 
         #region Jacob
@@ -91,10 +96,8 @@ namespace CommunalEating
         // # The front/overview four days objects
         private Calendar days;
         private Worker workers;
-        private int _address;
-        private string _email;
-        private int _housePick;
 
+        #endregion
 
 
         // # Constructor
@@ -123,6 +126,8 @@ namespace CommunalEating
             // workers = new Worker("", "", "");
             days = new Calendar();
         }
+
+        #region Methods
 
         #region Jacob
 
@@ -154,7 +159,6 @@ namespace CommunalEating
                 }
         }
         #endregion
-
 
 
         // # Properties to get the 4 days on the front/overview
@@ -194,7 +198,10 @@ namespace CommunalEating
         //  return testWorkser.GetThursday();
         //}
 
-        #region MyRegion
+        #endregion
+        
+        
+        #region PropertyChanged
 
         public event PropertyChangedEventHandler PropertyChanged;
 
