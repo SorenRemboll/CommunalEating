@@ -15,6 +15,7 @@ namespace CommunalEating
 {
     class PersistenceFacade
     {
+
         private static string jsonFileName = "Households.dat";
 
         public static async void SaveHouseholdJason(ObservableCollection<Household> households)
