@@ -10,6 +10,11 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
           Margin="40">
+        
+        <Grid.DataContext>
+            <local:ViewModel/>
+        </Grid.DataContext>
+        
         <Pivot Title="FællesspisningsApp">
             <PivotItem Header="Deltag">
 
@@ -94,11 +99,12 @@
                                   HorizontalAlignment="Left"
                                   Margin="30,400,0,0"
                                   Background="LightGray"
-                                  Width="200">
+                                  Width="200"
+                                  x:Name="backButton">
                         <SymbolIcon Symbol="Back" />
                         <interactivity:Interaction.Behaviors>
                             <core:EventTriggerBehavior EventName="Click">
-                                <core:NavigateToPageAction TargetPage="CommunalEating.MainPage" />
+                                <core:NavigateToPageAction TargetPage="CommunalEating.MainPage?pivotItems.SelectedIndex=3" />
                             </core:EventTriggerBehavior>
                         </interactivity:Interaction.Behaviors>
                     </AppBarButton>

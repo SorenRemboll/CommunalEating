@@ -41,11 +41,11 @@
             <local:ViewModel />
         </Grid.DataContext>
         <Grid Margin="40">
-            <Pivot Title="FællesspisningsApp">
+            <Pivot Title="FællesspisningsApp"
+                   x:Name="pivotItems">
                 <PivotItem Header="Oversigt">
                     <!-- tab1 -->
                     <Grid>
-
 
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1*" />
@@ -473,7 +473,6 @@
                             </PivotItem>
                             <PivotItem Header="Arbejdsopgaver">
 
-
                                 <Grid>
 
                                     <Grid.ColumnDefinitions>
@@ -483,7 +482,6 @@
                                         <ColumnDefinition Width="*" />
 
                                     </Grid.ColumnDefinitions>
-
 
                                     <!--Pane 1-->
 
@@ -528,8 +526,6 @@
                                                Margin="15,410,0,0"
                                                VerticalAlignment="Top"
                                                HorizontalAlignment="Left" />
-
-
 
                                     <TextBox VerticalAlignment="Top"
                                              HorizontalAlignment="Left"
@@ -579,7 +575,6 @@
                                              IsReadOnly="True"
                                              Background="LightGray"
                                              Width="250" />
-
 
                                     <!--Pane 2-->
 
@@ -679,7 +674,6 @@
                                              Width="250"
                                              Grid.Column="1" />
 
-
                                     <AppBarButton Label="Tilføj ændringer"
                                                   Grid.Column="1"
                                                   VerticalAlignment="Top"
@@ -727,7 +721,6 @@
                                    VerticalAlignment="Top"
                                    HorizontalAlignment="Left"
                                    Grid.Row="0" />
-
 
                         <DatePicker VerticalAlignment="Top"
                                     HorizontalAlignment="Center"
@@ -824,9 +817,6 @@
                             <SymbolIcon Symbol="Send" />
                         </AppBarButton>
 
-
-
-
                         <!--Pane 2-->
                         <TextBlock Text="Vælg Slut Dato"
                                    FontSize="20"
@@ -845,7 +835,8 @@
                                   Grid.Row="1"
                                   Margin="10"
                                   Background="LightGray"
-                                  Header="Tilmeldte Hustande" FontSize="20"
+                                  Header="Tilmeldte Hustande"
+                                  FontSize="20"
                                   ItemsSource="{Binding Households, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                   ItemTemplate="{StaticResource ListviewHustandTemplate}" />
 
@@ -883,7 +874,9 @@
                                       Margin="0,-0,0,0"
                                       Width="100"
                                       Height="75">
-                            <SymbolIcon Symbol="Pin" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <SymbolIcon Symbol="Pin"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center" />
                             <Interactivity:Interaction.Behaviors>
                                 <Core:EventTriggerBehavior EventName="Click">
                                     <Core:NavigateToPageAction TargetPage="CommunalEating.AttendHost" />
@@ -937,9 +930,7 @@
                                         anbefale at bruge en seperat email, og blot videre sende emails til den <LineBreak />
                                         adresse som du ønsker.
 
-
                                     </TextBlock>
-
 
                                 </Grid>
                             </PivotItem>
@@ -988,8 +979,6 @@
                                        Henrik Jeppesen <LineBreak />
                                        Alex Van Storm <LineBreak />
                                        Jacob Boeg Hansen
-
-
 
                                     </TextBlock>
                                 </Grid>

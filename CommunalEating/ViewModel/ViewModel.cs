@@ -6,6 +6,8 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
+using Windows.UI.Xaml.Controls;
 using CommunalEating.Annotations;
 using CommunalEating.Models;
 using Eventmaker.Common;
@@ -131,7 +133,7 @@ namespace CommunalEating
 
             #region Henrik
             days = new Calendar();
-            day1 = new HostDinner("Kødsovs","Serveres med yadada","Kan indeholde kød",5,500,DateTime.Today);
+            day1 = new HostDinner("Kødsovs", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today);
             day2 = new HostDinner("En anden ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(1));
             day3 = new HostDinner("En tredje ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(2));
             day4 = new HostDinner("Og den sidste ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(3));
@@ -168,8 +170,6 @@ namespace CommunalEating
                 }
         }
         #endregion
-
-
 
         #region Henrik
         // # Properties to get the 4 days on the front/overview
@@ -369,6 +369,11 @@ namespace CommunalEating
         //    get { return days.IsThursday(); }
         //} 
         #endregion
+
+        private void backButton(object sender, EventArgs e)
+        {
+            //INavigate(new Uri("MainPage.xaml?pivotItems.SelectedIndex = "));
+        }
 
         //public bool IsItThursday
         //{
