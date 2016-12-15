@@ -19,7 +19,7 @@ namespace CommunalEating
 
         #region Properties
 
-        #region Alex
+        #region Alex [RESERVATION]
 
         private ObservableCollection<Reservation> _reservations;
         private int _noOfAdults;
@@ -61,6 +61,18 @@ namespace CommunalEating
         private string _email;
         private int _housePick;
         #endregion
+
+        #region Alex [CALCULATOR]
+
+        private ObservableCollection<Calcualtor> _calculation;
+        private int valueOfAdults = 1;
+        private double valueOfTeens = 0.5;
+        private double valueOfKids = 0.25;
+        private int valueOfBabies = 0;
+
+        #endregion
+
+
 
         #region Jacob
 
@@ -104,7 +116,7 @@ namespace CommunalEating
         private HostDinner day2;
         private HostDinner day3;
         private HostDinner day4;
-#endregion
+        #endregion
         #region Henrik
         // # Properties to get the 4 days on the front/overview
         public String Day1
@@ -310,100 +322,110 @@ namespace CommunalEating
         // # Constructor
         public ViewModel()
         {
-            #region Alex
+            #region Alex [RESERVATION]
 
             _reservations = Singelton.GetInstance().Reservations;
             Singelton.GetInstance().Reservations.Add(new Reservation(0, 0, 0, 0));
 
             #endregion
 
-            // IsThursday();
-            // workers = new Worker("", "", "");
 
-            #region jacob
+            #region Alex [CALCULATOR]
 
-            _households = Singelton.GetInstance().Households;
+            _calculation = Singelton.GetInstance().Calculation;
+            Singelton.GetInstance().Calculation.Add(new Calcualtor(0,0,0,0));
+
+                #endregion
+
+        
+
+        // IsThursday();
+        // workers = new Worker("", "", "");
+
+        #region jacob
+
+        _households = Singelton.GetInstance().Households;
             HAddCommand = new RelayCommand(HAdd);
-            HRemoveCommand = new RelayCommand(HRemove);
-            HSaveCommand = new RelayCommand(SaveHousehold);
-            HLoadCommand = new RelayCommand(LoadHousehold);
-            #endregion
+        HRemoveCommand = new RelayCommand(HRemove);
+        HSaveCommand = new RelayCommand(SaveHousehold);
+        HLoadCommand = new RelayCommand(LoadHousehold);
+        #endregion
 
 
-            #region Henrik
-            days = new Calendar();
-            day1 = new HostDinner("Kødsovs", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today);
-            day2 = new HostDinner("En anden ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(4));
+        #region Henrik
+        days = new Calendar();
+        day1 = new HostDinner("Kødsovs", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today);
+        day2 = new HostDinner("En anden ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(4));
             day3 = new HostDinner("En tredje ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(5));
             day4 = new HostDinner("Og den sidste ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(6));
             #endregion
         }
 
-        #region Methods
+    #region Methods
 
-        #region Jacob
+    #region Jacob
 
-        public void HRemove() //Used to call the remove command on the singelton object of household at (housepick) location
-        {
-            Singelton.GetInstance().Households.RemoveAt(HousePick);
-            OnPropertyChanged();
-        }
-
-        public void HAdd() //used to call the add command on the singelton object of household
-        {
-            Singelton.GetInstance().Households.Add(new Household(Address, Email));
-            OnPropertyChanged();
-            Address = 0;
-            Email = "";
-        }
-
-        public async void SaveHousehold()
-        {
-            PersistenceFacade.SaveHouseholdJason(Singelton.GetInstance().Households);
-        }
-
-        public async void LoadHousehold()
-        {
-            var household = await PersistenceFacade.LoadHouseholdJason();
-            Singelton.GetInstance().Households.Clear();
-            if (household != null)
-                foreach (var house in household)
-                {
-                    Singelton.GetInstance().Households.Add(house);
-                }
-        }
-        #endregion
-        #endregion
-
-
-        private void backButton(object sender, EventArgs e)
-        {
-            //INavigate(new Uri("MainPage.xaml?pivotItems.SelectedIndex = "));
-        }
-
-        //public bool IsItThursday
-        //{
-        //    get { return _isThursday; }
-        //    set { _isItThursday = value; }
-        //}
-
-        //public bool IsThursday()
-        //{
-        //  Worker testWorkser = new Worker("Louise", "Bent", "Gunnar");
-
-        //  return testWorkser.GetThursday();
-        //}
-
-        #region PropertyChanged
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        [NotifyPropertyChangedInvocator]
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        #endregion
+    public void HRemove() //Used to call the remove command on the singelton object of household at (housepick) location
+    {
+        Singelton.GetInstance().Households.RemoveAt(HousePick);
+        OnPropertyChanged();
     }
+
+    public void HAdd() //used to call the add command on the singelton object of household
+    {
+        Singelton.GetInstance().Households.Add(new Household(Address, Email));
+        OnPropertyChanged();
+        Address = 0;
+        Email = "";
+    }
+
+    public async void SaveHousehold()
+    {
+        PersistenceFacade.SaveHouseholdJason(Singelton.GetInstance().Households);
+    }
+
+    public async void LoadHousehold()
+    {
+        var household = await PersistenceFacade.LoadHouseholdJason();
+        Singelton.GetInstance().Households.Clear();
+        if (household != null)
+            foreach (var house in household)
+            {
+                Singelton.GetInstance().Households.Add(house);
+            }
+    }
+    #endregion
+    #endregion
+
+
+    private void backButton(object sender, EventArgs e)
+    {
+        //INavigate(new Uri("MainPage.xaml?pivotItems.SelectedIndex = "));
+    }
+
+    //public bool IsItThursday
+    //{
+    //    get { return _isThursday; }
+    //    set { _isItThursday = value; }
+    //}
+
+    //public bool IsThursday()
+    //{
+    //  Worker testWorkser = new Worker("Louise", "Bent", "Gunnar");
+
+    //  return testWorkser.GetThursday();
+    //}
+
+    #region PropertyChanged
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    [NotifyPropertyChangedInvocator]
+    protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+
+    #endregion
+}
 }
