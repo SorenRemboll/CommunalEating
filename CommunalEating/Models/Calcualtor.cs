@@ -11,7 +11,7 @@ namespace CommunalEating
         private double valueOfKids = 0.25;
         private int valueOfBabies = 0;
 
-        private HostDinner hd = new HostDinner("", "", "", "", 0);
+        private HostDinner hd = new HostDinner();
 
 
 

@@ -469,7 +469,7 @@
                                         </CalendarView.FirstDayOfWeek>
 
                                     </CalendarView>
-                                    <TextBlock x:Name="textBlock copy"
+                                    <TextBlock x:Name="textBlock10"
                                                FontSize="20"
                                                HorizontalAlignment="Left"
                                                Margin="0,337,0,0"
