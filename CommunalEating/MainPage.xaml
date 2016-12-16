@@ -312,14 +312,15 @@
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="*" />
+
                                     </Grid.ColumnDefinitions>
 
                                     <!--pane 1 -->
+                                    <TextBlock Text="Arrangement" FontSize="25" FontWeight="Bold"/>
 
-                                    <TextBlock x:Name="HeadlineTextBlock"
-                                               Text="Dato"
-                                               FontSize="25" />
+                                    <DatePicker Header="Vælg en Dato"
+                                                VerticalAlignment="Top"
+                                                HorizontalAlignment="Right" />
 
                                     <TextBlock Text="Arrangør"
                                                VerticalAlignment="Top"
@@ -382,12 +383,29 @@
                                              IsReadOnly="True"
                                              PlaceholderText="Ingen note valgt"
                                              Text="{Binding HostDinners[0].AdditionalNote, Mode=TwoWay}" />
+                                    <TextBlock x:Name="textBlock10"
+                                               FontSize="20"
+                                               HorizontalAlignment="Left"
+                                               Margin="0,337,0,0"
+                                               TextWrapping="Wrap"
+                                               Text="Pris"
+                                               VerticalAlignment="Top" />
+                                    <TextBox Grid.Column="0"
+                                             VerticalAlignment="Top"
+                                             HorizontalAlignment="Left"
+                                             Margin="0,362,0,0"
+                                             Width="250"
+                                             Background="LightGray"
+                                             IsReadOnly="True"
+                                             PlaceholderText="Ingen note valgt"
+                                             Text="{Binding HostDinners[0].Price, Mode=TwoWay}" />
 
                                     <!--Pane 2 -->
                                     <TextBlock x:Name="HeadlineTextBlock2"
                                                Text="Oprettelse"
                                                FontSize="25"
-                                               Grid.Column="1" />
+                                               Grid.Column="1" 
+                                               FontWeight="Bold"/>
                                     <TextBlock Text="Arrangør"
                                                VerticalAlignment="Top"
                                                HorizontalAlignment="Left"
@@ -462,38 +480,12 @@
                                                   ToolTipService.ToolTip="Ved tryk bliver alle dine ændringer fjernet. Når først de er fjernet kan de ikke hentes tilbage. ">
                                         <SymbolIcon Symbol="Delete" />
                                     </AppBarButton>
-
-                                    <!--Pane 3-->
-                                    <TextBlock x:Name="HeadlineTextBlock3"
-                                               Text="Vælg Dato"
-                                               FontSize="25"
-                                               Grid.Column="2" />
-
-                                    <CalendarView Margin="40,40,40,0"
-                                                  Grid.Column="2"
-                                                  HorizontalAlignment="Center"
-                                                  VerticalAlignment="Top">
-                                        <CalendarView.FirstDayOfWeek>
-                                            <Globalization:DayOfWeek>Monday</Globalization:DayOfWeek>
-                                        </CalendarView.FirstDayOfWeek>
-
-                                    </CalendarView>
-                                    <TextBlock x:Name="textBlock10"
-                                               FontSize="20"
-                                               HorizontalAlignment="Left"
-                                               Margin="0,337,0,0"
-                                               TextWrapping="Wrap"
-                                               Text="Pris"
-                                               VerticalAlignment="Top"/>
-                                    <TextBox Grid.Column="0"
+                                    <TextBox Grid.Column="1"
                                              VerticalAlignment="Top"
                                              HorizontalAlignment="Left"
                                              Margin="0,362,0,0"
                                              Width="250"
-                                             Background="LightGray"
-                                             IsReadOnly="True"
-                                             PlaceholderText="Ingen note valgt"
-                                             Text="{Binding HostDinners[0].Price, Mode=TwoWay}" />
+                                             Text="{Binding Price, Mode=TwoWay}" />
                                     <TextBlock x:Name="textBlock2_Copy"
                                                FontSize="20"
                                                HorizontalAlignment="Left"
@@ -502,12 +494,19 @@
                                                Text="Pris"
                                                VerticalAlignment="Top"
                                                Grid.Column="1" />
-                                    <TextBox Grid.Column="1"
-                                             VerticalAlignment="Top"
-                                             HorizontalAlignment="Left"
-                                             Margin="0,362,0,0"
-                                             Width="250"
-                                             Text="{Binding Price, Mode=TwoWay}" />
+
+                                    <!--Pane 3-->
+                                    <!--<TextBlock x:Name="HeadlineTextBlock3"
+                                               Text="Vælg Dato"
+                                               FontSize="25"
+                                               Grid.Column="2" />
+
+                             <DatePicker Header="Vælg en Dato" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Column="2" Margin="0,0,0,0"/>-->
+
+
+
+
+
 
                                 </Grid>
 
