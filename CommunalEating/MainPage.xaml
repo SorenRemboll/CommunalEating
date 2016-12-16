@@ -352,7 +352,8 @@
                                              Width="250"
                                              Background="LightGray"
                                              IsReadOnly="True"
-                                             PlaceholderText="Ingen vært valgt" />
+                                             PlaceholderText="Ingen vært valgt"
+                                             Text="{Binding HostDinners[0].Host, Mode=TwoWay }" />
                                     <TextBox Grid.Column="0"
                                              VerticalAlignment="Top"
                                              HorizontalAlignment="Left"
@@ -360,7 +361,8 @@
                                              Width="250"
                                              Background="LightGray"
                                              IsReadOnly="True"
-                                             PlaceholderText="Ingen titel valgt" />
+                                             PlaceholderText="Ingen titel valgt"
+                                             Text="{Binding HostDinners[0].Headline, Mode=TwoWay}" />
                                     <TextBox Grid.Column="0"
                                              Margin="0,190,0,0"
                                              Background="LightGray"
@@ -369,7 +371,8 @@
                                              HorizontalAlignment="Left"
                                              Width="250"
                                              Height="100"
-                                             VerticalAlignment="top" />
+                                             VerticalAlignment="top"
+                                             Text="{Binding HostDinners[0].Description, Mode=TwoWay}" />
                                     <TextBox Grid.Column="0"
                                              VerticalAlignment="Top"
                                              HorizontalAlignment="Left"
@@ -377,7 +380,8 @@
                                              Width="250"
                                              Background="LightGray"
                                              IsReadOnly="True"
-                                             PlaceholderText="Ingen note valgt" />
+                                             PlaceholderText="Ingen note valgt"
+                                             Text="{Binding HostDinners[0].AdditionalNote, Mode=TwoWay}" />
 
                                     <!--Pane 2 -->
                                     <TextBlock x:Name="HeadlineTextBlock2"
@@ -415,23 +419,27 @@
                                              VerticalAlignment="Top"
                                              HorizontalAlignment="Left"
                                              Margin="0,80,0,0"
-                                             Width="250" />
+                                             Width="250"
+                                             Text="{Binding Host, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                                     <TextBox Grid.Column="1"
                                              VerticalAlignment="Top"
                                              HorizontalAlignment="Left"
                                              Margin="0,135,0,0"
-                                             Width="250" />
+                                             Width="250"
+                                             Text="{Binding Headline, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                                     <TextBox Grid.Column="1"
                                              Margin="0,190,0,0"
                                              HorizontalAlignment="Left"
                                              Width="250"
                                              Height="100"
-                                             VerticalAlignment="top" />
+                                             VerticalAlignment="top"
+                                             Text="{Binding Description, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                                     <TextBox Grid.Column="1"
                                              VerticalAlignment="Top"
                                              HorizontalAlignment="Left"
                                              Margin="0,310,0,0"
-                                             Width="250" />
+                                             Width="250"
+                                             Text="{Binding AdditionalNote, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
                                     <AppBarButton Label="Tilføj ændringer"
                                                   Grid.Column="1"
@@ -440,7 +448,8 @@
                                                   Background="LightGreen"
                                                   Margin="280,120,0,0"
                                                   AllowDrop="False"
-                                                  ToolTipService.ToolTip="Dette tilføjer dine ændringer">
+                                                  ToolTipService.ToolTip="Dette tilføjer dine ændringer"
+                                                  Command="{Binding DAddCommand}">
                                         <SymbolIcon Symbol="Add" />
                                     </AppBarButton>
                                     <AppBarButton Label="Slet ændringer"
@@ -483,7 +492,8 @@
                                              Width="250"
                                              Background="LightGray"
                                              IsReadOnly="True"
-                                             PlaceholderText="Ingen note valgt" />
+                                             PlaceholderText="Ingen note valgt"
+                                             Text="{Binding HostDinners[0].Price, Mode=TwoWay}" />
                                     <TextBlock x:Name="textBlock2_Copy"
                                                FontSize="20"
                                                HorizontalAlignment="Left"
@@ -496,7 +506,8 @@
                                              VerticalAlignment="Top"
                                              HorizontalAlignment="Left"
                                              Margin="0,362,0,0"
-                                             Width="250" />
+                                             Width="250"
+                                             Text="{Binding Price, Mode=TwoWay}" />
 
                                 </Grid>
 

@@ -14,6 +14,7 @@ namespace CommunalEating.Models
         public ObservableCollection<Reservation> Reservations { get; set; }
 
         public ObservableCollection<Calcualtor> Calculation { get; set; }
+        public ObservableCollection<HostDinner> HostDinners { get; set; }
 
         public Singelton()
         {
@@ -21,6 +22,7 @@ namespace CommunalEating.Models
             Households = new ObservableCollection<Household>();
             Reservations = new ObservableCollection<Reservation>();
             Calculation = new ObservableCollection<Calcualtor>();
+            HostDinners = new ObservableCollection<HostDinner>();
 
         }
 
