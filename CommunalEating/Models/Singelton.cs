@@ -15,6 +15,8 @@ namespace CommunalEating.Models
 
         public ObservableCollection<Calcualtor> Calculation { get; set; }
         public ObservableCollection<HostDinner> HostDinners { get; set; }
+        
+        public ObservableCollection<Calendar> Calendar { get; set; }
 
         public Singelton()
         {

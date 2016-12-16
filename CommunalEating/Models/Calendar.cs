@@ -25,11 +25,11 @@ namespace CommunalEating.Models
         static CultureInfo culture = new CultureInfo("da-DK");
         private System.Globalization.Calendar calendar = culture.Calendar;
         private CalendarWeekRule calendarWeekRule = culture.DateTimeFormat.CalendarWeekRule;
-        private DayOfWeek dayOfWeek = culture.DateTimeFormat.FirstDayOfWeek; 
+        private DayOfWeek dayOfWeek = culture.DateTimeFormat.FirstDayOfWeek;
         #endregion
 
+        #region Constructors
         // ## Default Constructor
-        #region Constructor
         // # I know - I too am ashamed of this snippet
         public Calendar()
         {
@@ -83,6 +83,12 @@ namespace CommunalEating.Models
                 day3 = day3.AddDays(3);
                 day4 = day4.AddDays(4);
             }
+        }
+
+        // # Constructor that takes a date
+        public Calendar(DateTime _date)
+        {
+            today = _date;
         }
         #endregion
 
