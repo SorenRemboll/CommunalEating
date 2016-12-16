@@ -423,14 +423,13 @@ namespace CommunalEating
 
         public double calcNoOfAdults()
         {
-            HostDinner hd = new HostDinner("", "", "", "", 0, DateTime.Now);
             if (_noOfAdults == 0)
             {
                 return 0;
             }
             else
             {
-                double result = hd.Price / (_noOfAdults / valueOfAdults) + (_noOfTeens / valueOfTeens) + (_noOfKids / valueOfKids);
+                double result = Price / (_noOfAdults / valueOfAdults) + (_noOfTeens / valueOfTeens) + (_noOfKids / valueOfKids);
                 return result;
             }
 
@@ -438,14 +437,13 @@ namespace CommunalEating
 
         public double calcNoOfTeens()
         {
-            HostDinner hd = new HostDinner("", "", "", "", 0, DateTime.Now);
             if (_noOfTeens == 0)
             {
                 return 0;
             }
             else
             {
-                double result = hd.Price / ((_noOfAdults / valueOfAdults) + (_noOfTeens / valueOfTeens) + (_noOfKids / valueOfKids) / valueOfTeens);
+                double result = Price / ((_noOfAdults / valueOfAdults) + (_noOfTeens / valueOfTeens) + (_noOfKids / valueOfKids) / valueOfTeens);
                 return result;
             }
 
@@ -454,14 +452,13 @@ namespace CommunalEating
 
         public double calcNoOfKids()
         {
-            HostDinner hd = new HostDinner("", "", "", "", 0, DateTime.Now);
             if (_noOfKids == 0)
             {
                 return 0;
             }
             else
             {
-                double result = hd.Price / ((_noOfAdults / valueOfAdults) + (_noOfTeens / valueOfTeens) + (_noOfKids / valueOfKids) / valueOfKids);
+                double result = Price / ((_noOfAdults / valueOfAdults) + (_noOfTeens / valueOfTeens) + (_noOfKids / valueOfKids) / valueOfKids);
                 return result;
             }
         }
@@ -519,7 +516,7 @@ namespace CommunalEating
 
         public void DAdd()
         {
-            Singelton.GetInstance().HostDinners.Add(new HostDinner(Headline,Description,AdditionalNote,Host,Price,DateTime.Today));
+            Singelton.GetInstance().HostDinners.Add(new HostDinner(Headline, Description, AdditionalNote, Host, Price, DateTime.Today));
             OnPropertyChanged();
             Headline = "";
             Description = "";
@@ -530,17 +527,17 @@ namespace CommunalEating
 
         public void DRemove()
         {
-            
+
         }
 
         public void SaveDinner()
         {
-            
+
         }
 
         public void LoadDinner()
         {
-            
+
         }
         #endregion
 
