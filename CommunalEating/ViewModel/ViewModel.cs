@@ -16,7 +16,15 @@ namespace CommunalEating
 {
     class ViewModel : INotifyPropertyChanged
     {
-
+        #region Variables (creating objects)
+        // # The front/overview four days objects
+        private Calendar days;
+        private HostDinner day1;
+        private HostDinner day2;
+        private HostDinner day3;
+        private HostDinner day4;
+        #endregion
+        
         #region Properties
 
         #region Alex [RESERVATION]
@@ -68,8 +76,6 @@ namespace CommunalEating
         private int valueOfBabies = 0;
 
         #endregion
-
-
 
         #region Jacob
 
@@ -158,17 +164,6 @@ namespace CommunalEating
         public RelayCommand HLoadCommand { get; set; }
         #endregion
 
-        #region Properties (creating objects)
-        // # The front/overview four days objects
-        private Calendar days;
-
-        private HostDinner day1;
-        private HostDinner day2;
-        private HostDinner day3;
-        private HostDinner day4;
-
-
-        #endregion
         #region Henrik
         // # Properties to get the 4 days on the front/overview
         public String Day1
@@ -370,7 +365,6 @@ namespace CommunalEating
 
         #endregion
 
-
         // # Constructor
         public ViewModel()
         {
@@ -381,7 +375,6 @@ namespace CommunalEating
 
             #endregion
 
-
             #region Alex [CALCULATOR]
 
             _calculation = Singelton.GetInstance().Calculation;
@@ -390,11 +383,6 @@ namespace CommunalEating
 
 
             #endregion
-
-
-
-            // IsThursday();
-            // workers = new Worker("", "", "");
 
             #region jacob
 
@@ -406,8 +394,7 @@ namespace CommunalEating
             HLoadCommand = new RelayCommand(LoadHousehold);
             DAddCommand = new RelayCommand(DAdd);
             #endregion
-
-
+            
             #region Henrik
             days = new Calendar();
             day1 = new HostDinner("Kødsovs", "Serveres med yadada", "Kan indeholde kød", "hans", 500, DateTime.Today);
@@ -543,25 +530,6 @@ namespace CommunalEating
 
         #endregion
         #endregion
-
-
-        private void backButton(object sender, EventArgs e)
-        {
-            //INavigate(new Uri("MainPage.xaml?pivotItems.SelectedIndex = "));
-        }
-
-        //public bool IsItThursday
-        //{
-        //    get { return _isThursday; }
-        //    set { _isItThursday = value; }
-        //}
-
-        //public bool IsThursday()
-        //{
-        //  Worker testWorkser = new Worker("Louise", "Bent", "Gunnar");
-
-        //  return testWorkser.GetThursday();
-        //}
 
         #region PropertyChanged
 
