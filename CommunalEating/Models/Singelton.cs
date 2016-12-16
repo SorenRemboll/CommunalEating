@@ -16,7 +16,7 @@ namespace CommunalEating.Models
         public ObservableCollection<Calcualtor> Calculation { get; set; }
         public ObservableCollection<HostDinner> HostDinners { get; set; }
         
-        public ObservableCollection<Calendar> Calendar { get; set; }
+        public ObservableCollection<WeekNumber> Week { get; set; }
 
         public Singelton()
         {
@@ -25,7 +25,6 @@ namespace CommunalEating.Models
             Reservations = new ObservableCollection<Reservation>();
             Calculation = new ObservableCollection<Calcualtor>();
             HostDinners = new ObservableCollection<HostDinner>();
-
         }
 
         public static Singelton GetInstance()
