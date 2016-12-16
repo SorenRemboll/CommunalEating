@@ -12,7 +12,7 @@ namespace CommunalEating.Models
         private string _headline;
         private string _description;
         private string _additionalNote;
-        private int _host;
+        private string _host;
         private double _price;
         private DateTime _date;
 
@@ -36,7 +36,7 @@ namespace CommunalEating.Models
             set { _additionalNote = value; }
         }
         // # Hosting Household
-        public int Host
+        public string Host
         {
             get { return _host; }
             set { _host = value; }
@@ -61,7 +61,7 @@ namespace CommunalEating.Models
             _headline = "";
             _description = "";
             _additionalNote = "";
-            _host = 0;
+            _host = "";
             _price = 0.0;
         }
 
@@ -69,7 +69,7 @@ namespace CommunalEating.Models
         public HostDinner(String _headline,
                           String _description,
                           String _additionalNote,
-                          int _host,
+                          string _host,
                           double _price,
                           DateTime _date)
         {
@@ -85,7 +85,7 @@ namespace CommunalEating.Models
         public HostDinner(String _headline,
                           String _description,
                           String _additionalNote,
-                          int _host,
+                          string _host,
                           DateTime _date)
         {
             this._headline = _headline;

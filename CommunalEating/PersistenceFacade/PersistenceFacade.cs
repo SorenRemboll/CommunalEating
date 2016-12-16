@@ -16,17 +16,19 @@ namespace CommunalEating
     class PersistenceFacade
     {
 
-        private static string jsonFileName = "Households.dat";
+        #region Household
+
+        private static string houseJsonFileName = "Households.dat";
 
         public static async void SaveHouseholdJason(ObservableCollection<Household> households)
         {
             string householdJsonString = JsonConvert.SerializeObject(households);
-            SerializeHousehold(householdJsonString, jsonFileName);
+            SerializeHousehold(householdJsonString, houseJsonFileName);
         }
 
         public static async Task<ObservableCollection<Household>> LoadHouseholdJason()
         {
-            string householdJsonString = await DeSerializeHousehold(jsonFileName);
+            string householdJsonString = await DeSerializeHousehold(houseJsonFileName);
             if (householdJsonString != null)
                 return (ObservableCollection<Household>)JsonConvert.DeserializeObject(householdJsonString, typeof(ObservableCollection<Household>));
             return null;
@@ -48,11 +50,54 @@ namespace CommunalEating
             catch (FileNotFoundException ex)
             {
 
-                MessageDialogHelper.Show("Loading for the first time? Try Adding and Save some Persons before you are trying to Load Persons!", "File not found!");
+                MessageDialogHelper.Show("Første gang der loades? Tilføj Husinformationer og gem for at kunne loade", "Fil findes ikke!");
                 return null;
             }
         }
 
+
+        #endregion
+
+        #region HostDinner
+
+        private static string dinnerJsonFileName = "Dinners.dat";
+
+        public static async void SaveDinnerJason(ObservableCollection<HostDinner> dinners)
+        {
+            string dinnerJsonString = JsonConvert.SerializeObject(dinners);
+            SerializeDinner(dinnerJsonString, dinnerJsonFileName);
+        }
+
+        public static async Task<ObservableCollection<HostDinner>> LoadDinnerJason()
+        {
+            string householdJsonString = await DeSerializeDinner(dinnerJsonFileName);
+            if (householdJsonString != null)
+                return (ObservableCollection<HostDinner>)JsonConvert.DeserializeObject(householdJsonString, typeof(ObservableCollection<HostDinner>));
+            return null;
+        }
+
+        public static async void SerializeDinner(string dinnerString, string fileName)
+        {
+            StorageFile localFile = await ApplicationData.Current.LocalFolder.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
+            await FileIO.WriteTextAsync(localFile, dinnerString);
+        }
+
+        public static async Task<string> DeSerializeDinner(String fileName)
+        {
+            try
+            {
+                StorageFile localFile = await ApplicationData.Current.LocalFolder.GetFileAsync(fileName);
+                return await FileIO.ReadTextAsync(localFile);
+            }
+            catch (FileNotFoundException ex)
+            {
+
+                MessageDialogHelper.ShowD("Første gang der loades? Tilføj Husinformationer og gem for at kunne loade", "Fil findes ikke!");
+                return null;
+            }
+        }
+
+        #endregion
         private class MessageDialogHelper
         {
             public static async void Show(string content, string title)
@@ -60,7 +105,11 @@ namespace CommunalEating
                 MessageDialog messageDialog = new MessageDialog(content, title);
                 await messageDialog.ShowAsync();
             }
+            public static async void ShowD(string content, string title)
+            {
+                MessageDialog messageDialog = new MessageDialog(content, title);
+                await messageDialog.ShowAsync();
+            }
         }
-
     }
 }

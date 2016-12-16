@@ -57,9 +57,6 @@ namespace CommunalEating
             set { _noOfKids = value; OnPropertyChanged(); }
         }
 
-        private int _address;
-        private string _email;
-        private int _housePick;
         #endregion
 
         #region Alex [CALCULATOR]
@@ -75,6 +72,8 @@ namespace CommunalEating
 
 
         #region Jacob
+
+        #region Household
 
         public int HousePick
         {
@@ -100,8 +99,59 @@ namespace CommunalEating
             set { _email = value; OnPropertyChanged(); }
         }
 
-
         private ObservableCollection<Household> _households;
+        private int _address;
+        private string _email;
+        private int _housePick;
+        #endregion
+
+        #region HostDinner
+
+        public ObservableCollection<HostDinner> HostDinners
+        {
+            get { return _hostDinners; }
+            set { _hostDinners = value; }
+        }
+
+        public string Headline
+        {
+            get { return _headline; }
+            set { _headline = value; }
+        }
+        // # Description
+        public string Description
+        {
+            get { return _description; }
+            set { _description = value; }
+        }
+        // # Additional Note
+        public string AdditionalNote
+        {
+            get { return _additionalNote; }
+            set { _additionalNote = value; }
+        }
+        // # Hosting Household
+        public string Host
+        {
+            get { return _host; }
+            set { _host = value; }
+        }
+        // # Price
+        public double Price
+        {
+            get { return _price; }
+            set { _price = value; }
+        }
+
+        private ObservableCollection<HostDinner> _hostDinners;
+        private string _headline;
+        private string _description;
+        private string _additionalNote;
+        private string _host;
+        private double _price;
+        #endregion
+
+        public RelayCommand DAddCommand { get; set; }
         public RelayCommand HAddCommand { get; set; }
         public RelayCommand HRemoveCommand { get; set; }
         public RelayCommand HSaveCommand { get; set; }
@@ -116,6 +166,8 @@ namespace CommunalEating
         private HostDinner day2;
         private HostDinner day3;
         private HostDinner day4;
+
+
         #endregion
         #region Henrik
         // # Properties to get the 4 days on the front/overview
@@ -333,33 +385,35 @@ namespace CommunalEating
             #region Alex [CALCULATOR]
 
             _calculation = Singelton.GetInstance().Calculation;
-            Singelton.GetInstance().Calculation.Add(new Calcualtor(0,0,0,0));
+            Singelton.GetInstance().Calculation.Add(new Calcualtor(0, 0, 0, 0));
 
-            
 
-                #endregion
 
-        
+            #endregion
 
-        // IsThursday();
-        // workers = new Worker("", "", "");
 
-        #region jacob
 
-        _households = Singelton.GetInstance().Households;
+            // IsThursday();
+            // workers = new Worker("", "", "");
+
+            #region jacob
+
+            _households = Singelton.GetInstance().Households;
+            _hostDinners = Singelton.GetInstance().HostDinners;
             HAddCommand = new RelayCommand(HAdd);
-        HRemoveCommand = new RelayCommand(HRemove);
-        HSaveCommand = new RelayCommand(SaveHousehold);
-        HLoadCommand = new RelayCommand(LoadHousehold);
-        #endregion
+            HRemoveCommand = new RelayCommand(HRemove);
+            HSaveCommand = new RelayCommand(SaveHousehold);
+            HLoadCommand = new RelayCommand(LoadHousehold);
+            DAddCommand = new RelayCommand(DAdd);
+            #endregion
 
 
-        #region Henrik
-        days = new Calendar();
-        day1 = new HostDinner("Kødsovs", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today);
-        day2 = new HostDinner("En anden ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(4));
-            day3 = new HostDinner("En tredje ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(5));
-            day4 = new HostDinner("Og den sidste ret", "Serveres med yadada", "Kan indeholde kød", 5, 500, DateTime.Today.AddDays(6));
+            #region Henrik
+            days = new Calendar();
+            day1 = new HostDinner("Kødsovs", "Serveres med yadada", "Kan indeholde kød", "hans", 500, DateTime.Today);
+            day2 = new HostDinner("En anden ret", "Serveres med yadada", "Kan indeholde kød", "hans", 500, DateTime.Today.AddDays(4));
+            day3 = new HostDinner("En tredje ret", "Serveres med yadada", "Kan indeholde kød", "hans", 500, DateTime.Today.AddDays(5));
+            day4 = new HostDinner("Og den sidste ret", "Serveres med yadada", "Kan indeholde kød", "hans", 500, DateTime.Today.AddDays(6));
             #endregion
         }
 
@@ -369,7 +423,7 @@ namespace CommunalEating
 
         public double calcNoOfAdults()
         {
-            HostDinner hd = new HostDinner("","","",0,0,DateTime.Now);
+            HostDinner hd = new HostDinner("", "", "", "", 0, DateTime.Now);
             if (_noOfAdults == 0)
             {
                 return 0;
@@ -384,7 +438,7 @@ namespace CommunalEating
 
         public double calcNoOfTeens()
         {
-            HostDinner hd = new HostDinner("", "", "", 0, 0, DateTime.Now);
+            HostDinner hd = new HostDinner("", "", "", "", 0, DateTime.Now);
             if (_noOfTeens == 0)
             {
                 return 0;
@@ -400,7 +454,7 @@ namespace CommunalEating
 
         public double calcNoOfKids()
         {
-            HostDinner hd = new HostDinner("", "", "", 0, 0, DateTime.Now);
+            HostDinner hd = new HostDinner("", "", "", "", 0, DateTime.Now);
             if (_noOfKids == 0)
             {
                 return 0;
@@ -427,67 +481,101 @@ namespace CommunalEating
 
         #region Jacob
 
+        #region Household
+
         public void HRemove() //Used to call the remove command on the singelton object of household at (housepick) location
-    {
-        Singelton.GetInstance().Households.RemoveAt(HousePick);
-        OnPropertyChanged();
+        {
+            Singelton.GetInstance().Households.RemoveAt(HousePick);
+            OnPropertyChanged();
+        }
+
+        public void HAdd() //used to call the add command on the singelton object of household
+        {
+            Singelton.GetInstance().Households.Add(new Household(Address, Email));
+            OnPropertyChanged();
+            Address = 0;
+            Email = "";
+        }
+
+        public async void SaveHousehold()
+        {
+            PersistenceFacade.SaveHouseholdJason(Singelton.GetInstance().Households);
+        }
+
+        public async void LoadHousehold()
+        {
+            var household = await PersistenceFacade.LoadHouseholdJason();
+            Singelton.GetInstance().Households.Clear();
+            if (household != null)
+                foreach (var house in household)
+                {
+                    Singelton.GetInstance().Households.Add(house);
+                }
+        }
+
+        #endregion
+
+        #region HostDinner
+
+        public void DAdd()
+        {
+            Singelton.GetInstance().HostDinners.Add(new HostDinner(Headline,Description,AdditionalNote,Host,Price,DateTime.Today));
+            OnPropertyChanged();
+            Headline = "";
+            Description = "";
+            AdditionalNote = "";
+            Host = "";
+            Price = 0;
+        }
+
+        public void DRemove()
+        {
+            
+        }
+
+        public void SaveDinner()
+        {
+            
+        }
+
+        public void LoadDinner()
+        {
+            
+        }
+        #endregion
+
+        #endregion
+        #endregion
+
+
+        private void backButton(object sender, EventArgs e)
+        {
+            //INavigate(new Uri("MainPage.xaml?pivotItems.SelectedIndex = "));
+        }
+
+        //public bool IsItThursday
+        //{
+        //    get { return _isThursday; }
+        //    set { _isItThursday = value; }
+        //}
+
+        //public bool IsThursday()
+        //{
+        //  Worker testWorkser = new Worker("Louise", "Bent", "Gunnar");
+
+        //  return testWorkser.GetThursday();
+        //}
+
+        #region PropertyChanged
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        [NotifyPropertyChangedInvocator]
+        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        #endregion
     }
-
-    public void HAdd() //used to call the add command on the singelton object of household
-    {
-        Singelton.GetInstance().Households.Add(new Household(Address, Email));
-        OnPropertyChanged();
-        Address = 0;
-        Email = "";
-    }
-
-    public async void SaveHousehold()
-    {
-        PersistenceFacade.SaveHouseholdJason(Singelton.GetInstance().Households);
-    }
-
-    public async void LoadHousehold()
-    {
-        var household = await PersistenceFacade.LoadHouseholdJason();
-        Singelton.GetInstance().Households.Clear();
-        if (household != null)
-            foreach (var house in household)
-            {
-                Singelton.GetInstance().Households.Add(house);
-            }
-    }
-    #endregion
-    #endregion
-
-
-    private void backButton(object sender, EventArgs e)
-    {
-        //INavigate(new Uri("MainPage.xaml?pivotItems.SelectedIndex = "));
-    }
-
-    //public bool IsItThursday
-    //{
-    //    get { return _isThursday; }
-    //    set { _isItThursday = value; }
-    //}
-
-    //public bool IsThursday()
-    //{
-    //  Worker testWorkser = new Worker("Louise", "Bent", "Gunnar");
-
-    //  return testWorkser.GetThursday();
-    //}
-
-    #region PropertyChanged
-
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    [NotifyPropertyChangedInvocator]
-    protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-    {
-        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    }
-
-    #endregion
-}
 }
