@@ -126,6 +126,7 @@
   <ItemGroup>
     <Content Include="Images\info.png" />
     <Content Include="Images\FAQ.png" />
+    <Content Include="Images\specialArrangement.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

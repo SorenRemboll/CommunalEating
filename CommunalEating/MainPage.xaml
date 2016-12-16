@@ -749,6 +749,13 @@
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
+                                    
+                                    <DatePicker Header="Vælg Dato" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" />
+                                    <Image Source="Images/specialArrangement.png" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.ColumnSpan="2" Width="750" Margin="25"></Image>
+                                    <AppBarButton Label="Bekræft" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="50">
+                                        <SymbolIcon Symbol="Accept" />
+                                    </AppBarButton>
+                                    
                                 </Grid>
                                 
                                 
