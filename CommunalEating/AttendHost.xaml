@@ -32,7 +32,7 @@
                                HorizontalAlignment="Left"
                                Margin="4,132,0,0"
                                FontSize="20" />
-                    <TextBlock Text="Antal Brøn"
+                    <TextBlock Text="Antal Unge "
                                FontSize="20"
                                VerticalAlignment="Top"
                                HorizontalAlignment="Left"
@@ -60,19 +60,23 @@
                     <TextBox VerticalAlignment="Top"
                              HorizontalAlignment="Left"
                              Margin="4,102,0,0"
-                             Width="250" />
+                             Width="250"
+                             Text="{Binding NoOfAdults, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                     <TextBox VerticalAlignment="Top"
                              HorizontalAlignment="Left"
                              Margin="4,157,0,0"
-                             Width="250" />
+                             Width="250"
+                             Text="{Binding NoOfTeens, Mode=TwoWay}" />
                     <TextBox Margin="4,212,0,0"
                              HorizontalAlignment="Left"
                              Width="250"
-                             VerticalAlignment="top" />
+                             VerticalAlignment="top"
+                             Text="{Binding NoOfYoungsters, Mode=TwoWay}" />
                     <TextBox VerticalAlignment="Top"
                              HorizontalAlignment="Left"
                              Margin="4,270,0,0"
-                             Width="250" />
+                             Width="250"
+                             Text="{Binding NoOfKids, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
 
                     <AppBarButton Label=""
                                   VerticalAlignment="Top"
@@ -119,7 +123,8 @@
                               HorizontalAlignment="Left"
                               Margin="4,40,0,0"
                               VerticalAlignment="Top"
-                              Width="120" />
+                              Width="120"
+                              ItemsSource="{Binding Households}" />
 
                 </Grid>
 
