@@ -104,7 +104,7 @@
                         <SymbolIcon Symbol="Back" />
                         <interactivity:Interaction.Behaviors>
                             <core:EventTriggerBehavior EventName="Click">
-                                <core:NavigateToPageAction TargetPage="CommunalEating.MainPage?pivotItems.SelectedIndex=3" />
+                                <core:NavigateToPageAction TargetPage="CommunalEating.MainPage" />
                             </core:EventTriggerBehavior>
                         </interactivity:Interaction.Behaviors>
                     </AppBarButton>
