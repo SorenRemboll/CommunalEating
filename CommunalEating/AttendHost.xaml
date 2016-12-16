@@ -22,17 +22,17 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Antal Voksne"
+                    <TextBlock Text="Antal Voksne (over 15 år)"
                                VerticalAlignment="Top"
                                HorizontalAlignment="Left"
                                FontSize="20"
                                Margin="4,72,0,0" />
-                    <TextBlock Text="Antal Unge"
+                    <TextBlock Text="Antal Unge (7-15 år)"
                                VerticalAlignment="Top"
                                HorizontalAlignment="Left"
                                Margin="4,132,0,0"
                                FontSize="20" />
-                    <TextBlock Text="Antal Unge "
+                    <TextBlock Text="Antal Børn (3-6 år) "
                                FontSize="20"
                                VerticalAlignment="Top"
                                HorizontalAlignment="Left"
@@ -42,7 +42,7 @@
                                HorizontalAlignment="Left"
                                Margin="4,245,0,0"
                                TextWrapping="Wrap"
-                               Text="Antal babyer"
+                               Text="Antal Børn (under 3 år)"
                                VerticalAlignment="Top" />
                     <TextBlock VerticalAlignment="Top"
                                HorizontalAlignment="Left"
