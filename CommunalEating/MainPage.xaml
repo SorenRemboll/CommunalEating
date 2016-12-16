@@ -744,7 +744,12 @@
                                 </Grid>
                             </PivotItem>
                             <PivotItem Header="Special Arrangement">
-                                
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                </Grid>
                                 
                                 
                             </PivotItem>
