@@ -7,10 +7,12 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using Windows.Networking.Sockets;
 using Windows.UI.Xaml.Controls;
 using CommunalEating.Annotations;
 using CommunalEating.Models;
 using Eventmaker.Common;
+using System.Globalization;
 
 namespace CommunalEating
 {
@@ -18,13 +20,18 @@ namespace CommunalEating
     {
         #region Variables (creating objects)
         // # The front/overview four days objects
-        private Calendar days;
+        private CommunalEating.Models.Calendar days;
         private HostDinner day1;
         private HostDinner day2;
         private HostDinner day3;
         private HostDinner day4;
+        static CultureInfo culture = new CultureInfo("da-DK");
+        private System.Globalization.Calendar calendar = culture.Calendar;
+        private CalendarWeekRule calendarWeekRule = culture.DateTimeFormat.CalendarWeekRule;
+        private DayOfWeek dayOfWeek = culture.DateTimeFormat.FirstDayOfWeek;
+        private DateTime WeekDate;
         #endregion
-        
+
         #region Properties
 
         #region Alex [RESERVATION]
@@ -182,6 +189,9 @@ namespace CommunalEating
         {
             get { return days.Day4; }
         }
+
+        // # Property for leading weeks
+        public ObservableCollection<WeekNumber> Week { get; set; }
 
         //public DateTime testDate { get { return days.Day1Date; }  }
         //public DateTime testDate2 { get { return day1.Date; } }
@@ -394,9 +404,9 @@ namespace CommunalEating
             HLoadCommand = new RelayCommand(LoadHousehold);
             DAddCommand = new RelayCommand(DAdd);
             #endregion
-            
+
             #region Henrik
-            days = new Calendar();
+            days = new CommunalEating.Models.Calendar();
             day1 = new HostDinner("Kødsovs", "Serveres med yadada", "Kan indeholde kød", "hans", 500, DateTime.Today);
             day2 = new HostDinner("En anden ret", "Serveres med yadada", "Kan indeholde kød", "hans", 500, DateTime.Today.AddDays(4));
             day3 = new HostDinner("En tredje ret", "Serveres med yadada", "Kan indeholde kød", "hans", 500, DateTime.Today.AddDays(5));
@@ -528,6 +538,18 @@ namespace CommunalEating
         }
         #endregion
 
+        #endregion
+
+        #region Henrik
+        public void LeadingWeeks()
+        {
+            WeekDate = DateTime.Today;
+            while (calendar.GetWeekOfYear(WeekDate, calendarWeekRule, dayOfWeek) > 1)
+            {
+                Week.Add(new WeekNumber(calendar.GetWeekOfYear(WeekDate, calendarWeekRule, dayOfWeek)));
+                WeekDate = WeekDate.AddDays(-7);
+            }
+        }
         #endregion
         #endregion
 

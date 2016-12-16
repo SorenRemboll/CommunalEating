@@ -107,6 +107,7 @@
     <Compile Include="Models\Household.cs" />
     <Compile Include="Models\Reservation.cs" />
     <Compile Include="Models\Singelton.cs" />
+    <Compile Include="Models\WeekNumber.cs" />
     <Compile Include="Models\Worker.cs" />
     <Compile Include="PersistenceFacade\PersistenceFacade.cs" />
     <Compile Include="Properties\Annotations.cs" />

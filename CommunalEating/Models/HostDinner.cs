@@ -9,14 +9,17 @@ namespace CommunalEating.Models
     class HostDinner
     {
         // # Needed variables / backing-fields
+        #region Variables
         private string _headline;
         private string _description;
         private string _additionalNote;
         private string _host;
         private double _price;
         private DateTime _date;
+        #endregion
 
         // ## Properties
+        #region Properties
         // # Headline
         public String Headline
         {
@@ -47,14 +50,15 @@ namespace CommunalEating.Models
             get { return _price; }
             set { _price = value; }
         }
-
         // # Date
         public DateTime Date
         {
             get { return _date; }
             set { _date = value; }
         }
+        #endregion
 
+        #region Constructors (3 of a kind)
         // # Default Constructor
         public HostDinner()
         {
@@ -94,6 +98,7 @@ namespace CommunalEating.Models
             this._host = _host;
             this._price = 0;
             this._date = _date;
-        }
+        } 
+        #endregion
     }
 }
