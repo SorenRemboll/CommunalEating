@@ -95,11 +95,11 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AttendHost.xaml.cs">
+    <Compile Include="View\AttendHost.xaml.cs">
       <DependentUpon>AttendHost.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Calcualtor.cs" />
-    <Compile Include="MainPage.xaml.cs">
+    <Compile Include="View\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Models\Calendar.cs" />
@@ -112,10 +112,13 @@
     <Compile Include="PersistenceFacade\PersistenceFacade.cs" />
     <Compile Include="Properties\Annotations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="regenskab.xaml.cs">
+    <Compile Include="View\regenskab.xaml.cs">
       <DependentUpon>regenskab.xaml</DependentUpon>
     </Compile>
     <Compile Include="RelayCommand\RelayCommand.cs" />
+    <Compile Include="View\specialEvents.xaml.cs">
+      <DependentUpon>specialEvents.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\ViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -142,15 +145,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="AttendHost.xaml">
+    <Page Include="View\AttendHost.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainPage.xaml">
+    <Page Include="View\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="regenskab.xaml">
+    <Page Include="View\regenskab.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\specialEvents.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
