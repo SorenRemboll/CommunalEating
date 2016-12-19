@@ -8,6 +8,16 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid Margin="15">
+        <Pivot >
+            <PivotItem Header="Oprettelse" >
+                
+            </PivotItem>
+            
+            <PivotItem Header="Arbejdere">
+                
+            </PivotItem>
+        </Pivot>
+        </Grid>
     </Grid>
 </Page>
