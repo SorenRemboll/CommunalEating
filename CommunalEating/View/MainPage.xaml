@@ -754,6 +754,11 @@
                                     <Image Source="../Images/specialArrangement.png" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.ColumnSpan="2" Width="750" Margin="25"></Image>
                                     <AppBarButton Label="Bekræft" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="45"
                                                   Click="AppBarButton_Click">
+                                        <Interactivity:Interaction.Behaviors>
+                                            <Core:EventTriggerBehavior EventName="Click">
+                                                <Core:NavigateToPageAction TargetPage="CommunalEating.specialEventsxaml" />
+                                            </Core:EventTriggerBehavior>
+                                        </Interactivity:Interaction.Behaviors>
                                         <SymbolIcon Symbol="Accept" />
                                     </AppBarButton>
                                     
